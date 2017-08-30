@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <title> Mimi Leon: Personal Website </title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" /> 
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+        <!-- another method to link external CSS file 
+        <style>
+            @import url("css/style.css");
+        </style> --> 
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+         <header>
+            <h1> Mimi Leon </h1>
+        </header>
+        <nav>
+            <hr />
+            <ul>
+                <li><span class="active"><a class="active" href="index.html">Home</a></span></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <br /><br />
+
+        <main>
+            <figure id="me">
+                <img id ="pic" src="img/mimi.jpg" alt="Picture of Mimi Leon" />
+            </figure>
+
+            <div id ="welcomeText">
+                Hello! <br />
+                <p>Thank you for visiting my professional portfolio website.</p>
+                <p>I am a Software Engineer and have been recently hired at the Acme Corporation.</p>
+                <p>Feel free to contact me!</p>
+
+                <br /><br />
+
+                <em>"With ordinary talent and extraordinary <strong>perserverance</strong>, all things are attainable"</em><br /> - Thomas F. Buxton
+            </div>
+        </main>
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+            <hr>
+            <!-- <div id="foot-content">-->
+            <div class="foot-content">
+                <img id="logo" src="img/csumb_logo.png" alt="CSUMB logo">    
+            </div>
+            <div class="foot-content">
+             <div id="info">
+                CST 336. 2017&copy; Leon <br />
+                <strong>Disclaimer</strong> The information in this webpage is fictitous. <br />
+                It is used for academic purposes only.
+             </div>
+            </div>
+            
+        </footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>

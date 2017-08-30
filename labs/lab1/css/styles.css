@@ -1,0 +1,128 @@
+body {
+    background-color: #363636;
+    color: white;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+    color: white;
+}
+
+hr {
+    width: 50%;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a { /* links within "nav" container */
+    
+    padding: 10px;
+    /*padding-bottom: 4px;*/
+    font-size: 1.8em;
+    font-family: 'Allan', cursive;
+    text-decoration: none; /* removes underline */
+    color: white; /* by default, links are blue */
+   
+}
+
+nav a:hover { /* psuedo class */
+    border-bottom: 2px #009688 solid;
+    font-size: 2em;
+    transition: .9s; /* transition effect */ 
+}
+
+nav .active {
+    background-color: #009688;
+    border-radius: 15px;
+}
+
+nav span {
+    height: 10px;
+}
+
+
+#me, #welcomeText {
+    float: left;
+}
+
+figure img {
+    border: 1px #ffe6ff;
+    
+    border-radius: 35px; 
+   
+}
+
+figure img:hover {
+     border: 10px #ffb3ff solid;
+    
+}
+
+
+#welcomeText {
+    text-align: left;
+}
+
+footer {
+    clear: left;
+}
+
+#foot-content {
+   display: inline-block;
+   margin: 1em;
+   
+}
+
+table {
+    margin: 0px auto;
+}
+
+th, td{
+    padding: 4px;
+}
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: #ffeb33;
+}
+
+#table-header {
+    background-color: #0097A7;
+    font-size: .8em;
+    font-family: helvetica;
+}
+
+.table-row {
+    background-color: #5bd7d7;
+    color: white;
+   
+}
+
+#about {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.hobby {
+    color: yellow;
+}
+
+#content-form {
+    display: block;
+    text-align: center;
+}
+
+iframe {
+    overflow-y:hidden;
+}
