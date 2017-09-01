@@ -2,6 +2,11 @@ body {
     background-color: #363636;
     color: white;
     font-family: 'Encode Sans', sans-serif;
+    /*cursor: url(''), default;*/
+}
+
+body, a, a:hover { 
+    cursor:url('http://ani.cursors-4u.net/nature/nat-11/nat1047.cur'), auto
 }
 
 h1 {
@@ -13,6 +18,7 @@ h1 {
 
 hr {
     width: 50%;
+    color: #ffe6ff;
 }
 
 header, main, nav, footer {
@@ -28,7 +34,7 @@ nav a { /* links within "nav" container */
     padding: 10px;
     /*padding-bottom: 4px;*/
     font-size: 1.8em;
-    font-family: 'Allan', cursive;
+    font-family: 'Encode Sans', cursive;
     text-decoration: none; /* removes underline */
     color: white; /* by default, links are blue */
    
@@ -54,11 +60,15 @@ nav span {
     float: left;
 }
 
+figure {
+    position: relative;
+    top: -40px;
+    left: 200px;
+}
+
 figure img {
-    border: 1px #ffe6ff;
-    
-    border-radius: 35px; 
-   
+    border: 5px #ffe6ff solid;
+    border-radius: 35px;
 }
 
 figure img:hover {
@@ -68,7 +78,9 @@ figure img:hover {
 
 
 #welcomeText {
+    position: relative;
     text-align: left;
+    left: 200px;
 }
 
 footer {
