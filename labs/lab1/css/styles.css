@@ -29,6 +29,10 @@ h1 {
    
 }
 
+hr{
+    width: 50%;
+}
+
 .line {
   text-decoration: none;
   position: relative;
