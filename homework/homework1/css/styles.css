@@ -1,0 +1,20 @@
+html {
+    background-color: gray;
+}
+h1{
+    display: inline;
+}
+
+nav {
+   
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+li {
+    display: inline-block;
+}
