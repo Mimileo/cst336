@@ -1,7 +1,15 @@
 
+
+html {
+    height: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: linear-gradient(to top, #667eea 0%, #764ba2 100%);
+}
 body {
-   background:linear-gradient(to top, #bbc0c4 0%, #596164 100%);
+    
     color: white;
+    
     font-family: 'Helvetica Neue';
     /*cursor: url(''), default;*/
 }
@@ -11,16 +19,36 @@ body, a, a:hover {
 }
 
 h1 {
+    
     font-family: 'Damion';
     font-size: 4em;
-    margin-bottom: 0px;
+    margin-top: -45px;
+	float: left;
+	padding: 5px 0px 0px 160px;
     color: white;
+   
 }
 
-hr {
-    width: 50%;
-    color: #ffe6ff;
+.line {
+  text-decoration: none;
+  position: relative;
+  color: white;
 }
+
+.line:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid black;
+  transition: 0.4s;
+}
+
+.line:hover:after {
+  width: 100%;
+}
+
 
 #me p{
     font-family: 'Damion';
@@ -32,10 +60,25 @@ hr {
     color: #888;
 }
 
-header, main, nav, footer {
+header, main, footer {
     text-align: center;
 }
 
+main {
+    margin: 70px 0px 50px 0px;
+    
+}
+
+
+
+
+nav {
+   text-align: right;
+   margin-right: 100px;
+   margin-top: 55px;  
+   margin-bottom: 30px
+   
+}
 
 nav li {
     display: inline-block;
@@ -46,20 +89,20 @@ nav a { /* links within "nav" container */
     font-family: 'Helvetica Neue';
     font-weight: 300;
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 1.32em;
     text-decoration: none; /* removes underline */
     color: white; /* by default, links are blue */
    
 }
 
 nav a:hover { /* psuedo class */
-    border-bottom: 2px #009688 solid;
+    border-bottom: 2px #ff6666 solid;
     font-size: 1.6em;
     transition: .9s; /* transition effect */ 
 }
 
 span .active {
-    background-color: #009688;
+    background-color:#ff6666;
     border-radius: 15px;
 }
 
@@ -72,9 +115,7 @@ nav span {
     float: left;
 }
 
-#welcomeText {
-    color: #374649;
-}
+
 
 figure {
     position: relative;
@@ -88,11 +129,12 @@ figure img {
 	display: inline;
 	padding: 20px 20px 70px 20px;
 	text-decoration: none;
-	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 18px 20px rgba(0,0,0,.3);
 	z-index:0;
        
     
 }
+
 
 figure:hover {
     transform: rotate(0deg);
@@ -107,6 +149,8 @@ figure:hover {
     text-align: left;
     left: 200px;
 }
+
+
 
 footer {
     clear: left;
@@ -126,35 +170,39 @@ table {
 
 th, td {
     padding: 15px;
+     
+      color: white;
+      
 }
 
 td {
     padding-right: 10px;
     font-size: 1.3em;
+     
+     border: 1px inset white;
+   
 }
 
-td strong {
-    color: #3b3a30;
-}
 
 
 #table-header {
     font-size: 1em;
     font-weight: 400;
-    background: linear-gradient(to right, #66ffcc 0%, #66ccff 100%);
-    color: #1f4060;
+   
+    background-color: rgba(255,255,255,0.3);
+   
+   
+   
 }
 
 .table-row {
-    background: linear-gradient(to bottom, #000000 -600%, #ffffff 100%);
-    border-bottom: 1px solid #FFF;
     margin-bottom: 5px;
-    color:  #8a97a0;
+    color:  white;
 }
 
 .table-row:hover {
-    background: linear-gradient(to right, #66ff99 0%, #66ffff 100%);
-    color:  white;
+   
+    background-color: rgba(255,255,255,0.5);
     
 }
 
@@ -178,6 +226,3 @@ td strong {
     text-align: center;
 }
 
-iframe {
-    overflow-y: hidden;
-}
