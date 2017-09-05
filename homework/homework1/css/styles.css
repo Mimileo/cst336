@@ -22,7 +22,7 @@ main{
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     background-color: #5FD9FF;
     width:100%;
@@ -36,13 +36,20 @@ li {
 }
 
 li a {
-   display: block;
+    display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
+    transition-property: background;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    font-size: 1.2em;
 }
 
 li a:hover {
-    background: #ff7b29;
+    background: #99ffff;
+    color: #4d4d4d;
 }
+
+
