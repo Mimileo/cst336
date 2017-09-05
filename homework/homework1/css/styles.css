@@ -53,3 +53,10 @@ li a:hover {
 }
 
 
+#cpu img {
+    border-radius: 25px;
+}
+
+article {
+    width: 200px;
+}
