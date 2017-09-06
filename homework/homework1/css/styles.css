@@ -70,6 +70,33 @@ li a:hover {
     
 }
 
+#social-com {
+    width:1100px;
+}
+
 figcaption{
     padding-left: 150px;
 }
+
+figure {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+figure figcaption {
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    bottom: 0;
+    left: -30%;
+    transition: all 0.6s ease;
+}
+
+figure:hover figcaption{
+    opacity: 1;
+    left:0;
+}
+
