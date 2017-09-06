@@ -59,7 +59,8 @@ li a:hover {
 
 #hci-img img{
     position:relative;
-    padding-left: 300px ;
+    padding-left: 350px;
+    padding-top: -100px;
 }
 
 #cpu img {
