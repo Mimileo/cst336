@@ -53,11 +53,14 @@ li a:hover {
 }
 
 #hci{
-    width:300px;
+    width:500px;
     float:left;
 }
 
-
+#hci-img{
+    position:relative;
+    margin-right: 100px;
+}
 
 #cpu img {
     border-radius: 25px;
