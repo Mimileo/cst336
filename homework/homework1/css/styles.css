@@ -16,7 +16,7 @@ h1 {
 
 main{
     margin-top: 50px;
-    margin-left: 100px;
+    text-align: center;
 }
 
 nav ul {
@@ -145,6 +145,7 @@ figure:hover figcaption{
    text-align: left;
 }
 #ref a {
+    background-color: transparent;
     color:black;
     text-align: center;
     padding: 14px 20px;
