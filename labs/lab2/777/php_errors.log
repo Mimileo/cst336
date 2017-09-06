@@ -1,0 +1,10 @@
+[06-Sep-2017 20:26:25 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php on line 38
+[06-Sep-2017 20:26:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php on line 39
+[06-Sep-2017 20:26:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php on line 39
+[06-Sep-2017 20:30:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php on line 41
+[06-Sep-2017 20:46:17 UTC] PHP Fatal error:  Call to undefined function displayPoints() in /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php on line 14
+[06-Sep-2017 20:46:17 UTC] PHP Stack trace:
+[06-Sep-2017 20:46:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php:0
+[06-Sep-2017 20:46:23 UTC] PHP Fatal error:  Call to undefined function displayPoints() in /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php on line 14
+[06-Sep-2017 20:46:23 UTC] PHP Stack trace:
+[06-Sep-2017 20:46:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/777/777/index.php:0
