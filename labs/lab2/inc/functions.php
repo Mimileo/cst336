@@ -2,7 +2,7 @@
 
 
 function displaySymbol($randomValue, $pos) {
-        $randomValue = rand(0,2);
+        //$randomValue = rand(0,2);
     /*    if ($randomValue == 0) {
             echo '<img src="img/seven.png" alt="seven" title="Seven" width="70" />';
         } else if ($randomValue == 1) {
@@ -17,9 +17,11 @@ function displaySymbol($randomValue, $pos) {
                 break;
             case 2: $symbol = "lemon";
                 break;
+            case 3: $symbol = "grapes";
+                break;
         }
         
-        echo "<img id='reel$pos' src='img/$symbol.png' alt='$symbol' title= '". ucfirst($symbol). "' width='70' >";
+        echo "<img id='reel$pos' src='img/$symbol.png' alt='$symbol' title= '". ucfirst($symbol). "' width='70' />";
 }
 
 function displayPoints($randomValue1, $randomValue2, $randomValue3) {
@@ -34,10 +36,14 @@ function displayPoints($randomValue1, $randomValue2, $randomValue3) {
                 break;
             case 2: $totalPoints = 250;
                 break;
+            case 3: $totalPoints = 900;
+                break;
         }
         
         echo "<h2>You won $totalPoints points!</h2>";
-    } else {
+    } 
+    
+    else {
         echo "<h3> Try Again! </h3>";
     }
     echo "</div>";
@@ -45,9 +51,10 @@ function displayPoints($randomValue1, $randomValue2, $randomValue3) {
 
 function play() {
         for($i=1; $i<4; $i++) {
-            ${"randomValue" . $i } = rand(0,2);
+            ${"randomValue" . $i } = rand(0,3);
             displaySymbol(${"randomValue" . $i}, $i );
         }
         displayPoints($randomValue1, $randomValue2, $randomValue3);
 }
+
 ?>

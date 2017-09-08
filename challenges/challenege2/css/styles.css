@@ -1,0 +1,38 @@
+
+
+h1{
+    color: black;
+}
+
+div {
+    display: inline-block;
+    text-align: center;
+}
+#h, #c{
+    display: inline;
+    word-wrap: break-word;
+   padding-left: 30px;
+  
+}
+
+ #main {
+        font-family: 'Baloo Bhaina', cursive;
+        background-image:url("../img/machine.png");
+        width:600px;
+        height:500px;
+        position:relative;
+        margin:0 auto;
+    }
+    
+    #reel1, #reel2{
+        top:248px;
+        position:absolute;
+    }
+    
+    #reel1{
+        left:145px;
+    }
+    #reel2{
+        left:252px;
+    }
+   
