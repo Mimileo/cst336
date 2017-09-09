@@ -32,8 +32,6 @@ function displayPoints($randomValue1, $randomValue2, $randomValue3) {
             case 0: $totalPoints = 1000;
                 echo '<embed src="sound/win.wav" hidden="true" autostart="true"></embed>';
                 echo "<h1>Jackpot!</h1>";
-                
-                
                 break;
             case 1: $totalPoints = 500;
                 break;
