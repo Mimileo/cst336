@@ -27,3 +27,6 @@
 [07-Sep-2017 03:53:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
 [07-Sep-2017 03:53:55 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/cst336/labs/lab2/index.php:17
 [07-Sep-2017 05:04:40 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 30
+[10-Sep-2017 06:25:03 UTC] PHP Fatal error:  Call to undefined function play() in /home/ubuntu/workspace/cst336/labs/lab2/index.php on line 14
+[10-Sep-2017 06:25:03 UTC] PHP Stack trace:
+[10-Sep-2017 06:25:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab2/index.php:0
