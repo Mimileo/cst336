@@ -1,4 +1,40 @@
 body {
-    color: black;
+    background-color:gray;
+    
 }
 
+#grid {
+    background-color:#ffb3b3;
+    border: 1px solid white;
+    width: 100px;
+    height:100px;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+#first {
+    position: relative;
+}
+#go {
+    text-align: center;
+    width:200px;
+    
+}
+/*h1{
+    text-align: center;
+}
+header {
+        border: 1px dashed white;
+        float: top;
+  		margin: 10px;
+  		height: 20%;
+}
+
+main {
+  		border: 1px solid white;
+  		margin: 10px;
+  		height: 100%;
+  		background-color: white;
+}*/
