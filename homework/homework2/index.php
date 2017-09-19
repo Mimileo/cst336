@@ -100,8 +100,8 @@ if(isset($_POST["submit"])) {
         
             if($winner == 'n'){
                 echo "<div id='btn'>";
-            echo '<button id="go" type="submit" name="submit" value="Go"><img src="img/btn.png"/></button>';
-             echo "</div>";
+                echo '<button id="go" type="submit" name="submit" value="Go"><img src="img/btn.png"/></button>';
+                echo "</div>";
            
              }
             
@@ -117,9 +117,10 @@ if(isset($_POST["submit"])) {
         
                 ?>
        
-       
+        <hr/>
          <footer>
             <h4> Rules: </h4>
+             <hr/>
             <br>
               
             <aside>Unfair Tic Tac Toe, where player turn is random.<br>Enter x to make a move.<br>Click button for computer turn.<aside>

@@ -102,7 +102,7 @@ main {
 
 h4{
     color:#00e6b8;
-    margin-bottom: 5px;
+    margin: 10px auto;
 }
 footer{
     font-size: 1.2em;
@@ -112,4 +112,8 @@ footer{
     font-family: sans-serif;
 }
 
-
+hr {
+    border-style: dotted;
+    width:30%;
+    color:white;
+}
