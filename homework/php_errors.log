@@ -7,3 +7,36 @@
 [11-Sep-2017 15:32:55 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 8
 [11-Sep-2017 15:32:55 UTC] PHP Stack trace:
 [11-Sep-2017 15:32:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[17-Sep-2017 22:29:47 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[17-Sep-2017 22:29:47 UTC] PHP Stack trace:
+[17-Sep-2017 22:29:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[17-Sep-2017 22:30:02 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[17-Sep-2017 22:30:02 UTC] PHP Stack trace:
+[17-Sep-2017 22:30:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[17-Sep-2017 22:30:11 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[17-Sep-2017 22:30:11 UTC] PHP Stack trace:
+[17-Sep-2017 22:30:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[17-Sep-2017 22:30:11 UTC] PHP   2. array_fill() /home/ubuntu/workspace/cst336/homework/homework2/index.php:7
+[18-Sep-2017 00:17:50 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[18-Sep-2017 00:17:50 UTC] PHP Stack trace:
+[18-Sep-2017 00:17:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[18-Sep-2017 00:17:50 UTC] PHP   2. array_fill() /home/ubuntu/workspace/cst336/homework/homework2/index.php:7
+[18-Sep-2017 00:19:54 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[18-Sep-2017 00:19:54 UTC] PHP Stack trace:
+[18-Sep-2017 00:19:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[18-Sep-2017 00:19:56 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 9
+[18-Sep-2017 00:19:56 UTC] PHP Stack trace:
+[18-Sep-2017 00:19:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[18-Sep-2017 15:20:14 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[18-Sep-2017 15:20:14 UTC] PHP Stack trace:
+[18-Sep-2017 15:20:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[18-Sep-2017 15:20:14 UTC] PHP   2. array_fill() /home/ubuntu/workspace/cst336/homework/homework2/index.php:7
+[18-Sep-2017 15:20:30 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[18-Sep-2017 15:20:30 UTC] PHP Stack trace:
+[18-Sep-2017 15:20:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[18-Sep-2017 18:58:52 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 7
+[18-Sep-2017 18:58:52 UTC] PHP Stack trace:
+[18-Sep-2017 18:58:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework2/index.php:0
+[18-Sep-2017 18:58:52 UTC] PHP   2. array_fill() /home/ubuntu/workspace/cst336/homework/homework2/index.php:7
+[19-Sep-2017 17:26:49 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 36
+[19-Sep-2017 17:38:46 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/cst336/homework/homework2/index.php on line 108

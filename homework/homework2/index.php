@@ -1,12 +1,20 @@
 <?php
-$first = round(rand(0,1));
-echo ($first == 0) ? "Human Player Goes First" : "CPU Player Goes first";
-while($winner = 'n'){
+
+
+$winner = 'n';
 // check if button pressed
 // post to retrieve value from submit
 $grid = array_fill(0, 9,'');
 
+echo "<header><h1 id='tictac'>Tic Tac Toe</h1></header>";
+
+$first = round(rand(0,1));
+echo ($first == 0) ? "<h2>Human Player Turn</h2>" : "<h2>CPU Player Turn</h2>";
+    
+   
 if(isset($_POST["submit"])) {
+   
+    $count+=1;
     $grid[0] = $_POST["grid0"]; 
     $grid[1] = $_POST["grid1"]; 
     $grid[2] = $_POST["grid2"]; 
@@ -16,14 +24,15 @@ if(isset($_POST["submit"])) {
     $grid[6] = $_POST["grid6"]; 
     $grid[7] = $_POST["grid7"]; 
     $grid[8] = $_POST["grid8"]; 
-    print_r($grid);
+    //print_r($grid);
     
     if (($grid[0] == 'x' && $grid[1] == 'x' && $grid[2] =='x') || ($grid[3] == 'x' && $grid[4] == 'x' && $grid[5] =='x') || ($grid[6] == 'x' && $grid[7] == 'x' && $grid[8] =='x') 
     || ($grid[0] == 'x' && $grid[3] == 'x' && $grid[6] =='x') || ($grid[1] == 'x' && $grid[4] == 'x' && $grid[7] =='x') || ($grid[2] == 'x' && $grid[5] == 'x' && $grid[8]=='x') 
     || ($grid[0] == 'x' && $grid[4] == 'x' && $grid[8] =='x') || ($grid[2] == 'x' && $grid[4] == 'x' && $grid[6] =='x'))
     {
         $winner = 'x';
-        echo "<h2>X wins</h2>";
+        echo "<h2>You Win!</h2>";
+        
     }
     $blank = 0;
     $arlen = count($grid);
@@ -49,14 +58,16 @@ if(isset($_POST["submit"])) {
         $winner = 'o';
         echo "<h2> O win! </h2>";
     }
- } else if ($winner == 'n'){
+    } else if ($winner == 'n'){
      $winner = 't';
-     echo "<h2> Tied game </h2>";
+     echo "<h2> Tie! </h2>";
  }
+ 
     
- }
 }
+
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -64,37 +75,56 @@ if(isset($_POST["submit"])) {
         <meta name="viewport" content="width=device-width">
         <title> Tictactoe </title>
         <style>
+        
+           
             @import url("css/styles.css");
-        </style>
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+</style>
     </head>
     <body>
+         
+       
        <form name="tictactoe" method="post" action="index.php">
             <?php
-           
+            echo "<main>";
             for($i=0;$i<9;$i++) {
                echo "<input id='grid' type='text' name='grid$i' value='$grid[$i]'>";
-    //$i==2 || $i==5 || $i==8
+   
                 if($i % 3 == 2) {
                     echo "<br>";
                 }
             }
-            
+        
+             
+               
+        
             if($winner == 'n'){
-            echo '<input id="Go!" type="submit" name="submit" value="Go">';
-            } else {
+                echo "<div id='btn'>";
+            echo '<button id="go" type="submit" name="submit" value="Go"><img src="img/btn.png"/></button>';
+             echo "</div>";
+           
+             }
+            
+             else{
                 echo '<input id="Play" type="button" name="new" value="Play Again" onclick="window.location.href=\'index.php\'">';
             }
+            echo " </main>";
            
-             echo "<input id='first' type='text' name='Who will go first?' value='$first'>";
+            if($winner == 'x'){
+                 echo "<div id='msg'><img src='img/win.png'/></div>";
+             }
+            // echo "<input id='first' type='text' name='Who will go first?' value='$first'>";
         
                 ?>
-        <header>
-           
-        </header>
-        <main>
-            <p></p>
+       
+       
+         <footer>
+            <h4> Rules: </h4>
+            <br>
+              
+            <aside>Unfair Tic Tac Toe, where player turn is random.<br>Enter x to make a move.<br>Click button for computer turn.<aside>
             
-        </main>
+         </footer>
        
     </body>
 </html>
