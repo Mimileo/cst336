@@ -2,14 +2,98 @@
         opacity:0.9;
         width:100%;
         text-align:center;
-        color:yellow;
+         color:#87CEEB;
     }
+    select {
+         color:#f28060;
+         height:40px;
+        border-radius:25px;
+        border:5px solid #63f7e1;
+        background:linear-gradient(to bottom, white, #63f7e1);
+    }
+    
+   
+    
     
     input {
         font-size: 3em;
-        color: black;
+        color:#f28060;
+        border-radius:20px;
+        background:linear-gradient(to top, white, #63f7e1);
+        
     }
     
+    #submit-btn {
+         color:#f28060;
+        margin:15px auto;
+        background:linear-gradient(to bottom, white, #63f7e1);
+        
+    }
+    
+    input[type="radio"] {
+    display:none;
+}
+ input[type=radio] + label:before {
+    content: "";  
+    display: inline-block;  
+    width: 25px;  
+    height: 25px;  
+    vertical-align:middle;
+    text-align:center;
+    margin-right: 8px;  
+    background-color: #fff;  
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
+    border-radius: 25px;  
+}
+input[type=checkbox] + label:before {
+    content: "";  
+    display: inline-block;  
+    width: 25px;  
+    height: 25px;  
+    vertical-align:middle;
+    text-align: center;
+    margin-right: 8px;  
+    background-color: #fff;  
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
+    border-radius: 25px;  
+}
+input[type=radio]:checked + label:before {
+    content: "\2022"; 
+    color:white;
+    background-color: #76a1a6; 
+    font-size:3em;
+    text-align:center;
+    line-height:24px;
+    text-shadow:0px 0px 3px #eee;
+}
+input[type=checkbox]:checked + label:before {
+    content:"\2714"; 
+    color:white;
+    font-size:3em;
+  
+    background-color: #76a1a6;
+    text-align:center;
+    line-height:24px;
+    text-shadow:0px 0px 3px #eee;
+}
+#rgroup{
+    margin: 10px;
+    display: inline-block;
+      text-align:left;
+      right:300px;
+      background:linear-gradient(to bottom, white, #63f7e1);
+      border-radius: 20px;
+      width:200px;
+      color:#fff;
+}
+
+ label{
+    padding:5px;
+     vertical-align:top;
+   color:#f28060;
+    margin: 10px;
+   
+}
     #carousel-example-generic {
          margin: 0 auto;   
          width: 700px;

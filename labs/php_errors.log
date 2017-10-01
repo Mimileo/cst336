@@ -1,0 +1,65 @@
+[24-Sep-2017 05:37:44 UTC] PHP Warning:  include(api/pixelbayAPI.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 7
+[24-Sep-2017 05:37:44 UTC] PHP Stack trace:
+[24-Sep-2017 05:37:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 05:37:44 UTC] PHP Warning:  include(): Failed opening 'api/pixelbayAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 7
+[24-Sep-2017 05:37:44 UTC] PHP Stack trace:
+[24-Sep-2017 05:37:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 05:37:44 UTC] PHP Fatal error:  Call to undefined function getImageURLs() in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 8
+[24-Sep-2017 05:37:44 UTC] PHP Stack trace:
+[24-Sep-2017 05:37:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 05:45:27 UTC] PHP Warning:  include(api/pixelbayAPI.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 7
+[24-Sep-2017 05:45:27 UTC] PHP Stack trace:
+[24-Sep-2017 05:45:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 05:45:27 UTC] PHP Warning:  include(): Failed opening 'api/pixelbayAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 7
+[24-Sep-2017 05:45:27 UTC] PHP Stack trace:
+[24-Sep-2017 05:45:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 05:45:27 UTC] PHP Fatal error:  Call to undefined function getImageURLs() in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 8
+[24-Sep-2017 05:45:27 UTC] PHP Stack trace:
+[24-Sep-2017 05:45:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 06:24:38 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 37
+[24-Sep-2017 06:24:38 UTC] PHP Stack trace:
+[24-Sep-2017 06:24:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 06:25:49 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 37
+[24-Sep-2017 06:25:49 UTC] PHP Stack trace:
+[24-Sep-2017 06:25:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 06:27:16 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 37
+[24-Sep-2017 06:27:16 UTC] PHP Stack trace:
+[24-Sep-2017 06:27:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 06:29:34 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 37
+[24-Sep-2017 06:29:34 UTC] PHP Stack trace:
+[24-Sep-2017 06:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 06:30:26 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 37
+[24-Sep-2017 06:30:26 UTC] PHP Stack trace:
+[24-Sep-2017 06:30:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[24-Sep-2017 06:31:51 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 37
+[24-Sep-2017 06:31:51 UTC] PHP Stack trace:
+[24-Sep-2017 06:31:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[27-Sep-2017 16:31:59 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 71
+[27-Sep-2017 16:31:59 UTC] PHP Stack trace:
+[27-Sep-2017 16:31:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[28-Sep-2017 04:42:53 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 89
+[28-Sep-2017 04:42:53 UTC] PHP Stack trace:
+[28-Sep-2017 04:42:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[28-Sep-2017 22:24:07 UTC] PHP Parse error:  syntax error, unexpected '">';' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 94
+[29-Sep-2017 19:21:05 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/cst336/labs/lab4/api/pixabayAPI.php:4) in /home/ubuntu/workspace/cst336/labs/lab4/api/pixabayAPI.php on line 4
+[29-Sep-2017 19:21:05 UTC] PHP Stack trace:
+[29-Sep-2017 19:21:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[29-Sep-2017 19:29:49 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/cst336/labs/lab4/api/pixabayAPI.php:4) in /home/ubuntu/workspace/cst336/labs/lab4/api/pixabayAPI.php on line 4
+[29-Sep-2017 19:29:49 UTC] PHP Stack trace:
+[29-Sep-2017 19:29:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[29-Sep-2017 19:35:55 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/cst336/labs/lab4/api/pixabayAPI.php:4) in /home/ubuntu/workspace/cst336/labs/lab4/api/pixabayAPI.php on line 4
+[29-Sep-2017 19:35:55 UTC] PHP Stack trace:
+[29-Sep-2017 19:35:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[29-Sep-2017 19:52:48 UTC] PHP Parse error:  syntax error, unexpected '"><label for="' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 59
+[29-Sep-2017 19:53:20 UTC] PHP Parse error:  syntax error, unexpected '"><label for="' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 57
+[29-Sep-2017 19:53:22 UTC] PHP Parse error:  syntax error, unexpected '"><label for="' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 57
+[29-Sep-2017 19:53:22 UTC] PHP Parse error:  syntax error, unexpected '"><label for="' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 57
+[29-Sep-2017 21:46:41 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 115
+[29-Sep-2017 21:46:41 UTC] PHP Stack trace:
+[29-Sep-2017 21:46:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[01-Oct-2017 03:05:27 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 118
+[01-Oct-2017 03:05:27 UTC] PHP Stack trace:
+[01-Oct-2017 03:05:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
+[01-Oct-2017 03:05:27 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/labs/lab4/index.php on line 118
+[01-Oct-2017 03:05:27 UTC] PHP Stack trace:
+[01-Oct-2017 03:05:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab4/index.php:0
