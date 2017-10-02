@@ -58,37 +58,54 @@ function player(){
 function playerToll(){
     global $playerscore;
      $pics = array("pic1","pic2","pic3", "pic4");
-     $names = array("Player1", "Player2", "Player3", "Player4");
+     $names = array("Player 1", "Player 2", "Player 3", "Player 4");
      $winner = array();
 
      $ar = array(0,1,2,3);
      shuffle($ar);
+     //print_r($ar);
+     $playerNameScore=array("Player 1"=> 0,"Player 2"=> 0, "Player 3"=> 0,"Player 4"=> 0);
     for($i = 1;$i<=4;$i++) {
                 $k=$ar[$i-1];  
                 echo "<img src='img/$pics[$k].png' width='100'>" . $names[$k];
                 ${"player" . $i } = player();
-                echo " ${'player' . $i } ";
+                echo "<span> 	&nbsp;&nbsp;&nbsp;${'player' . $i }</span>";
                 $playerScore[] = ${'player' . $i};
+                if($k == 0)
+                $playerNameScore["Player 1"] = ${'player' . $i};
+                if($k == 1)
+                $playerNameScore["Player 2"] = ${'player' . $i};
+                if($k == 2)
+                $playerNameScore["Player 3"] = ${'player' . $i};
+                if($k == 3)
+                $playerNameScore["Player 4"] = ${'player' . $i};
+                //print_r($playerNameScore);
                 //print_r($playerScore);
-                if(${'player' . $i } == 42) {
-                    echo " <br/><h3>Player ". $i . " Wins!</h3>";
-                }
+             
                 echo "<br>";
                 
         }
         echo "  ";
          //print_r($player1);
         
-        displayWinner($playerScore);
+        displayWinner($playerScore, $playerNameScore);
 }
 
-function displayWinner($playerScore) {
+function displayWinner($playerScore, $playerNameScore) {
    // if($playerScore ==)
+   
    $winner=array();
     $max = 0;
     $index = 0;
     $tie = 0;
-    for($i=0;$i<4;$i++) {
+    foreach($playerNameScore as $score) {
+        if ($score > $max && $score <= 42) {
+            $max = $score;
+        }
+    }
+    
+    //echo "<br/> The max score is : ". $max ."<br/>";
+   /* for($i=0;$i<4;$i++) {
         if($playerScore[$i] > $max && $playerScore[$i] <= 42  ) {
             
              $max = $playerScore[$i];
@@ -98,11 +115,17 @@ function displayWinner($playerScore) {
         }
        
     }
+  */
   
-    for($j=0;$j<4;$j++) {
+   foreach($playerNameScore as $score) {
+        if ($score == $max) 
+            $tie+=1;
+        
+    }
+/*for($j=0;$j<4;$j++) {
           if($playerScore[$j] == $max){
               array_push($winner, $j+1);
-              //print_r($winner);
+              print_r($winner);
           }
         if($j == $index-1)
         continue;
@@ -111,22 +134,38 @@ function displayWinner($playerScore) {
                  $tie+=1;
              }
         }
-    }
-     $points = array_sum($playerScore);
+    }*/
+    
+    /* $points = array_sum($playerScore);
     for($i=0;$i<count($winner);$i++){
        
         //echo "Subtract loser points";
         $points= $points - $playerScore[($winner[$i])-1];
         //echo $points;
-     }
-    if($tie > 0 || $index == 0) {
-        echo "Tie!<br>";
-        for($i=0;$i<count($winner);$i++){
-            echo "Player ". $winner[$i] . " wins " . $points . " points!<br>";
+     }*/
+     $points = array_sum($playerScore);
+    if($tie > 1 ) {// || $index==0
+    echo "Tie!<br>";
+     $points=$points - ($max*$tie);
+        foreach($playerNameScore as $name => $score){
+            if ($score == $max) {
+                 //$points=$points - $max;
+                echo $name . " wins " .$points ." points!<br>";
+            }
         }
+        /*echo "Tie!<br>";
+        for($i=0;$i<count($winner);$i++){
+            echo "Player ". $playerScore[($winner[$i])+1] . " wins " . $points . " points!<br>";
+        }*/
     }
     else {
-        echo "Player ". $index . " wins " . $points . " points!";
+         $points=$points - $max;
+         foreach($playerNameScore as $name => $score){
+            if ($score == $max) 
+            
+                echo $name . " wins " . $points ." points!<br>";
+            
+        }
     }
 }
 
