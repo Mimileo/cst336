@@ -165,3 +165,4 @@
 [11-Oct-2017 06:47:51 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK), expecting ',' or ';' in /home/ubuntu/workspace/cst336/homework/homework3/returnData.php on line 316
 [11-Oct-2017 06:49:04 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/homework/homework3/returnData.php on line 343
 [11-Oct-2017 07:12:48 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/homework/homework3/returnData.php on line 356
+[11-Oct-2017 08:07:12 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/cst336/homework/homework3/returnData.php on line 105
