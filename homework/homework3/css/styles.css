@@ -3,10 +3,35 @@ body{
      font-family: 'Indie Flower', cursive;
 }
 form{
-    background:pink;
+    margin:0 auto;
+    background:#5A352D;
     border-radius:20px;
+    width:50%;
+    font-size: 1.2em;
     overflow:hidden;
+    color:#fffdd0;
    
+}
+#results{
+    text-align:center;
+    color: pink;
+    font-size:1.4em;
+}
+
+#username{
+    color:pink;
+}
+
+.question{
+    color: #ffb366;
+}
+h1{color:#ffb366;}
+h1,h2, h3{
+    text-align:center;
+}
+button {
+    background: #fffdd0 ;
+    color: #5A352D;
 }
 
 label{
@@ -27,8 +52,49 @@ select {
     color: #383838;
 }
 img{
+   
     border-radius:25px;
+    display: block;
+    margin: 0 auto;
+    opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    
 }
+
+.out{
+    display:block;
+    margin:0 auto;
+    position: relative;
+    width: 50%;
+    text-align:center;
+}
+
+.text {
+  background-color: #86592d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.out:hover img {
+  opacity: 0.3;
+}
+
+.out:hover .middle {
+  opacity: 1;
+}
+
 
 input[type=text] {
     width: 30%;

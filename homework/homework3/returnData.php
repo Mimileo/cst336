@@ -7,7 +7,21 @@ function random_username($string) {
     $nrRand = rand(0, 100);
     
     $username = trim($firstPart).trim($secondPart).trim($nrRand);
-    return $username;
+    echo $username;
+}
+
+
+function checkIfSelected($option){
+    if($option == $_POST['select']) {
+        return 'selected';
+    }
+}
+function ischecked($option)
+{
+      if($option == $_POST['product']) {
+        return 'selected';
+    }
+    
 }
 
 function checked($option){
@@ -21,10 +35,34 @@ function checked($option){
 
 
 
-function checkIfSelected($option){
-    if ($option == $_POST['select']) {
+function check1($option){
+    if ($option == $_POST['choice1']) {
             
-            return "selected";
+            return "checked";
+            
+        }
+}
+
+function check2($option){
+    if ($option == $_POST['choice2']) {
+            
+            return "checked";
+            
+        }
+}
+
+function check3($option){
+    if ($option == $_POST['choice3']) {
+            
+            return "checked";
+            
+        }
+}
+
+function check4($option){
+    if ($option == $_POST['choice4']) {
+            
+            return "checked";
             
         }
 }
@@ -42,36 +80,184 @@ function checkIfSelected($option){
 </head>
 <body>
     <form action="returnData.php" method="post" name="enterData">
+<h1>Coffee Form</h1>
+<label for="firstname">Firstname:</label> 
 
-<label for="username">Username:</label> 
-<input type="text" name="userTxt"><br>
-<p>Welcome: <?php if($_POST["userTxt"]){echo $_POST["userTxt"];}else if(empty($_POST["userTxt"])){echo "<h4>* You did not enter a username</h4>";} ?></p>
-<label for="password">Password:</label> 
-<input type="text" name="password"><br/>
-<p><?php echo (isset($_POST["password"]))?  $_POST["password"]: "<h4>* You did not enter a name</h4>"; ?></p>
+<input type="text" name="firstname" value="<?php if($_POST["firstname"]){echo $_POST["firstname"];}else if(empty($_POST["firstname"])){echo "";} ?>"><br>
+<?php
+if(empty($_POST['firstname'])){
+echo "<h4>* You did not enter a firstname</h4>";}?>
+<label for="lastname">Lastname:</label> 
+<input type="text" name="lastname" value="<?php if($_POST["lastname"]){echo $_POST["lastname"];}else if(empty($_POST["lastname"])){echo "";} ?>"<br/>
+<?php
+if(empty($_POST['lastname'])){
+echo "<h4>* You did not enter a lastname</h4>";}?>
+<?php 
+if(isset($_POST['firstname']) &&  isset($_POST['lastname'])){
+$str = $_POST['firstname']." " . $_POST['lastname'];
+echo $str;}
+else{
+    echo '<h4>* You must enter your name</h4>';
+}
+?>
+<h3 id="username">Welcome: <?php
 
- <label for="name">Name:</label>
-<input id="name" type="text" name="textfield"/><br/>
-<p><?php echo (isset($_POST["name"]))?  $_POST["name"]: "<h4>* You did not enter a name</h4>"; ?></p>
-         <fieldset>
-                <legend> Select type of product you are looking for: </legend>
-                <input id="electronics" type="checkbox" name="electronics" value="electronics" <?php echo (isset($_POST['electronics']) && !empty($_POST['electronics'])) ? "checked" : ""; ?> >
-                <label for="electronics">Electronics</label><br/>
+random_username($str); ?></h3>
+
+
+       
+            
+               <fieldset>  
+               <p class="question">Where was coffee first discovered? </p>
+            <input id="turkey" type="radio" name="choice1" value="turkey" <?=check1('turkey')?>>
+                <label for="turkey">Turkey</label> <br/>
                 
+                 <input id="Ethiopia" type="radio" name="choice1" value="Ethiopia" <?=check1('Ethiopia')?>>
+                <label for="Ethiopia">Ethiopia</label> <br/>
                 
-                <input id="coffee" type="checkbox" name="coffee" value="coffee" <?php echo (isset($_POST['coffee']))? "checked": ""; ?>>
-                <label for="coffee">Coffee</label><br/>
+                <input id="Columbia" type="radio" name="choice1" value="Columbia" <?=check1('Columbia')?>>
+                <label for="Columbia">Columbia</label> <br/>
                 
-                 <input id="vegan yogurt" type="checkbox" name="vegan yogurt" value="vegan yogurt" <?php echo (isset($_POST['vegan yogurt']))? "checked": ""; ?>>
-                <label for="vegan yogurt">Vegan yogurt</label><br/><br/>
-                <?php if(isset($_POST["product"])){  
-                foreach($_POST["product"] as $value){
-                    echo "<p>".$value . "</p>";
-                    } 
-                }else{ 
-                echo "<h4>* You did not mark a checkbox</h4>";
-                } ?>
+                <input id="brazil" type="radio" name="choice1" value="brazil" <?=check1('brazil')?>>
+                <label for="brazil">Brazil</label>
+            
+        
             </fieldset>
+            
+                <?php
+                if(empty($_POST['choice1'])) {
+                    echo "<h4>*Please select a radio button</h4>";
+                }
+                else {
+                if($_POST['choice1'] != 'Ethiopia') {
+                    echo "The correct option was Ethiopia";
+                }
+                else{
+                    echo "correct!";
+                }
+                }
+                ?>
+
+            
+             <fieldset> 
+               <p class="question">Which of these are the names of the most common types of coffee bean? </p>
+            <input id="ristretto-and-tactera" type="radio" name="choice2" value="ristretto-and-tactera" <?=check2('ristretto-and-tactera')?>>
+                <label for="ristretto-and-tactera">Ristretto and Tactera</label> <br/>
+                
+                 <input id="arabica-and-robusta" type="radio" name="choice2" value="arabica-and-robusta" <?=check2('arabica-and-robusta')?>>
+                <label for="arabica-and-robusta">Arabica and Robusta</label> <br/>
+                
+                <input id="liberica-and-acaisa" type="radio" name="choice2" value="liberica-and-acaisa" <?=check2('liberica-and-acaisa')?>>
+                <label for="liberica-and-acaisa">Liberica and acaisa</label> <br/>
+                
+                <input id="laurina-and-topponta" type="radio" name="choice2" value="laurina-and-topponta" <?=check2('laurina-and-topponta')?>>
+                <label for="laurina-and-topponta">Laurina and Topponta</label>
+        
+            </fieldset>
+            <?php
+                if(empty($_POST['choice2'])) {
+                    echo "<h4>*Please select a radio button</h4>";
+                }
+                else {
+                if($_POST['choice2'] != 'arabica-and-robusta') {
+                    echo "The correct option was arabica and robusta";
+                }
+                else{
+                    echo "correct!";
+                }
+                }
+                ?>
+         <fieldset> 
+           <p class="question">How do coffee beans grow? </p>
+            <input id="bush" type="radio" name="choice3" value="bush" <?=check3('bush')?>>
+                <label for="bush">Bush</label> <br/>
+                
+                 <input id="vines" type="radio" name="choice3" value="vines" <?=check3('vines')?>>
+                <label for="vines">Vines</label> <br/>
+                
+                <input id="trees" type="radio" name="choice3" value="trees" <?=check3('trees')?>>
+                <label for="trees">Trees</label> <br/>
+                
+                <input id="roots" type="radio" name="choice3" value="roots" <?=check3('roots')?>>
+                <label for="roots">Roots</label>
+                
+    
+        
+            </fieldset>
+            
+                <?php
+                if(empty($_POST['choice3'])) {
+                    echo "<h4>*Please select a radio button</h4>";
+                }
+                else {
+                if($_POST['choice3'] != 'bush') {
+                    echo "The correct option was bush";
+                }
+                else{
+                    echo "correct!";
+                }
+                }
+                ?>
+            </fieldset>
+            <fieldset>
+            <p class="question">How large is a shot of espresso? </p>
+            <input id="30ml" type="radio" name="choice4" value="30ml" <?=check4('30ml')?>>
+                <label for="30ml">30ml</label> <br/>
+                
+                 <input id="35ml" type="radio" name="choice4" value="35ml" <?=check4('35ml')?>>
+                <label for="35ml">35ml</label> <br/>
+                
+                <input id="37ml" type="radio" name="choice4" value="37ml" <?=check4('37ml')?>>
+                <label for="37ml">37ml</label> <br/>
+                
+                <input id="40ml" type="radio" name="choice4" value="40ml" <?=check4('40ml')?>>
+                <label for="40ml">40ml</label>
+            </fieldset>
+                <?php
+                if(empty($_POST['choice4'])) {
+                    echo "<h4>*Please select a radio button</h4>";
+                }
+                else{
+                if($_POST['choice4'] != '30ml') {
+                    echo "The correct option was 30ml";
+                }
+                else{
+                    echo "correct!";
+                }
+                }
+                ?>
+            
+            <?php
+                               
+                    $answer1 = $_POST['choice1'];
+                    
+                    $answer2 = $_POST['choice2'];
+                    
+                    $answer3 = $_POST['choice3'];
+                    
+                    $answer4 = $_POST['choice4'];
+                    
+                    
+                    
+                    
+                    $totalCorrect = 0;
+                    
+                    if ($answer1 == "Ethiopia") { $totalCorrect++; }
+                    
+                    if ($answer2 == "arabica-and-robusta") { $totalCorrect++; }
+                    
+                    if ($answer3 == "bush") { $totalCorrect++; }
+                    
+                    if ($answer4 == "30ml") { $totalCorrect++; }
+                    
+                    
+                    echo "<br/><div id='results'> Coffee Quiz Score: ". $totalCorrect ."/ 5 correct</div>";
+
+            
+            
+            
+            ?>
+            
             
             
             <p>Select one preference: </p>
@@ -96,7 +282,7 @@ function checkIfSelected($option){
                 
                 <input id="dairy-alternative" type="radio" name="choice" value="dairy-alternative" <?=checked('dairy-alternative')?>>
                 <label for="dairy-alternative">Dairy Alternative</label>
-            
+            </fieldset>
             <?php echo (isset($_POST["choice"]))? "<p>".$_POST["choice"]."</p>": "<h4>* You did not select a radio button</h4>"; 
               
               
@@ -128,16 +314,17 @@ function checkIfSelected($option){
                         break;
                       
                       default:
-                          echo "error";
+                         echo "<h4>* Select a valid option</h4>";
                           break;
                   }
           ?>
             </fieldset>
-            
+            <br/>
             <label for="birthmonth">Choose your month of birth</label>
                 <select id="month" name="select">
+                    <option value=""> - Select one - </option>
                     <option <?=checkIfSelected('1')?> value="1">January</option>
-                    <option <?=checkIfSelected('2')?> value="2">Februaryk</option>
+                    <option <?=checkIfSelected('2')?> value="2">February</option>
                     <option <?=checkIfSelected('3')?> value="3">March</option>
                     <option <?=checkIfSelected('4')?> value="4">April</option>
                     <option <?=checkIfSelected('5')?> value="5">May</option>
@@ -147,62 +334,29 @@ function checkIfSelected($option){
                     <option <?=checkIfSelected('9')?> value="9">September</option>
                     <option <?=checkIfSelected('10')?> value="10">October</option>
                     <option <?=checkIfSelected('11')?> value="11">November</option>
-                    <option <?=checkIfSelected('12')?> value="12">December</option> <br/>
-                <?php 
+                    <option <?=checkIfSelected('12')?> value="12">December</option>
+                    </select>
+                    <br/>
+                
                
+                
               
-                
-               // else if(isset($_POST["select"])) {
-                 //   $month=$_POST["select"];
-                  if(empty($_POST['select']))
-                {
-                echo "<h4>* You did not select a month</h4>";
-                    
-                }
-                 
-                else{
-                   echo "<p>".$_POST['select']."</p>";  
-                   
-               }
-
-
-                   // for($i = 0; $i < count($arr);$i++){
-                     //   if($i+1 == $_POST["select"] ){
-                       //     $num = $i+1;
-                         //   echo "<img src='img/pic".$num.".png' width='70'><br>";
-                    //    }
-                //    }    
-            //    }
-                
-                ?>
-            <br/>
-<label for="address">Enter your favorite word:</label><br/>
-<textarea id="address" name="word"></textarea>
- <?php echo (isset($_POST["word"]))?  $_POST["word"]: "<h4>* You did not select a radio button</h4>"; ?>
-</form>
-
-
-<p>The password you enetered was: <?php echo $_POST["password"]; ?></p>
-
-<p> <?php echo $_POST["name"]; ?><p>
     
-<p> <?php 
-foreach($_POST["product"] as $selected){
-echo $selected."</br>";
-} ?><p>
-    
-<p><?php echo $_POST["color"]?> </p>  
 
 <?php
+if(!empty($_POST['select'])){
  $arr = array( 1 => "Green Tea Latte",2=>"Nitro Cold Brew",3=>"Mocha",4=>"Irish Coffee",5=>"Iced Coffe",6=>"Iced Caramel Mocchiato",7=>" Mocha Frappicino",8=>"Vanilla Latte",9=>"Dark Roast",10=>"Pumpkin Spice Latte",11=>"Gingerbread Latte",12=>"Peppermint Latte");
 $month = $_POST["select"];
- echo "<p>".$month ."</p>";  
-echo "Based on your birth month, we reccomend a ".$arr[$month];
-echo  '<br/><img src="img/pic' . $month . '.png" width="150" >';
+echo "Based on your birth month, we reccomend a ".$arr[$month]."!";
+echo  '<br/><div class ="out"><img src="img/pic' . $month . '.png" width="150" ><div class="middle">
+    <div class="text">Enjoy</div></div>';
+}
+else{
+    echo '<h4>* Select a month</h4>';
+}
     
 
 ?>
-<p><?php echo $_POST["word"]?> </p> 
 
 </body>
 </html>
