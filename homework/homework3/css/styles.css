@@ -32,6 +32,13 @@ h1,h2, h3{
 button {
     background: #fffdd0 ;
     color: #5A352D;
+    display:block;
+    margin:10px auto;
+    border-radius:20px;
+    height:30px;
+    width:60;
+    font-weight:bolder;
+    font-size: .8em;
 }
 
 label{

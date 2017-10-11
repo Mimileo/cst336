@@ -48,7 +48,7 @@ if($_GET['formSubmit'] == "Submit")
 
        
             <fieldset>
-               <p class="question">Where was coffee first discovered? </p>
+               <legend class="question">Where was coffee first discovered? </legend>
             <input id="turkey" type="radio" name="choice1" value="turkey" >
                 <label for="turkey">Turkey</label><br/>
                 
@@ -63,7 +63,7 @@ if($_GET['formSubmit'] == "Submit")
             </fieldset>
             
             <fieldset>
-               <p class="question">Which of these are the names of the most common types of coffee bean? </p>
+               <legend class="question">Which of these are the names of the most common types of coffee bean? </legend>
                 <input id="ristretto-and-tactera" type="radio" name="choice2" value="ristretto-and-tactera" >
                 <label for="ristretto-and-tactera">Ristretto and Tractera</label><br/>
                 
@@ -78,7 +78,7 @@ if($_GET['formSubmit'] == "Submit")
             </fieldset>
         
             <fieldset>
-            <p class="question">How do coffee beans grow? </p>
+            <legend class="question">How do coffee beans grow? </legend>
                 <input id="bush" type="radio" name="choice3" value="bush" >
                 <label for="bush">Bush</label><br/>
                 
@@ -93,7 +93,7 @@ if($_GET['formSubmit'] == "Submit")
             </fieldset>
             
             <fieldset>
-            <p class="question">How large is a shot of espresso? </p>
+            <legend class="question">How large is a shot of espresso? </legend>
                 <input id="30ml" type="radio" name="choice4" value="30ml" >
                 <label for="30ml">30ml</label><br/>
                 
