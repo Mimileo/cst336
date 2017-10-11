@@ -100,7 +100,7 @@ else{
     echo '<h4>* You must enter your name</h4>';
 }
 ?>
-<h3 id="username">Welcome: <?php if(!empty($_POST['firstanme']) && !empty($_POST['lastname'])){
+<h3 id="username">Welcome: <?php if(isset($_POST['firstname']) && isset($_POST['lastname'])){
 
 random_username($str);} else{echo "<h4>* No username until first and last name entered</h4>";}?></h3>
 
