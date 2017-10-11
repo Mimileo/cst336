@@ -350,7 +350,7 @@ if(!empty($_POST['select'])){
  $arr = array( 1 => "Green Tea Latte",2=>"Nitro Cold Brew",3=>"Mocha",4=>"Irish Coffee",5=>"Iced Coffe",6=>"Iced Caramel Mocchiato",7=>" Mocha Frappicino",8=>"Vanilla Latte",9=>"Dark Roast",10=>"Pumpkin Spice Latte",11=>"Gingerbread Latte",12=>"Peppermint Latte");
 $month = $_POST["select"];
 echo "Based on your birth month, we reccomend a ".$arr[$month]."!";
-echo  '<br/><div class ="out"><img src="img/pic' . $month . '.png" width="150" ><div class="middle">
+echo  '<br/><div class ="out"><img class="bev" src="img/pic' . $month . '.png" width="150" ><div class="middle">
     <div class="text">Enjoy</div></div>';
 }
 else{
@@ -359,8 +359,11 @@ else{
     
 
 ?>
+
+
 <button>Submit</button>
 </form>
+
 <img src="img/buddy_verified.png" alt="buddy verified" width ="90">
 </body>
 </html>
