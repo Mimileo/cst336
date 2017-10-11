@@ -298,28 +298,26 @@ random_username($str);} else{echo "<h4>* No username until first and last name e
                     case 'coffee':
                         echo "You are straightforward, minimalistic, and quiet.";
                         break;
-                    case 'Expresso':
-                        echo "You are diligent, strict, and reliable.";
+                    case 'expresso':
+                        echo "<br>You are diligent, strict, and reliable.<br/>";
                         break;
                     case 'latte':
-                        echo "You are a trend follower, admirer of aesthetics, and friendly.";
+                        echo "You are a trend follower, admirer of aesthetics, and friendly.<br/>";
                         break;
                     case 'cappucino':
-                        echo "You are creative, introverted, and sometimes manipulative.";
+                        echo "You are creative, introverted, and sometimes manipulative.<br/>";
                         break;
                      case 'frappuccino':
-                        echo "You are adventurous, impulsive, and carefree.";
+                        echo "You are adventurous, impulsive, and carefree.<br/>";
                         break;
                     case 'instant':
-                        echo "You are optimistic, busy, and a procrasinator.";
+                        echo "You are optimistic, busy, and a procrasinator.<br/>";
                         break;
                      case 'dairy-alternative':
-                        echo "You are detail-oriented, health/environmentally conscious, and high-maintenance.";
+                        echo "You are detail-oriented, health/environmentally conscious, and high-maintenance.<br/>";
                         break;
                       
-                      default:
-                         echo "<h4>* Select a valid option</h4>";
-                          break;
+                    
                   }
           ?>
             </fieldset>
@@ -361,7 +359,9 @@ else{
     
 
 ?>
-
+<button>Submit</button>
+</form>
+<img src="img/buddy_verified.png" alt="buddy verified" width ="90">
 </body>
 </html>
 

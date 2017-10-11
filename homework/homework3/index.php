@@ -46,7 +46,7 @@ if($_GET['formSubmit'] == "Submit")
 <input type="text" name="lastname"><br>
 
 
-       
+           <br/>
             <fieldset>
                <legend class="question">Where was coffee first discovered? </legend>
             <input id="turkey" type="radio" name="choice1" value="turkey" >
@@ -61,7 +61,7 @@ if($_GET['formSubmit'] == "Submit")
                 <input id="brazil" type="radio" name="choice1" value="brazil">
                 <label for="brazil">Brazil</label>
             </fieldset>
-            
+            <br/>
             <fieldset>
                <legend class="question">Which of these are the names of the most common types of coffee bean? </legend>
                 <input id="ristretto-and-tactera" type="radio" name="choice2" value="ristretto-and-tactera" >
@@ -76,7 +76,7 @@ if($_GET['formSubmit'] == "Submit")
                 <input id="laurina-and-topponta" type="radio" name="choice2" value="laurina-and-topponta">
                 <label for="laurina-and-topponta">Laurina and Topponta</label>
             </fieldset>
-        
+            <br/>
             <fieldset>
             <legend class="question">How do coffee beans grow? </legend>
                 <input id="bush" type="radio" name="choice3" value="bush" >
@@ -91,7 +91,7 @@ if($_GET['formSubmit'] == "Submit")
                 <input id="roots" type="radio" name="choice3" value="roots">
                 <label for="roots">Roots</label><br/>
             </fieldset>
-            
+            <br/>
             <fieldset>
             <legend class="question">How large is a shot of espresso? </legend>
                 <input id="30ml" type="radio" name="choice4" value="30ml" >
@@ -135,7 +135,7 @@ if($_GET['formSubmit'] == "Submit")
 	
 
 </form>
-
+<img src="img/buddy_verified.png" alt="buddy verified" width ="90">
 
        
         
