@@ -109,7 +109,29 @@ if($_GET['formSubmit'] == "Submit")
             
             <br/>
 
-            
+              <fieldset>
+                 <legend>Select one preference: </legend>
+                <input id="coffee" type="radio" name="choice" value="coffee" >
+                <label for="coffee">Coffee</label>
+                
+                 <input id="expresso" type="radio" name="choice" value="expresso" >
+                <label for="expresso">Expresso</label>
+                
+                <input id="latte" type="radio" name="choice" value="latte">
+                <label for="latte">Latte</label>
+                
+                <input id="cappucino" type="radio" name="choice" value="cappucino">
+                <label for="cappucino">Cappuccino</label>
+                
+                <input id="frappuccino" type="radio" name="choice" value="frappuccino" >
+                <label for="frappuccino">Frappucino</label>
+                
+                <input id="instant" type="radio" name="choice" value="instant">
+                <label for="instant">Instant</label>
+                
+                <input id="dairy-alternative" type="radio" name="choice" value="dairy-alternative" >
+                <label for="dairy-alternative">Dairy Alternative</label>
+            </fieldset>
             
              <label for="birthmonth">Choose your month of birth: </label>
                 <select id="month" name="select">
