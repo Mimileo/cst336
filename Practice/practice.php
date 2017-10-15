@@ -45,7 +45,6 @@ function device() {
 
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -62,4 +61,5 @@ function device() {
 <h3> Devices between $300 and $1000</h3>
 <?=device()?>
     </body>
+   
 </html>
