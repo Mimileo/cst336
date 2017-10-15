@@ -20,7 +20,7 @@ function displayCheckoutHistory() {
     
     foreach ($records as $record) {
         
-        echo  $record['firstName'] . " &nbsp;" . $record['lastName'] . "  &nbsp;" . $record['userId'] . " &nbsp; " . $record['deviceId'] . " &nbsp; " . $record['checkoutDate']  . " &nbsp; " . $record['dueDate'] . " &nbsp; " . $record['returnDate'] . " &nbsp; " . $record['checkoutBy'] . "&nbsp;  " . $record['checkinBy'] . "<br />";
+        echo  $record['firstName'] . " " . $record['lastName'] . "<br />";
         
     }
     

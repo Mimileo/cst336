@@ -1,6 +1,6 @@
 <?php
 
-include '../../../dbConnection.php';
+include '../../dbConnection.php';
 
 $conn = getDatabaseConnection();
 
@@ -26,7 +26,7 @@ function displayDevices(){
     global $conn;
     
     $sql = "SELECT * FROM tc_device WHERE 1";
-  
+ 
     if (isset($_GET['submit'])){
         
         $namedParameters = array();
@@ -52,10 +52,10 @@ function displayDevices(){
 
          }     
          
-         if (isset($_GET['available']) && $_GET['available'] == 'A') {
-            
-             $sql .= " WHERE status = :status";
-             $namedParameters[':status'] =  $_GET['available'] ;
+         if (isset($_GET['available']) && $_GET['available'] == 'available') {
+             echo "availabilty";
+             $sql .= " WHERE status= :status";
+             $namedParameters[':status'] =  $_GET['status'] ;
              
          }
          
@@ -63,13 +63,13 @@ function displayDevices(){
               $sql .= " ORDER BY deviceName"; //using named parameters
              #$namedParameters['deviceName'] =   $_GET['deviceType'] ;
          }
-         elseif (isset($_GET['orderBy']) && $_GET['orderBy'] == 'price') {
+         if (isset($_GET['orderBy']) && $_GET['orderBy'] == 'price') {
               $sql .= " ORDER BY price"; //using named parameters
              #$namedParameters['price'] =  $_GET['deviceType'] ;
          }
         
         
-        
+        echo ";";
     }//endIf (isset)
     
       else  {
@@ -77,7 +77,7 @@ function displayDevices(){
     }
     
     
-    
+     echo "<br/>". $sql;
     //If user types a deviceName
      //   "AND deviceName LIKE '%$_GET['deviceName']%'";
     //if user selects device type
@@ -116,7 +116,7 @@ function displayDevices(){
                 <?=getDeviceTypes()?>
             </select>
             
-            <input type="checkbox" name="available" id="available" value="A">
+            <input type="checkbox" name="available" id="available" value="available">
             <label for="available"> Available </label>
             
             <br>
