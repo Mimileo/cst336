@@ -32,6 +32,7 @@ function displayDevices(){
         $namedParameters = array();
         
         
+         
         if (!empty($_GET['deviceName'])) {
             
             //The following query allows SQL injection due to the single quotes
@@ -42,7 +43,8 @@ function displayDevices(){
 
          }
          
-        if (!empty($_GET['deviceType'])) {
+         
+        elseif (!empty($_GET['deviceType'])) {
             
             //The following query allows SQL injection due to the single quotes
             //$sql .= " AND deviceName LIKE '%" . $_GET['deviceName'] . "%'";
@@ -54,14 +56,14 @@ function displayDevices(){
          
          if (isset($_GET['available'])) {
              echo $_GET['status'];
-             $sql .= " AND status LIKE :status";
+             $sql .= " AND status = :status";
              $namedParameters[':status'] =  $_GET['available'];
              
          }
          
-         if($_GET['orderBy'] == 'name')     {
+         if(isset($_GET['orderBy']) && $_GET['orderBy'] == 'name')     {
                   $sql .= " ORDER BY deviceName";
-        } else {
+        } else if(isset($_GET['orderBy']) && $_GET['orderBy'] == 'price'){
                   $sql .= " ORDER BY price";
         }
         
@@ -113,14 +115,14 @@ function displayDevices(){
         </header>
         
         <form>
-            Device: <input type="text" name="deviceName" placeholder="Device Name"/>
+             Device: <input type="text" name="deviceName" placeholder="Device Name"/>
             Type: 
             <select name="deviceType">
                 <option>Select One</option>
                 <?=getDeviceTypes()?>
             </select>
             
-            <input type="checkbox" name="available" id="available" value="A">
+             <input type="checkbox" name="available" id="available" value="A">
             <label for="available"> Available </label>
             
             <br>
@@ -130,6 +132,7 @@ function displayDevices(){
             
             <input type="radio" name="orderBy" id="orderByPrice" value="price">
             <label for="orderByPrice"> Price </label>
+
             
             
             <input type="submit" value="Search!" name="submit" >

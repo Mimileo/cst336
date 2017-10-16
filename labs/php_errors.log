@@ -417,3 +417,6 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab5/index.php(137): displayDevices()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 88
+[16-Oct-2017 03:14:53 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 40
+[16-Oct-2017 03:15:31 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 40
+[16-Oct-2017 03:15:33 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 40
