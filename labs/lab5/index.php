@@ -59,14 +59,13 @@ function displayDevices(){
              
          }
          
-         if (isset($_GET['orderBy']) && $_GET['orderBy'] == 'name' ) {
-              $sql .= " ORDER BY deviceName"; //using named parameters
-             #$namedParameters['deviceName'] =   $_GET['deviceType'] ;
-         }
-         if (isset($_GET['orderBy']) && $_GET['orderBy'] == 'price') {
-              $sql .= " ORDER BY price"; //using named parameters
-             #$namedParameters['price'] =  $_GET['deviceType'] ;
-         }
+         if($_GET['orderBy'] == 'name')     {
+                  $sql .= " ORDER BY deviceName";
+        } else {
+                  $sql .= " ORDER BY price";
+        }
+        
+       
         
         
        
