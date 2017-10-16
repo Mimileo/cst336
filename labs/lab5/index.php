@@ -44,7 +44,7 @@ function displayDevices(){
          }
          
          
-        elseif (!empty($_GET['deviceType'])) {
+        if (!empty($_GET['deviceType'])) {
             
             //The following query allows SQL injection due to the single quotes
             //$sql .= " AND deviceName LIKE '%" . $_GET['deviceName'] . "%'";
@@ -118,7 +118,7 @@ function displayDevices(){
              Device: <input type="text" name="deviceName" placeholder="Device Name"/>
             Type: 
             <select name="deviceType">
-                <option>Select One</option>
+                <option value="">Select One</option>
                 <?=getDeviceTypes()?>
             </select>
             
