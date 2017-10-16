@@ -20,7 +20,9 @@ function displayCheckoutHistory() {
     
     foreach ($records as $record) {
         
-        echo  $record['firstName'] . " " . $record['lastName'] . "<br />";
+        echo  "<span> <b>Name:</b> ". $record['firstName'] . " " . $record['lastName'] . " <b>userId:</b> " . $record['userId'] . " <b>deviceId:</b> " . $record['deviceId'] . " <b>checkoutId:</b> " . $record['checkoutId'].
+        " <b>checkoutDate:</b> ". $record['checkoutDate'] . " <br/><b>dueDate:</b> " . $record['dueDate'] . " <b>returnDate:</b> " . $record['returnDate'] . " " . $record['checkoutBy'] 
+        . " <b>checkInBy:</b> " . $record['checkinBy'] . " <br/><b>deviceName:</b> " . $record['deviceName'] . " <b>deviceType:</b> " . $record['deviceType'] . " <b>price:</b> $" . $record['price'] . " <b>status:</b> " . $record['status'] . " <b>Email:</b> " . $record['email'] . "</span>";
         
     }
     
@@ -31,7 +33,12 @@ function displayCheckoutHistory() {
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title> Checkout History </title>
+        <meta charset="utf-8">
+        <style>
+            @import url('css/styles.css');
+        </style>
     </head>
     <body>
         

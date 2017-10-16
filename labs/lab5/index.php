@@ -52,10 +52,10 @@ function displayDevices(){
 
          }     
          
-         if (isset($_GET['available']) && $_GET['available'] == 'available') {
-             echo "availabilty";
-             $sql .= " WHERE status= :status";
-             $namedParameters[':status'] =  $_GET['status'] ;
+         if (isset($_GET['available'])) {
+             echo $_GET['status'];
+             $sql .= " AND status LIKE :status";
+             $namedParameters[':status'] =  $_GET['available'];
              
          }
          
@@ -69,7 +69,7 @@ function displayDevices(){
          }
         
         
-        echo ";";
+       
     }//endIf (isset)
     
       else  {
@@ -77,7 +77,7 @@ function displayDevices(){
     }
     
     
-     echo "<br/>". $sql;
+     //echo "<br/>". $sql;
     //If user types a deviceName
      //   "AND deviceName LIKE '%$_GET['deviceName']%'";
     //if user selects device type
@@ -89,10 +89,10 @@ function displayDevices(){
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
      foreach ($records as $record) {
-        
-        echo  $record['deviceName'] . " " . $record['deviceType'] . " " .
-              $record['price'] .  "  " . $record['status'] . 
-             "<a target='checkoutHistory' href='checkoutHistory.php?deviceId=".$record['deviceId']."'> Checkout History </a> <br />";
+    
+        echo  "<p><b>Device Name: </b> ".$record['deviceName'] . " <b>Device Type:</b> " . $record['deviceType'] . " <br/><b>Price:</b> $" .
+              $record['price'] .  "  <b>Status:</b> " . $record['status'] . 
+             "</p><a target='checkoutHistory' href='checkoutHistory.php?deviceId=".$record['deviceId']."'> Checkout History </a><br />";
         
     }
 }
@@ -103,10 +103,15 @@ function displayDevices(){
 <html>
     <head>
         <title>Lab 5: Device Search </title>
+        <meta charset="utf-8">
+        <style>
+               @import url('css/styles.css');
+        </style>
     </head>
     <body>
-        
-        <h1> Technology Center: Checkout System </h1>
+        <header>
+        <h1>Technology Center: Checkout System</h1>
+        </header>
         
         <form>
             Device: <input type="text" name="deviceName" placeholder="Device Name"/>
@@ -116,7 +121,7 @@ function displayDevices(){
                 <?=getDeviceTypes()?>
             </select>
             
-            <input type="checkbox" name="available" id="available" value="available">
+            <input type="checkbox" name="available" id="available" value="A">
             <label for="available"> Available </label>
             
             <br>
@@ -133,9 +138,12 @@ function displayDevices(){
         
         
         <hr>
-        
+        <main>
         <?=displayDevices()?>
-         <iframe name="checkoutHistory" width="400" height="400"></iframe>
+        </main>
+        <div id="frame">
+         <iframe name="checkoutHistory" height="600" allowtransparency="true"></iframe>
+         </div>
 
     </body>
 </html>
