@@ -1,0 +1,59 @@
+[17-Oct-2017 06:20:04 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 61
+[17-Oct-2017 06:20:04 UTC] PHP Stack trace:
+[17-Oct-2017 06:20:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:20:04 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:20:04 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 63
+[17-Oct-2017 06:20:04 UTC] PHP Stack trace:
+[17-Oct-2017 06:20:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:20:04 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:20:50 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 61
+[17-Oct-2017 06:20:50 UTC] PHP Stack trace:
+[17-Oct-2017 06:20:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:20:50 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:20:50 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 63
+[17-Oct-2017 06:20:50 UTC] PHP Stack trace:
+[17-Oct-2017 06:20:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:20:50 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:20:52 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 61
+[17-Oct-2017 06:20:52 UTC] PHP Stack trace:
+[17-Oct-2017 06:20:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:20:52 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:20:52 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 63
+[17-Oct-2017 06:20:52 UTC] PHP Stack trace:
+[17-Oct-2017 06:20:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:20:52 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:24:49 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 60
+[17-Oct-2017 06:24:49 UTC] PHP Stack trace:
+[17-Oct-2017 06:24:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:24:49 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:24:49 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 62
+[17-Oct-2017 06:24:49 UTC] PHP Stack trace:
+[17-Oct-2017 06:24:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:24:49 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:24:52 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 60
+[17-Oct-2017 06:24:52 UTC] PHP Stack trace:
+[17-Oct-2017 06:24:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:24:52 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:24:52 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 62
+[17-Oct-2017 06:24:52 UTC] PHP Stack trace:
+[17-Oct-2017 06:24:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:24:52 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:25:28 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 60
+[17-Oct-2017 06:25:28 UTC] PHP Stack trace:
+[17-Oct-2017 06:25:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:25:28 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:25:28 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 62
+[17-Oct-2017 06:25:28 UTC] PHP Stack trace:
+[17-Oct-2017 06:25:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:25:28 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:26:10 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 60
+[17-Oct-2017 06:26:10 UTC] PHP Stack trace:
+[17-Oct-2017 06:26:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:26:10 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:26:10 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 62
+[17-Oct-2017 06:26:10 UTC] PHP Stack trace:
+[17-Oct-2017 06:26:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0
+[17-Oct-2017 06:26:10 UTC] PHP   2. player() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:22
+[17-Oct-2017 06:48:06 UTC] PHP Parse error:  syntax error, unexpected '$humanPlayer' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/cst336/challenges/challenege2/inc/functions.php on line 67
+[17-Oct-2017 06:48:06 UTC] PHP Stack trace:
+[17-Oct-2017 06:48:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/challenges/challenege2/card.php:0

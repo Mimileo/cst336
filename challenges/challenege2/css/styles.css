@@ -11,28 +11,23 @@ div {
 #h, #c{
     display: inline;
     word-wrap: break-word;
-   padding-left: 30px;
+   margin: 20px;
+   color: black;
   
 }
 
  #main {
         font-family: 'Baloo Bhaina', cursive;
-        background-image:url("../img/machine.png");
-        width:600px;
-        height:500px;
-        position:relative;
+        display: block;
+        
         margin:0 auto;
     }
     
-    #reel1, #reel2{
-        top:248px;
-        position:absolute;
-    }
-    
-    #reel1{
-        left:145px;
-    }
-    #reel2{
-        left:252px;
-    }
-   
+img {
+    margin: 20px;
+}
+ 
+ p{
+     color: green;
+     
+ }

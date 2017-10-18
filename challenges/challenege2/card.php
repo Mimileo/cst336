@@ -19,7 +19,7 @@
         <p id="c">Computer</p>
         </div>
         <?php
-                play();
+                player();
             ?>
        
        

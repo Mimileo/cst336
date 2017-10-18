@@ -1,59 +1,95 @@
 <?php
-function displayCard($randomValueC, $randomValueS, $pos) {
-             
-            switch ($randomValueC) { //sets the value of the card
-                
-                case 0: $card = "ten";
-                    break;
-                case 1: $card = "jack";
-                    break;
-                case 2: $card = "queen";
-                    break;
-                case 3: $card = "king";
-                    break;
-                case 4:$card = "ace";
-                    break;
-                }//endSwitch
-                
-                switch ($randomValueS) { // sets the suit of the card
-                
-                case 0: $suit = "clubs";
-                    break;
-                case 1: $suit = "diamonds";
-                    break;
-                case 2: $suit = "hearts";
-                    break;
-                case 3:$suit = "spades";
-                    break;
-                }//endSwitch
-                
-            echo "<img id='reel$pos'src='img/cards/$suit/$card.png' alt='$card' . '$suit' title='" . ucfirst($card) ."' width='70'/>";
-        }
-        
-        function displayWinner ($randomValueCardHuman, $randomValueCardComputer){
+
+
+    $deck = array();
+    $suits = array("clubs","spades","hearts","diamonds");
+    $ranks = array("ace","jack","king", "queen", "ten");
+    
+
+for ($i = 0; $i < 4; $i++) {
+    for ($j = 0; $j < 5; $j++) {
+       
+      
             
-            echo "<div id='output'>";
-            if ($randomValueCardHuman > $randomValueCardComputer) {
-                echo "<h2>Human wins!</h2>";
-                }
-            else if($randomValueCardHuman < $randomValueCardComputer){
-                echo "<h2>Computer wins!</h2>";
-            }   else {
-                    echo "<h3> Tie game! </h3>";
-            }
-            echo "</div>";
-        }
-        
-        function play() {
-            for ($i=1; $i<3; $i++){
-                ${"randomValueC" . $i } = rand(0,4);
-                ${"randomValueS" . $i } = rand(0,3);
-                displayCard(${"randomValueC" . $i }, ${"randomValueS" . $i}, $pos );
-            }
-            displayWinner($randomValueCardHuman, $randomValueCardComputer);
-        }
-        
-        
+            $deck[] = $suits[$i] . "_" . $ranks[$j];
+            //echo $suits[$i] . "_" . $ranks[$j]."<br>";
+       }
+      
+    }
+     
+    
+
+
+function drawCard(){
+    global $deck;
+    $chosen;
+    shuffle($deck);
+    $chosen = array_pop($deck);
+    return $chosen;
+}
+
+function play($chosen){
+    $stringParts = explode("_", $chosen);
+
+    $firstPart  = $stringParts[0]; 
+    $secondPart = $stringParts[1];
+    echo $ranks[$secondPart % 5];
+    echo "<img src='img/cards/$firstPart/$secondPart.png' alt='$firstPart'>";
+    
+     switch ($secondPart) {
+       case 'ace':
+           $val = 14;
+           break;
+       
+       case 'jack':
+           $val = 13;
+           break;
+        case 'king':
+           $val = 12;
+           break;
+           
+        case 'queen':
+           $val = 11;
+           break;
+        case 'ten':
+           $val = 10;
+           break;
+   }
+    return $val;
+}
+
+function player(){
+ 
+  
+    //$total = 0;
+    //while($total <= 35 ) {
+        echo "<br/>";
+       $humanPlayer = play(drawCard());
+       //echo $humanPlayer;
+       //echo "<img id='human' src='img/cards/".$ranks[$humanPlayer%5].".png'>";
+       $cpuPlayer = play(drawCard());
+        //echo "<img id='comp' src='img/cards/".$ranks[$cpuPlayer%5].".png'>";
+       if($humanPlayer > $cpuPlayer) {
+           echo "<p>Human Player wins!</p>";
+       }
+       
+       elseif ($humanPlayer < $cpuPlayer) {
+           // code...
+           echo "<p>Computer Player wins!</p>";
+       }
+       
+       else{
+           echo "Tie!";
+       }
+        //if($val + $total > 42){
+          //  break;
+        //}
+       // $total+= $val; //still draws past 42 :c
+    //}
+   
+}
+
+
         
         
 ?>
