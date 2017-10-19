@@ -421,3 +421,63 @@ Stack trace:
 [16-Oct-2017 03:15:31 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 40
 [16-Oct-2017 03:15:33 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 40
 [16-Oct-2017 06:59:44 UTC] PHP Parse error:  syntax error, unexpected '"</span>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab5/checkoutHistory.php on line 25
+[18-Oct-2017 23:57:47 UTC] PHP Parse error:  syntax error, unexpected '"</br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 37
+[18-Oct-2017 23:58:59 UTC] PHP Parse error:  syntax error, unexpected '"</br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 54
+[18-Oct-2017 23:59:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:01:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:01:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:01:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:01:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:01:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:01:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 14
+[19-Oct-2017 00:05:11 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:05:11 UTC] PHP Stack trace:
+[19-Oct-2017 00:05:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:0
+[19-Oct-2017 00:07:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tcp.mp_town' doesn't exist' in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php(13): PDO->query('SELECT town_nam...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:09:32 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:09:32 UTC] PHP Stack trace:
+[19-Oct-2017 00:09:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:0
+[19-Oct-2017 00:09:33 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:09:33 UTC] PHP Stack trace:
+[19-Oct-2017 00:09:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:0
+[19-Oct-2017 00:09:34 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:09:34 UTC] PHP Stack trace:
+[19-Oct-2017 00:09:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:0
+[19-Oct-2017 00:10:24 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:10:24 UTC] PHP Stack trace:
+[19-Oct-2017 00:10:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:0
+[19-Oct-2017 00:10:26 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php on line 13
+[19-Oct-2017 00:10:26 UTC] PHP Stack trace:
+[19-Oct-2017 00:10:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/midtermpractice/index.php:0
