@@ -19,7 +19,7 @@ $password = sha1($_POST['password']);
 $sql = "SELECT *
         FROM tc_admin
         WHERE username = :username 
-        AND   password = :password";
+        AND  password = :password";
 
 $namedParameters = array();
 $namedParameters[':username'] = $username;
