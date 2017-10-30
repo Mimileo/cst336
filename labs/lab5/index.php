@@ -44,7 +44,7 @@ function displayDevices(){
          }
          
          
-        if (!empty($_GET['deviceType'])) {
+         if (!empty($_GET['deviceType'])) {
             
             //The following query allows SQL injection due to the single quotes
             //$sql .= " AND deviceName LIKE '%" . $_GET['deviceName'] . "%'";

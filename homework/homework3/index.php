@@ -38,7 +38,7 @@ if($_GET['formSubmit'] == "Submit")
     <body>
 
 
-<form action="returnData.php" method="post" name="enterData">
+<form action="returnData.php" method="get" name="enterData">
 <h1>Coffee Form</h1>
 <label for="firstname">Firstname:</label> 
 <input type="text" name="firstname"><br>

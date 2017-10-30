@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+.form-signin{
+    border: 1px solid black;
+    margin: 0 auto;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 25px;
+}
+.form-signin{
+    color: #737373;
+    max-width: 50%;
+    height:40%;
+    background: #fff;
+    padding: 30px 60px;
+  
+      border: 1px solid #737373;
+ 
+ border-radius: 25px;
+}
+.form-group {
+    margin: 0 auto;
+    position:inherit;
+}
+
+.form-control{
+    width:100%;
+}
+form input{
+ color:#55ACEE;  
+
+}
+
+.text-warning {
+    padding-top:30px;
+    color:red;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#name{
+    text-decoration: none;
+    color:gray;
+}
+
+#add{
+    margin:0 auto;
+    background:#fff;
+    border-radius:20px;
+    border:1px solid gray;
+    width:50%;
+    font-size: 1.4em;
+    overflow:hidden;
+    color:#55ACEE;
+    padding: 40px;
+    font-family: 'Exo 2', sans-serif;
+   
+}
+
+ul{
+     list-style: none;
+}
+
+ul li a{
+
+   
+    float: left;
+  display: block;
+  color: #808080;
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 50px;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+    
+ 
+ 
+ 
+  font-size: 17px;
+    
+}
+
+ul li a:hover{
+
+   
+   text-decoration:none;
+  color: #f2f2f2;
+  
+    
+ 
+ 
+ 
+  
+    
+}
+
+a {
+    text-decoration: none;
+    color: #3d3d5c;
+}
+
+#user{
+    background-color: gray;
+}
+
+
+
+
+
+.jumbotron{
+     padding: 0.5em 0.6em;
+   
+    
+}
+
+ 
+ .jumbotron h1 {
+        font-size: 2em;
+    }
+ .jumbotron p {
+        font-size: 1.2em;
+        
+    }
+    
+  
