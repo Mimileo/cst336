@@ -738,3 +738,12 @@ Stack trace:
 [30-Oct-2017 05:45:17 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/labs/lab6/admin.php on line 14
 [30-Oct-2017 05:45:17 UTC] PHP Stack trace:
 [30-Oct-2017 05:45:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/admin.php:0
+[30-Oct-2017 15:39:39 UTC] PHP Warning:  include(../../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 3
+[30-Oct-2017 15:39:39 UTC] PHP Stack trace:
+[30-Oct-2017 15:39:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/index.php:0
+[30-Oct-2017 15:39:39 UTC] PHP Warning:  include(): Failed opening '../../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 3
+[30-Oct-2017 15:39:39 UTC] PHP Stack trace:
+[30-Oct-2017 15:39:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/index.php:0
+[30-Oct-2017 15:39:39 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 5
+[30-Oct-2017 15:39:39 UTC] PHP Stack trace:
+[30-Oct-2017 15:39:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/index.php:0
