@@ -1,5 +1,5 @@
 <?php
-function getDatabaseConnection($dbname = 'tcp'){
+function getDatabaseConnection($dbname = 'heroku_b044cfd7d742548'){
     
     $host = 'us-cdbr-iron-east-05.cleardb.net';//cloud 9
     $dbname = 'heroku_b044cfd7d742548';
