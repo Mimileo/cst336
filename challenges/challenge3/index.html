@@ -13,7 +13,7 @@
             <input type="text"id="num2"><br/>
             Number 3:
             <input type="text"id="num3"><br/>
-            <button onclick()="check()">Sort!</button>
+            <button type="button" onclick="check()">Sort!</button>
             <br/><br/><br/><br/><br/>
             <p id="error"></p>
             <h2 id="largest"></h2>
@@ -45,8 +45,8 @@ function check(){
             document.getElementById("equal").innerHTML="All numbers are equal";
         }
         else {
-            document.getElementById("largest").innerHTML="The biggest number is "+sorted[2];
-            document.getElementById("demo").innerHTML="The numbers in ascending order are: " + sorted;
+            document.getElementById("largest").innerHTML="The biggest number is " + sorted[2];
+            document.getElementById("demo").innerHTML="The numbers in ascending order are: " + sorted[0] + ", " +sorted[1]+", "+sorted[2];
         }
     }
 }
