@@ -35,7 +35,7 @@ var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
             
            
             
-             $(".letters").on("click",".letter", function(){
+             $("#letters").on("click",".letter", function(){
                 checkLetter($(this).attr("id"));
                  disableButton($(this));
                 });
