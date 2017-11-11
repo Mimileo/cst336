@@ -67,9 +67,9 @@ function updateBoard() {
     
      $('#word').append("<br/>");
                  //$('#word').append('Hint: ' + selectedHint + '')
-                  $("#hint").on("click",function(){
+                  $(".hint").on("click",function(){
                        $('#clue').text('Hint: ' + selectedHint + '');
-                        $("#hint").hide();
+                        $(".hint").hide();
                   });
 }
 

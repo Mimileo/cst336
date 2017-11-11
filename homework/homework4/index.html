@@ -11,6 +11,9 @@
 
 			var leftArrowDown = false;
 			var rightArrowDown = false;
+			
+			var bg1, bg2;
+			const BG_SPEED = 4;
 
 			const GS_WIDTH = 800;
 			const GS_HEIGHT = 600;
@@ -19,6 +22,24 @@
 				gameScreen = document.getElementById('gameScreen');
 				gameScreen.style.width = GS_WIDTH + 'px';
 				gameScreen.style.height = GS_HEIGHT + 'px';
+				
+				bg1 = document.createElement('IMG');
+				bg1.className = 'gameObject';
+				bg1.src = 'bg.jpg';
+				bg1.style.width = '800px';
+				bg1.style.height = '1422px';
+				bg1.style.left = '0px';
+				bg1.style.top = '0px'
+				gameScreen.appendChild(bg1);
+				
+				bg2 = document.createElement('IMG');
+				bg2.className = 'gameObject';
+				bg2.src = 'bg.jpg';
+				bg2.style.width = '800px';
+				bg2.style.height = '1422px';
+				bg2.style.left = '0px';
+				bg2.style.top = '-1422px'
+				gameScreen.appendChild(bg2);
 
 				output = document.getElementById('output');
 

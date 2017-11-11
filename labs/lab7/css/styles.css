@@ -1,9 +1,45 @@
+body,html {
+    background-color: #1aa3ff !important;
+   
+     font-family: 'Raleway', sans-serif !important;
+   
+    
+    
+}
+
+.h1{
+   
+    font-weight: bolder;
+}
+
+header{
+     font-family: 'ABeeZee', sans-serif !important;
+    width:50%;
+    border-radius:5px;
+    padding: 10px;
+    margin-top: 30px !important;
+    
+}
+
 #won,#lost {
     display:none;
 }
 
+
+
+.btn-success {
+    background-color:#47d147 !important;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color:#2eb82e !important;
+    color: white;
+}
+
 #word,#letters{
     padding: 20px 0px;
+    color:white;
 }
 
 #man {
@@ -11,8 +47,9 @@
     width: 600px;
     height: 600px;
     border:solid;
-    border-radius: 5px;
-    border-width: 1px;
+    border-radius: 10px;
+    border-width: 6px;
+    color: white;
     
 }
 
@@ -20,8 +57,14 @@
     font-size: 1.8em;
 }
 
+#clue {
+     font-size: 1.3em !important;
+     color:white !important;
+}
+
 .hint {
-    font-size: 0.6em !important;
+    font-size: 1.5em !important;
+    width: 5em;
 }
 
 .btn {

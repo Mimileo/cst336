@@ -10,21 +10,25 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link href="https://fonts.googleapis.com/css?family=ABeeZee|Raleway" rel="stylesheet">
        
     </head>
-    <div class='container text-center'>
-        <header>
+    <div class='container text-center' >
+        
+        <header style="background-color:white;margin:0 auto;">
+           
             <h1>Hangman</h1>
-            <h4>Javascript Edition</h4>
+            <h4 class="text-muted"><small>Javascript Edition</small></h4>
+            
+        
         </header>
          
             <div id="word">
               
             </div>
-             <span id="clue"></span>
+             <span id="clue" class="text-primary"></span>
             <div id="letters"></div>
-            <button id="hint">Hint</button>
+            <button class="hint btn btn-default btn-lg">Hint</button>
             <div id="won">
                 <h2>You Won!</h2>
                 <button class="replayBtn btn btn-success">Play Again</button>    
