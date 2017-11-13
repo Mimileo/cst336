@@ -7,6 +7,11 @@
 			var gameScreen;
 			var output;
 			
+			var bgNoise;
+			var shoot;
+			var exp;
+			
+			
 			var bullets;
 			var currentCount = 0;
 			var autofire = false;
@@ -28,6 +33,9 @@
 			const GS_HEIGHT = 600;
 
 			function init(){
+				bgNoise = new sound("Frozen Jam Seamless Loop.mp3");
+    			shoot = new sound("Laser_Shoot4.wav");
+    			exp = new sound("Explosion9.wav");
 			
 				gameScreen = document.getElementById('gameScreen');
 				gameScreen.style.width = GS_WIDTH + 'px';
@@ -101,12 +109,14 @@
 			}
 
 			function gameloop(){
+				
+				bgNoise.play();
 				if(autofire){
 					currentCount += 1;
 					if(currentCount % 2 == 0) {
 						fire();
 						autofireCount += 1;
-						if(autofireCount > 10) {
+						if(autofireCount > 80) {
 						autofire = false;
 						autofireCount = 0;
 						}
@@ -151,6 +161,7 @@
 							if( hittest(b[i], enemies[j]) ){
 								bullets.removeChild(b[i]);
 								explode(enemies[j]);
+								exp.play();
 								placeEnemyShip(enemies[j]);
 								break;
 							}
@@ -166,7 +177,9 @@
 				
 					if( hittest(enemies[i], ship) ){
 						explode(ship);
+						exp.play();
 						explode(enemies[i]);
+						exp.play();
 						ship.style.top = '-10000px';
 						placeEnemyShip(enemies[i]);
 					}
@@ -174,8 +187,13 @@
 				
 					for(var i=0; i<orbs.length; i++){
 					var newY = parseInt(orbs[i].style.top);
-					if(newY > GS_HEIGHT) placeBlueOrb(orbs[i]);
-					else orbs[i].style.top = newY + orbs[i].speed + 'px';
+				//	setInterval(function(){ alert("Hello"); }, 16000);
+					if(newY < GS_HEIGHT){
+						orbs[i].style.top = newY + orbs[i].speed + 'px';
+					
+					}
+					//placeBlueOrb(orbs[i]);
+					else 	setInterval( placeBlueOrb(orbs[i]) , 32000);
 				
 					if( hittest(orbs[i], ship) ){
 						placeBlueOrb(orbs[i]);
@@ -199,6 +217,7 @@
 				bullet.style.top = parseInt(ship.style.top) - bulletHeight + 'px';
 				var shipX = parseInt(ship.style.left) + parseInt(ship.style.width)/2;
 				bullet.style.left = (shipX - bulletWidth/2) + 'px';
+				shoot.play();
 				bullets.appendChild(bullet);
 			}
 			
@@ -263,15 +282,35 @@
 				explosion.style.height = obj.style.height;
 				explosion.style.left = obj.style.left;
 				explosion.style.top = obj.style.top;
+				exp.play();
 				gameScreen.appendChild(explosion);
 				
+				
 			}
+			
+			function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }
+}
 			
 		
 
 			document.addEventListener('keypress', function(event) {
 			   // if(event.keyCode==32) fire(); 
-			   if(event.charCode==32) fire();
+			   if(event.charCode==32) {
+			   	shoot.play();
+			   	fire();
+			   }
 			});
 			
 			document.addEventListener('keydown', function(event){
@@ -283,6 +322,9 @@
 				if(event.keyCode==37) leftArrowDown = false;
 				if(event.keyCode==39) rightArrowDown = false;
 			});
+			
+				var audio = $(".audio");
+    			audio.play();
 
 		</script>
 		<style>
@@ -300,6 +342,10 @@
 		</style>
 	</head>
 	<body onload="init()">
+		<audio>
+        <source src="Frozen Jam Seamless Loop.mp3"></source>
+</audio>
+
 		<div id="gameScreen"></div>
 		<div id="output">degugger</div>
 	</body>
