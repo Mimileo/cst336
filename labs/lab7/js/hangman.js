@@ -8,7 +8,8 @@ var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
 
 var words = [{ word: "snake", hint: "It's a reptile" }, 
              { word: "monkey", hint: "It's a mammal" }, 
-             { word: "beetle", hint: "It's an insect" }];
+             { word: "beetle", hint: "It's an insect" },
+             { word: "octopus", hint: "It's a mollusk" }];
 
 var selectedWord = "";
 var selectedHint = "";
