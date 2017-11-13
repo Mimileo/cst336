@@ -8,9 +8,13 @@
 			var output;
 			
 			var bullets;
+			var currentCount = 0;
+			var autofire = false;
+			var autofireCount = 0;
 
 			var ship;
 			var enemies = new Array();
+			var orbs = new Array();
 
 			var gameTimer;
 
@@ -80,12 +84,36 @@
 					enemies[i] = enemy;
 				}
 				
+				for(var i=0; i<1; i++){
+					var orb = new Image();
+					orb.className = 'gameObject';
+					orb.style.width = '64px';
+					orb.style.height = '64px';
+					orb.src = 'blueOrb.png';
+					gameScreen.appendChild(orb);
+					placeBlueOrb(orb);
+					orbs[i] = orb;
+				}
+				
 			
 	
 				gameTimer = setInterval(gameloop, 50);
 			}
 
 			function gameloop(){
+				if(autofire){
+					currentCount += 1;
+					if(currentCount % 2 == 0) {
+						fire();
+						autofireCount += 1;
+						if(autofireCount > b && b == 8)
+						autofire = false;
+						autofireCount = 0;
+					}
+				}
+				
+				
+			
 				
 				var bgY = parseInt(bg1.style.top) + BG_SPEED;
 				if( bgY > GS_HEIGHT ){
@@ -142,6 +170,20 @@
 						placeEnemyShip(enemies[i]);
 					}
 				}
+				
+					for(var i=0; i<orbs.length; i++){
+					var newY = parseInt(orbs[i].style.top);
+					if(newY > GS_HEIGHT) placeBlueOrb(orbs[i]);
+					else orbs[i].style.top = newY + orbs[i].speed + 'px';
+				
+					if( hittest(orbs[i], ship) ){
+						placeBlueOrb(orbs[i]);
+						autofire = true;
+						
+						
+					}
+				}
+				
 			}
 			
 			function fire(){
@@ -169,6 +211,17 @@
 				
 				var newY = Math.floor(Math.random()*600) - 1000;
 				e.style.top = newY + 'px';
+			}
+			
+			function placeBlueOrb(o){
+				o.speed = Math.floor(Math.random()*10) + 6;
+				
+				var maxX = GS_WIDTH - parseInt(o.style.width);
+				var newX = Math.floor(Math.random()*maxX);
+				o.style.left = newX + 'px';
+				
+				var newY = Math.floor(Math.random()*600) - 1000;
+				o.style.top = newY + 'px';
 			}
 			
 			// hittest based on distance bteween the midepoints of two objects
