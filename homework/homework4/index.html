@@ -190,10 +190,11 @@
 				//	setInterval(function(){ alert("Hello"); }, 16000);
 					if(newY < GS_HEIGHT){
 						orbs[i].style.top = newY + orbs[i].speed + 'px';
+						
 					
 					}
-					//placeBlueOrb(orbs[i]);
-					else 	setInterval( placeBlueOrb(orbs[i]) , 32000);
+					//
+					else placeBlueOrb(orbs[i]);
 				
 					if( hittest(orbs[i], ship) ){
 						placeBlueOrb(orbs[i]);
@@ -234,6 +235,7 @@
 			}
 			
 			function placeBlueOrb(o){
+				setInterval( o , 32000);
 				o.speed = Math.floor(Math.random()*10) + 6;
 				
 				var maxX = GS_WIDTH - parseInt(o.style.width);
@@ -328,10 +330,16 @@
 
 		</script>
 		<style>
+		#outer{
+			border:10px solid black;
+			border-radius:5px;
+		}
 			#gameScreen{
 				position: relative;
 				background-color: silver;
 				overflow: hidden;
+				margin:0 auto;
+				border:5px solid gray;
 			}
 
 			.gameObject{
@@ -345,8 +353,9 @@
 		<audio>
         <source src="Frozen Jam Seamless Loop.mp3"></source>
 </audio>
-
+<div id="outer">
 		<div id="gameScreen"></div>
+</div>
 		<div id="output">degugger</div>
 	</body>
 </html>
