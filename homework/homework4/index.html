@@ -106,9 +106,10 @@
 					if(currentCount % 2 == 0) {
 						fire();
 						autofireCount += 1;
-						if(autofireCount > b && b == 8)
+						if(autofireCount > 10) {
 						autofire = false;
 						autofireCount = 0;
+						}
 					}
 				}
 				
