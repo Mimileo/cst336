@@ -17,14 +17,18 @@
 			var exp3;
 			var powUp;
 			
-			var blacktime = 5000;
-			var whitetime = 11000;
+			var delay = 999;
+			var time = setInterval(function () {
+    		var text = document.getElementById('b');
+    		text.style.visibility = (text.style.visibility == 'hidden' ? '' : 'hidden');
+			}, delay);
 			
 			
 			var bullets;
 			var currentCount = 0;
 			var autofire = false;
 			var autofireCount = 0;
+			
 
 			var ship;
 			var enemies = new Array();
@@ -123,7 +127,7 @@
 			}
 			
 			function gameloop(){
-			setTimeout(whiteFunc,blacktime);
+		
 					bgNoise.play();
 				if(autofire){
 					currentCount += 1;
@@ -354,12 +358,12 @@
 
 
 			function whiteFunc(){
-			    document.getElementById("blink").style.color = "white";
-			    setTimeout(blackFunc,whitetime);
+			    document.getElementById("blink").fadetoggle();
+			    //setTimeout(blackFunc,whitetime);
 			}
 			function blackFunc(){
 			    document.getElementById("blink").style.color = "black";
-			    setTimeout(whiteFunc,blacktime);
+			    //setTimeout(whiteFunc,blacktime);
 			}
 		</script>
 		<style>
@@ -424,7 +428,7 @@
 			<div id="pic" style="height:800px;border-radius:50px;background-image:url('large.jpg');background-repeat:no-repeat; background-size: 100% 100%;">
 			
 			<img src="buddy_verified.png">
-		<h3 id="blink">Ready! Play! Space Invaders!</h3>
+		<h3 id="blink"><span id="b">Ready! Play! Space Invaders!</span></h3>
 	
 	
 		<div id="gameScreen"></div>
