@@ -17,6 +17,9 @@
 			var exp3;
 			var powUp;
 			
+			var blacktime = 5000;
+			var whitetime = 11000;
+			
 			
 			var bullets;
 			var currentCount = 0;
@@ -115,9 +118,12 @@
 			
 	
 				gameTimer = setInterval(gameloop, 50);
-			}
+					
 
+			}
+			
 			function gameloop(){
+			setTimeout(whiteFunc,blacktime);
 					bgNoise.play();
 				if(autofire){
 					currentCount += 1;
@@ -132,7 +138,7 @@
 				}
 				
 				
-			
+	
 				
 				var bgY = parseInt(bg1.style.top) + BG_SPEED;
 				if( bgY > GS_HEIGHT ){
@@ -345,6 +351,16 @@
 			
 		
 
+
+
+			function whiteFunc(){
+			    document.getElementById("blink").style.color = "white";
+			    setTimeout(blackFunc,whitetime);
+			}
+			function blackFunc(){
+			    document.getElementById("blink").style.color = "black";
+			    setTimeout(whiteFunc,blacktime);
+			}
 		</script>
 		<style>
 		#outer{
@@ -358,6 +374,9 @@
 			
 			margin:0 auto;
 			
+		}
+		body{
+			background-color:silver;
 		}
 			#gameScreen{
 				position: relative;
@@ -378,23 +397,42 @@
 			}
 		h3 {
 			text-align:center;
+			padding-top:20px;
+		
+			
+		}
+		#blink{
+				background:black;
+			width:50%;
+			margin:5px auto;
+			margin-top:-20px;
+			margin-bottom:20px;
+			
+			border-radius:50px;
+			height:5%;
 			
 		}
 
 		</style>
 	</head>
 	
-	<body onload="init()">
+	<body onload="init()" >
 		<audio>
         	<source src="Frozen Jam Seamless Loop.mp3"></source>
 		</audio>
 	<div id="outer">
+			<div id="pic" style="height:800px;border-radius:50px;background-image:url('large.jpg');background-repeat:no-repeat; background-size: 100% 100%;">
+			
 			<img src="buddy_verified.png">
-		<h3 id="txt">Ready! Play! Space Invaders!</h3>
-		
+		<h3 id="blink">Ready! Play! Space Invaders!</h3>
+	
+	
 		<div id="gameScreen"></div>
+	
+		</div>
+		
 	</div>
-		<div id="output">degugger
+	<!--	<div id="output">degugger-->
 	
 		</div>
 	</body>
