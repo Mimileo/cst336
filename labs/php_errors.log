@@ -747,3 +747,70 @@ Stack trace:
 [30-Oct-2017 15:39:39 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/labs/lab5/index.php on line 5
 [30-Oct-2017 15:39:39 UTC] PHP Stack trace:
 [30-Oct-2017 15:39:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab5/index.php:0
+[19-Nov-2017 04:31:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php on line 18
+[19-Nov-2017 05:10:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php on line 18
+[19-Nov-2017 05:11:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php on line 18
+[19-Nov-2017 05:12:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php on line 18
+[19-Nov-2017 05:34:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkUsername.php on line 18
+[19-Nov-2017 05:35:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[19-Nov-2017 05:43:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[19-Nov-2017 05:43:49 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[19-Nov-2017 05:43:49 UTC] PHP Stack trace:
+[19-Nov-2017 05:43:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:0
+[19-Nov-2017 05:43:49 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:18
+[19-Nov-2017 05:45:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[19-Nov-2017 05:45:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[26-Nov-2017 15:00:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[26-Nov-2017 15:05:07 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 18
+[26-Nov-2017 15:05:07 UTC] PHP Stack trace:
+[26-Nov-2017 15:05:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:0
+[26-Nov-2017 15:21:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 17
+[26-Nov-2017 15:21:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab8/checkPassword.php on line 17
