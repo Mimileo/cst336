@@ -9,7 +9,7 @@
 </style>
 <style>
     form{
-        margin:20px 300px;
+        margin:20px 200px;
         border:5px gray solid;
         padding:100px;
         border-radius:25px;
@@ -190,20 +190,22 @@
             </div>
               <div class="form-row">                              <!-- js function-->
                     <div class="form-group col-md-6">                              <!-- onchange(): execute function whenever field value is changed-->
-                         <label for="zipcode">Zipcode:</label>    <input type="text" id="zip"><span id="zipError"></span>
+                         <label>Zipcode:</label>    
+                         <input  type="text" id="zip">
+                         <span id="zipError"></span>
                    </div>
                     <br/>
                     <div class="form-group col-md-6">
-                        <label>City:</label> <span id="city"></span>
+                        <label>City:</label> <span class="form-control" id="city"></span>
                     </div>
                 </div>
                     <br>
                 <div class="form-group col-md-6">
-            <label>Latitude:</label> <span id="lat"></span>
+            <label>Latitude:</label> <span class="form-control" id="lat"></span>
             </div>
             <br>
             <div class="form-group col-md-6">
-            <label>Longitude:</label> <span id="long"></span>
+            <label>Longitude:</label> <span class="form-control" id="long"></span>
             </div>
             <br><br>
            
@@ -238,7 +240,7 @@
              <span id="passVal"></span>
              </div>
              <br/>
-            <input class="form-control" type="submit" value="Sign up!">
+            <input class="btn-info form-control" type="submit" value="Sign up!">
         </fieldset>
         
     </form>
