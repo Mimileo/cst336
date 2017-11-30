@@ -9,12 +9,16 @@
 </style>
 <style>
     form{
-        margin:20px 300px;
+        margin:20px 200px;
         border:5px gray solid;
-        padding:100px;
+        
         border-radius:25px;
+       
+        
     }
-    
+    #zip{
+        display:inline-block;
+    }
     h1{text-align: center;}
     h2{text-align: center;}
     
@@ -114,8 +118,8 @@
             
            if ($("#password").val() != $('#pass').val() ) {
                 //alert("USERNAME AVAILABLE!");
-                $('#passVal').css("color", "red");
-                $('#passVal').html("&nbsp;&nbsp; Retype Password");
+               $('#passVal').css('color', 'red');
+                $('#passVal').html("&nbsp;&nbsp; *Retype Password");
                 return false;
                
             }   else {
@@ -155,7 +159,11 @@
         
         <div class="form-group">
         <fieldset>
-           <h2><legend>Sign Up</legend></h2>
+           <h2><legend>
+               <a href="#">
+          <span class="glyphicon glyphicon-user"></span>
+        </a>&nbsp;
+               Sign Up</legend></h2>
            <div class="form-row">
                <div class="form-group col-md-6">
             <label for="first">First Name:</label>
@@ -171,11 +179,11 @@
                     <input class="form-control" type="text"><br> 
                 <div class="form-group col-md-6">
                     <label for="phone">Phone Number:</label> 
-                    <input class="form-control" type="text"><br><br>
+                    <input class="form-control" type="text"><br>
                 </div>
             </div>
               <div class="form-row">                              <!-- js function-->
-                    <div class="form-group col-md-6">                              <!-- onchange(): execute function whenever field value is changed-->
+                    <div class="form-group col-sm-2">                              <!-- onchange(): execute function whenever field value is changed-->
                          <label>Zipcode:</label>    
                          <input  type="text" id="zip">
                          <span id="zipError"></span>
@@ -186,6 +194,7 @@
                     </div>
                 </div>
                     <br>
+             <div class="form-row">  
                 <div class="form-group col-md-6">
             <label>Latitude:</label> <span class="form-control" id="lat"></span>
             </div>
@@ -193,6 +202,7 @@
             <div class="form-group col-md-6">
             <label>Longitude:</label> <span class="form-control" id="long"></span>
             </div>
+        </div>
             <br><br>
            
            <div class="form-row">  
@@ -222,11 +232,11 @@
             <div class="form-group col-md-6">
             <label>Password:</label> <input class="form-control" id="password" type="password"></div><br>
             <div class="form-group col-md-6">
-            <label>Type Password Again:</label> <input id="pass" type="password">
+            <label>Type Password Again:</label> <input class="form-control" id="pass" type="password">
              <span id="passVal"></span>
              </div>
              <br/>
-            <input class="btn-info form-control" type="submit" value="Sign up!">
+            <input class="btn-info form-control" type="submit" value="Sign up!" style="margin:0 auto;display:block;width:90%;">
         </fieldset>
         
     </form>
