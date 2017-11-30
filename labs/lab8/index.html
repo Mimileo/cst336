@@ -9,7 +9,7 @@
 </style>
 <style>
     form{
-        margin:20px 200px;
+        margin:20px 300px;
         border:5px gray solid;
         padding:100px;
         border-radius:25px;
@@ -108,39 +108,24 @@
         
         
      function checkPass() {
-        //alert("hello")
-        $.ajax({
-
-            type: "GET",
-            url: "checkPassword.php",
-            dataType: "json",
-            data: { "password": $('#password').val() },
-            success: function(data,status) {
-            alert(data);
-            
+       
            
 
             
-            if (data != $('#pass').val() ) {
+           if ($("#password").val() != $('#pass').val() ) {
                 //alert("USERNAME AVAILABLE!");
                 $('#passVal').css("color", "red");
                 $('#passVal').html("&nbsp;&nbsp; Retype Password");
-                
+                return false;
                
-            } else {
-                //alert ("username already taken!")
-                $('#passVal').css("color", "red");
-                $('#passVal').html("&nbsp;&nbsp; Correct!");
-            }
-            
-            },
-            complete: function(data,status) { //optional, used for debugging purposes
-            //alert(status);
-            }
-            
-            });//ajax
+            }   else {
+                    //alert ("username already taken!")
+                    $('#passVal').css("color", "red");
+                    $('#passVal').html("&nbsp;&nbsp; Correct!");
+                
+                
         }
-        
+    }
         
     
     // event handlers
@@ -151,7 +136,8 @@
         $('#zip').change( function(){ getCity(); } );
         $('#stateId').change( function(){ getCounties(); } );
         $('#username').change( function(){ checkUsername(); } );
-        $('#password').on('submit', function(){ checkPass(); } );
+       
+       
         
     }); // documentReady
   
@@ -165,7 +151,7 @@
 
    <h1> Sign Up Form </h1>
 
-    <form id="form" onsubmit="checkPass()" method="GET" class="jumbotron">
+    <form id="form"  onsubmit="return checkPass()" method="GET" class="jumbotron">
         
         <div class="form-group">
         <fieldset>
@@ -244,7 +230,7 @@
         </fieldset>
         
     </form>
-    </div>
+   </div>
 
 
 

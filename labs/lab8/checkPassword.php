@@ -5,7 +5,7 @@ include '../../dbConnection.php';
 $conn = getDatabaseConnection();
 
 
-$sql = "SELECT password
+$sql = "SELECT *
         FROM tc_user
         WHERE password = :password"; 
 

@@ -1,29 +1,48 @@
-<?php
 
-//returns array with 100 URLs to images from Pixabay.com, based on a "keyword"
-function getImageURLs($keyword, $orientation="horizontal") {
-    $curl = curl_init();
-    curl_setopt_array($curl, array(
-      CURLOPT_URL => "https://pixabay.com/api/?key=6510806-a871d6d8e0621ead67528753a&q=$keyword&image_type=photo&orientation=$orientation&safesearch=true&per_page=100",
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_TIMEOUT => 30,
-      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-      CURLOPT_CUSTOMREQUEST => "GET",
-      CURLOPT_HTTPHEADER => array(
-        "cache-control: no-cache"
-      ),
-    ));
-    
-    $jsonData = curl_exec($curl);
-    $data = json_decode($jsonData, true); //true makes it an array!
-    
-    $imageURLs = array();
-    for ($i = 0; $i < 99; $i++) {
-    $imageURLs[] = $data['hits'][$i]['webformatURL'];
+
+<head>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+</head>
+<body id="dummybodyid">
+    <header>
+      <h1>Earthquake Info</h1>
+    </header>
+
+      <form method="get">
+				Name:   <input type="text" id="name" > <br><br>
+				End Time:     <input type="text" id="endtime" > <br><br>
+				Latitude:     <input type="text" id="latitude" > <br><br>
+				Longitude:    <input type="text" id="longitude" > <br><br>
+				Max Radius:   <input type="text" id="maxradius" > <br><br>
+				Magnitud (0 to 7): <input type="range" id="minmag" min="0" value="3" max="7"> <br><br>
+			</form>
+        Change any value to update results.<br><br>
+     
+      <div id="earthquakeResult"></div>
+
+  <script> 
+		
+		$("input").change(getEarthquakes);
+  	
+  	function getEarthquakes() {        
+      $.ajax({
+            type: "get",
+             url: "http://pokeapi.co/api/v2/pokemon",
+        dataType: "json",
+            data: {
+                   "format":"json",
+                   "result['name']":$("#starttime").val()
+
+            },
+            success: function(data,status) {
+            alert(data);
+            
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+                 //alert(status);
+            }
+         });
     }
-    $err = curl_error($curl);
-    curl_close($curl);
-    
-    return $imageURLs;
-}
-?>
+
+ 	</script>
+ 	</body>
