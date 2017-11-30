@@ -13,13 +13,17 @@
         border:5px gray solid;
         
         border-radius:25px;
-       
+        box-shadow: 10px 10px 5px #b3b3b3;
         
     }
+    
+  
     #zip{
         display:inline-block;
     }
-    h1{text-align: center;}
+    h1{text-align: center;
+         text-shadow: 3px 3px 5px #b3b3b3;
+    }
     h2{text-align: center;}
     
 </style>
@@ -94,12 +98,12 @@
             if (!data) {
                 //alert("USERNAME AVAILABLE!");
                 $('#usernameValidation').css("color", "green");
-                $('#usernameValidation').html("&nbsp;&nbsp; USERNAME AVAILABLE!");
+                $('#usernameValidation').html("&nbsp;&nbsp; Username Available!");
                
             } else {
                 //alert ("username already taken!")
                 $('#usernameValidation').css("color", "red");
-                $('#usernameValidation').html("&nbsp;&nbsp; username already taken!");
+                $('#usernameValidation').html("&nbsp;&nbsp; * Username Already Taken!");
             }
             
             },
@@ -118,8 +122,8 @@
             
            if ($("#password").val() != $('#pass').val() ) {
                 //alert("USERNAME AVAILABLE!");
-               $('#passVal').css('color', 'red');
-                $('#passVal').html("&nbsp;&nbsp; *Retype Password");
+              
+                $('#passVal').html("&nbsp;&nbsp; * Retype Password");
                 return false;
                
             }   else {
@@ -189,7 +193,7 @@
                         
                    </div>
                    <div class="form-group col-sm-2"> 
-                    <span id="zipError"></span>
+                    <span class="label label-warning" id="zipError"></span>
                     </div>
                     <br/>
                     <div class="form-group col-md-2">
@@ -238,7 +242,7 @@
                     </div>
                 <div class="form-group col-md-6">
                     <label>Type Password Again:</label> <input class="form-control" id="pass" type="password">
-                     <span id="passVal"></span>
+                     <span class="label label-danger" id="passVal"></span>
                  </div>
              </div>
              <br/>
