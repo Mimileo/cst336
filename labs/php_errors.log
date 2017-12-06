@@ -931,3 +931,1388 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/labs/lab9/adoptions.php(59): getPetList()
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab9/adoptions.php on line 14
+[05-Dec-2017 18:11:31 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 67
+[05-Dec-2017 18:13:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 66
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:45:36 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 28
+[06-Dec-2017 03:45:36 UTC] PHP Stack trace:
+[06-Dec-2017 03:45:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:45:36 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:19
+[06-Dec-2017 03:45:36 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:28
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(gallerytiger.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(gallerysamantha.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(galleryotter.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(gallerygalaxy.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(gallerycharlie.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(gallerycarl.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  file_get_contents(galleryalex.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:53:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:53:25 UTC] PHP Stack trace:
+[06-Dec-2017 03:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:53:25 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:53:25 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  Missing argument 1 for createThumbnail(), called in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 31 and defined in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 19
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 03:57:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 03:57:03 UTC] PHP Stack trace:
+[06-Dec-2017 03:57:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 03:57:03 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 03:57:03 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:27:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:27:37 UTC] PHP Stack trace:
+[06-Dec-2017 04:27:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:27:37 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:27:37 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(tiger.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(samantha.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(otter.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(galaxy.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(charlie.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(carl.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  file_get_contents(alex.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:13 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:13 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:13 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:28:48 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:28:48 UTC] PHP Stack trace:
+[06-Dec-2017 04:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:28:48 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:28:48 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecreatefromstring(): Data is not in a recognized format in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:29:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:29:34 UTC] PHP Stack trace:
+[06-Dec-2017 04:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:29:34 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:29:34 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(gallerytiger.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(gallerysamantha.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(galleryotter.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(gallerygalaxy.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(gallerycharlie.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(gallerycarl.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  file_get_contents(galleryalex.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 04:30:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 04:30:16 UTC] PHP Stack trace:
+[06-Dec-2017 04:30:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 04:30:16 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 04:30:16 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 06:01:35 UTC] PHP Warning:  file_get_contents(buddy_verified.png): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 06:01:35 UTC] PHP Stack trace:
+[06-Dec-2017 06:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 06:01:35 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 06:01:35 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 06:01:35 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 20
+[06-Dec-2017 06:01:35 UTC] PHP Stack trace:
+[06-Dec-2017 06:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 06:01:35 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 06:01:35 UTC] PHP   3. imagecreatefromstring() /home/ubuntu/workspace/cst336/labs/lab10/index.php:20
+[06-Dec-2017 06:01:35 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 06:01:35 UTC] PHP Stack trace:
+[06-Dec-2017 06:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 06:01:35 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 06:01:35 UTC] PHP   3. imagesx() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 06:01:35 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 06:01:35 UTC] PHP Stack trace:
+[06-Dec-2017 06:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 06:01:35 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 06:01:35 UTC] PHP   3. imagesy() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
+[06-Dec-2017 06:01:35 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/ubuntu/workspace/cst336/labs/lab10/index.php on line 24
+[06-Dec-2017 06:01:35 UTC] PHP Stack trace:
+[06-Dec-2017 06:01:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab10/index.php:0
+[06-Dec-2017 06:01:35 UTC] PHP   2. createThumbnail() /home/ubuntu/workspace/cst336/labs/lab10/index.php:31
+[06-Dec-2017 06:01:35 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/cst336/labs/lab10/index.php:24
