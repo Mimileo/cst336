@@ -62,7 +62,9 @@ function createThumbnail($file){
             }
             
             img {
-                margin: 0 40px 0 0;
+                margin: 120px 40px 0 0;
+                
+                
             }
             body{
                 background:#d5e1df;
@@ -89,6 +91,10 @@ function createThumbnail($file){
             }
             #gallery{
                 text-align:center;
+                background:grey;
+                
+                margin:0 90px;
+                height:70%;
             }
             #buttons{
              text-align:center;
@@ -140,6 +146,16 @@ function createThumbnail($file){
                  border-radius: 4px;
             }
             
+            input[type="file"] {
+                display: none;
+            }
+        .inputfile {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+                    
          label:focus,
          label:hover {
             color:#fff;
@@ -152,10 +168,13 @@ function createThumbnail($file){
         <h1>Photo Gallery</h1>
         </header>
         <br>
+         <div id="gallery">
         <form method="POST" enctype="multipart/form-data"> 
         <div id="buttons">
-            <input class="inputfile" type="file" name="myFile" /> 
-            <label for="file">Choose a file</label>
+            <label class="custom-file-upload">
+                <input class="inputfile" type="file" name="myFile" /> 
+                <i class="fa fa-cloud-upload"></i> Choose File
+            </label>
             
             <input id="btn" type="submit"  name="submit" value="Upload File!"/>
         </div>
@@ -163,12 +182,15 @@ function createThumbnail($file){
         
         </form>
         
-        <div id="gallery">
+       
             <?php
             
         for ($i = 0; $i < count($files) - 2; $i++) {
-     
+        
         createThumbnail('gallery/'.$files[$i]);
+        if($i % 3 == 2){
+            echo"<br>";
+        }
           // echo "<img src='gallery/" .   $files[$i] . "' width='50' >";
       
         }
