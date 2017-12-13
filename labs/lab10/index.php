@@ -9,7 +9,8 @@
   }
   
  else if($_FILES['myFile']['size'] < 1000000) {
-    move_uploaded_file($_FILES["myFile"]["tmp_name"], "gallery/" . $_FILES["myFile"]["name"]);
+    //move_uploaded_file($_FILES["myFile"]["tmp_name"], "gallery/" . $_FILES["myFile"]["name"]);
+     move_uploaded_file($_FILES["myFile"]["tmp_name"], "gallery/" . $_FILES["myFile"]["name"] );
     
 } 
  //echo "<img src='gallery/". $_FILES['myFile']['name'] . "'>";
