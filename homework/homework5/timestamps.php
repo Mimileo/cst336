@@ -3,7 +3,8 @@
 $conn = getDatabaseConnection();
 $searchName = $_GET['value'];
 
-$sql = "SELECT time FROM weatherData WHERE 
+
+$sql = "SELECT time FROM weather WHERE 
         location = '$searchName'";
          $stmt = $conn->query($sql);
         $results = $stmt->fetchAll();

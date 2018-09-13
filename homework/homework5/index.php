@@ -19,7 +19,7 @@
                         <span class="input-group-addon" id="sizing-addon1">Search</span>
                         <input type="text" id="search" class="form-control" placeholder="city, state/country..."aria-label="city,state/country">
     			 <span class="input-group-btn">
-    				<button type="button" class="btn btn-secondary" onclick='find()' id="submit" value="submit">
+    				<button type="button" class="btn btn-secondary"  id="submit" value="submit">
     				     Submit
     				     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     				</button>
@@ -31,17 +31,15 @@
 		</form>
       <div id="main" align="center"></div>
       <div id="history">
-           <?php
-          $date = new DateTime();
-            echo date('Y-m-d H:i:s');
-          ?>
+           
+           
 
       </div>
 
   <script> 
-	$("#submit").change(find);
-	$("#submit").click(function(){insert(); });
-	$("#submit").click(function(){timeStamp(); });
+	//$("#submit").change(find);
+//	$("input").change(function(){insert(); });
+	//$("input").change(function(){timeStamp(); });
 
     function find(){
     $("#submit").click(function(event) {
@@ -67,10 +65,10 @@
         });
 }
 
-function insert(){
-     $.ajax({
+function update(){
+    $.ajax({
          type : 'GET',
-          url:'data.php?search=',
+          url:'data.php',
           datatype:"",
           data: { value: $("#search").val()
               
@@ -79,31 +77,18 @@ function insert(){
               alert(value);
               $("#history").append(value);
           },
-          complete: function(data,status) { //optional, used for debugging purposes
-                 //alert(status);
-            }
-          
         });
 }
 
-function timeStamp(){
-         $.ajax({
-         type : 'GET',
-          url:'timestamps.php',
-          datatype:"",
-          data: { value: $("#search").val()
-              
-          },
-          success: function(value) {
-              //alert(value);
-              $("#history").append(value);
-          },
-          complete: function(data,status) { //optional, used for debugging purposes
-                 //alert(status);
-            }
-          
-        });
-}
+$(document).ready( function(){
+    $("#submit").click(function () {
+        find();
+        update();
+        
+    })
+});
+
+
 
  	</script>
 </body>
