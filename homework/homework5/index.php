@@ -40,8 +40,8 @@
 
   <script> 
 	$("#submit").change(find);
-	$("#submit").change(function(){insert(); });
-		$("#submit").change(function(){timeStamp(); });
+	$("#submit").click(function(){insert(); });
+	$("#submit").click(function(){timeStamp(); });
 
     function find(){
     $("#submit").click(function(event) {
@@ -76,7 +76,7 @@ function insert(){
               
           },
           success: function(value) {
-              //alert(value);
+              alert(value);
               $("#history").append(value);
           },
           complete: function(data,status) { //optional, used for debugging purposes
