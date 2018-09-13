@@ -1,0 +1,31 @@
+[12-Sep-2018 02:51:21 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/cst336/homework/homework5/data.php on line 17
+[12-Sep-2018 02:51:21 UTC] PHP Stack trace:
+[12-Sep-2018 02:51:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework5/data.php:0
+[12-Sep-2018 02:52:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.walmartApi' doesn't exist' in /home/ubuntu/workspace/cst336/homework/homework5/data.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/homework/homework5/data.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/homework/homework5/data.php on line 17
+[12-Sep-2018 02:52:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.walmartApi' doesn't exist' in /home/ubuntu/workspace/cst336/homework/homework5/data.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/homework/homework5/data.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/homework/homework5/data.php on line 17
+[12-Sep-2018 02:52:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.walmartApi' doesn't exist' in /home/ubuntu/workspace/cst336/homework/homework5/data.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/homework/homework5/data.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/homework/homework5/data.php on line 17
+[12-Sep-2018 02:52:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.walmartApi' doesn't exist' in /home/ubuntu/workspace/cst336/homework/homework5/data.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/homework/homework5/data.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/homework/homework5/data.php on line 17
+[12-Sep-2018 02:58:18 UTC] PHP Fatal error:  Call to undefined function printit() in /home/ubuntu/workspace/cst336/homework/homework5/index.php on line 16
+[12-Sep-2018 02:58:18 UTC] PHP Stack trace:
+[12-Sep-2018 02:58:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/homework/homework5/index.php:0
+[12-Sep-2018 04:31:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.walmartApi' doesn't exist' in /home/ubuntu/workspace/cst336/homework/homework5/data.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/homework/homework5/data.php(17): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/homework/homework5/data.php on line 17
