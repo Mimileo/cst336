@@ -1,24 +1,24 @@
 <?php
-//$searchName = $_GET['value'];
-//echo 'search: '.$searchName;
-include("../../dbConnection.php");
+
+
+include 'dbconnection.php';
 $conn = getDatabaseConnection();
 $searchName = $_GET['value'];
 
+
+if(isset($searchName)) {
 $sql = "INSERT INTO weather
-        (location, time)
+        ( location, time)
         VALUES
-        (:search, CURRENT_TIMESTAMP())";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute($namedParameters);  
+        ( :search, CURRENT_TIMESTAMP())";
         
         $namedParameters = array();
         $namedParameters[':search'] = $searchName;
-        
         $stmt = $conn->prepare($sql);
-        $stmt->excecute($namedParameters);
+        $stmt->execute($namedParameters);
         
-        echo "Location and time added";
+        echo "Searched city  and  time  added.<br/>";
+
 
 $sql = "SELECT COUNT(*)
             AS Rows, location
@@ -29,13 +29,13 @@ $sql = "SELECT COUNT(*)
         $namedParameters[':search'] = $searchName;
         
         $stmt = $conn->prepare($sql);
-        $stmt->excecute($namedParameters);
+        $stmt->execute($namedParameters);
         $count = $stmt->fetch();
+       
+        echo "<br/><h5 class='h6-responsive' style='letter-spacing: 1px'>  The keyword '<i>" . $searchName ."</i>' has been searched<br/> <b>" . $count[0] . "</b> time(s)</h5><br/>";
+        echo "<h5 class='h5-responsive font-weight-bold'>Search History </h5>";
         
-        echo "<h3>The keyword '" . $searchName ."' has been searched " . $count[0] . " time(s)</h3>";
-        echo "<h4>History: </h4>";
-        
-        
+    
 $sql = "SELECT *
         FROM weather 
         WHERE location = :search";
@@ -44,14 +44,28 @@ $sql = "SELECT *
         $stmt->execute($namedParameters);
         $records = $stmt->fetchAll();
         foreach($records as $results){
-            echo $results['time'];
+            $weatherDate = $results['time'];
+            $dt = new DateTime($weatherDate, new DateTimeZone('UTC'));
+
+
+            $dt->setTimezone(new DateTimeZone('America/Los_Angeles'));
+
+
+            $date = $dt->format('M&\nb\sp;j,&\nb\sp;Y  &\nb\sp;&\nb\sp;&\nb\sp;    g:ia  ');
+            //setTimezone(new DateTimeZone('America/Los_Angeles'));
+            echo $date . "<br/>";
         }
-        
+
+
+
+
+}
+     /*   
 $sql = "INSERT INTO weather
         (location, time)
         VALUES
         (:search, CURRENT_TIMESTAMP())";
         $stmt = $conn->prepare($sql);
         $stmt->execute($namedParameters);  
-
+*/
 ?>
