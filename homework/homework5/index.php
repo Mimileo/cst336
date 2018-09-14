@@ -9,7 +9,7 @@
         
 body,html {
     background: url("http://mdbootstrap.com/img/Photos/Others/images/91.jpg")0 0 no-repeat / cover;
-    padding-bottom: 77.5%;
+   
     height: 0;
 }
 .btn .fa {
@@ -71,7 +71,7 @@ h6 {
     background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
     background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
     background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-    position:fixed;
+    position:absolute;
     padding:0;
     margin:0;
 
