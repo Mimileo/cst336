@@ -71,7 +71,8 @@ h6 {
     background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
     background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
     background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-    padding-bottom: 7.15%;
+    padding-bottom: 77.5%;
+    height:0;
   }
 .card {
     background-color: rgba(126, 123, 215, 0.2);
@@ -123,7 +124,7 @@ h6 {
 <body id="dummybodyid">
    
          <div class="bg">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" float="right">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top " float="right">
         <div class="container">
             
             <a class="navbar-brand" href="#"><h1><strong>Weather Search</strong></h1></a>
