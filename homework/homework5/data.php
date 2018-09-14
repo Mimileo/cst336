@@ -1,7 +1,7 @@
 <?php
 
 
-include 'dbconnection.php';
+include("../../dbConnection.php");
 $conn = getDatabaseConnection();
 $searchName = $_GET['value'];
 
