@@ -123,7 +123,7 @@ h6 {
 <body id="dummybodyid">
    
          <div class="bg">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" float="right">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" float="right">
         <div class="container">
             
             <a class="navbar-brand" href="#"><h1><strong>Weather Search</strong></h1></a>
