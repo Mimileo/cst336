@@ -1,9 +1,12 @@
 <?php
 
-
-include("../../dbConnection.php");
-$conn = getDatabaseConnection();
-$searchName = $_GET['value'];
+ 
+    include '../../dbConnection.php';
+    $conn = getDatabaseConnection();
+    
+//include("../../dbConnection.php");
+//$conn = getDatabaseConnection();
+$searchName = $_GET['toFind'];
 
 
 if(isset($searchName)) {

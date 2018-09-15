@@ -1,30 +1,47 @@
 <?php
- include("../../dbConnection.php");
+ include "dbConnection.php";
  $conn = getDatabaseConnection();
 //$searchName = $_GET['value'];
 ?>
 
 <head>
-    <style>
-        
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery.min.js"></script>
+        <style> 
 body,html {
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
     background: url("http://mdbootstrap.com/img/Photos/Others/images/91.jpg")0 0 no-repeat / cover;
-   
-    height: 0;
+    background-attachment: fixed;
+  
 }
 .btn .fa {
     margin-left: 3px;
 }
+
 .top-nav-collapse {
-    background-color: #424f95 !important;
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+   
 }
 
 .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #424f95 !important;
+       background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
     }
 }
 h6 {
@@ -54,43 +71,44 @@ h6 {
 
 
 .top-nav-collapse {
-    background-color: #3f51b5 !important;
-    
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+     
     
 }
 .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-    margin-top: 2rem;
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
+        background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+   
     }
 }
 .rgba-gradient {
     background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
     background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
     background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-    position:absolute;
-    padding:0;
-    margin:0;
-
-    top:0;
-    left:0;
-
-    width: 100%;
-    height: 100%;
+    height:100%;
   }
 .card {
     background-color: rgba(126, 123, 215, 0.2);
-     margin-top: 6rem;
+     margin-top: -3rem;
      height: 560px;
+     color:white;
+  
 }
 
 #history {
-    margin-top: 6rem;
-    color: #c6bad6;
-    height:250px;
+    margin-top: -2rem;
+    color: #cfa5cf;
+    height:560px;
     overflow-y: scroll;
 }
 
@@ -105,33 +123,27 @@ h6 {
 h6 {
     line-height: 1.7;
 }
+
 @media (max-width: 740px) {
     .full-height,
     .full-height body,
     .full-height header,
     .full-height header .view {
-        height: 1040px;
+        height: 700px;
     }
 }
-
-    </style>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery.min.js"></script>
+      </style>
   <script>
  
       
   </script>
 </head>
-<html lang="en" class="full-height">
+<html lang="en" class="full-height" >
     
 <body id="dummybodyid">
    
          <div class="bg">
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top " float="right">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top" float="right">
         <div class="container">
             
             <a class="navbar-brand" href="#"><h1><strong>Weather Search</strong></h1></a>
@@ -174,7 +186,7 @@ h6 {
             <!--Grid column-->
             <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
               
-               <div id="history"></div>
+               <div id="history" style="color: #e7b1dd;"></div>
               
               
             </div>
@@ -188,10 +200,10 @@ h6 {
                   <div class="text-center">
                     <h3 class="white-text">
                         
-                      <i class="fa fa-user white-text">Weather</i></h3>
+                      <i class="fa fa-user white-text" style="color:white; margin-top:-10rem;">Weather</i></h3>
                     <hr class="hr-light">
                   </div>
-                  <div id="main" align="center" margin="auto" height="1040px">
+                  <div id="main" align="center" margin="auto" style="color:white;"height="1040px">
            
                   </div>
     
@@ -259,12 +271,11 @@ function update(){
          type : 'GET',
           url:'data.php',
           datatype:"",
-          data: { value: $("#search").val(),
+          data: { toFind: $("#search").val(),
               
           },
-          success: function(value) {
-              //alert(value);
-              $("#history").html(value);
+          success: function(toFind,success) {
+             $("#history").html(toFind);
           },
         });
 }
