@@ -1,6 +1,8 @@
 <?php
- include "dbConnection.php";
- $conn = getDatabaseConnection();
+ 
+    include '../../dbConnection.php';
+    $conn = getDatabaseConnection();
+    
 //$searchName = $_GET['value'];
 ?>
 
@@ -12,7 +14,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery.min.js"></script>
-        <style> 
+<style> 
 body,html {
     background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
     background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)));
