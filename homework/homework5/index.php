@@ -254,23 +254,12 @@ h6 {
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.item.condition.text + "</p>");
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
-            var sunSet = json_weather.query.results.channel.astronomy.sunset;
-            for(var i in sunSet)
-            {
-                if (/^\d{1,2}\:\d{1}\s/.test( a[i] ))
-                {
-                    var value = /^\d{1,2}(\:\d)\s/.exec(a[i])[1];
-                    sunSet[i] = sunSet[i].replace( value, ':0' + value.substr(1) )
-                }
-            }
-
-            $('#main').append("<p class='lead'>" + sunSet + "</p>");
+            
+            $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunset + "</p>");
             
         } else if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
-             var sunRise = json_weather.query.results.channel.astronomy.sunrise;
-            
-            $('#main').append("<p class='lead'>" + sunRise + "</p>");
+            $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunrise + "</p>");
         }
        
        
