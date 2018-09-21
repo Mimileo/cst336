@@ -1,32 +1,127 @@
 <?php
  // print_r($_FILES);
+function display() {
+   
+if(isset($_FILES['fileName'])) {
+    //echo $_FILES['fileName']['name'];
+    $errors     = array();
+    $maxsize    = 1000000;
+    $acceptable = array(
+        'application/pdf',
+        'image/jpeg',
+        'image/jpg',
+        'image/gif',
+        'image/png'
+    );
+
+    if(($_FILES['fileName']['size'] >= $maxsize) || ($_FILES["fileName"]["size"] == 0)) {
+        $errors[] = 'Error: file too large';
+    }
 
 
-//  echo "File size " . $_FILES['myFile']['size'];
+if(count($errors) === 0) {
+      move_uploaded_file($_FILES["fileName"]["tmp_name"], "gallery/" . $_FILES["fileName"]["name"] );
+} else {
+    foreach($errors as $error) {
+        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h6>'.$error.'</h6><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button></div>';
+    }
 
-  
-  
+    //die(); //Ensure no more processing is done
+}
+}
+    $files = scandir("gallery/", 1);
+    $count = 0;
+    echo "<div class='row justify-content-center'>";
+    for($i = 0; $i < count($files) - 2; $i++){
+            
+            $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
+            $newx = 300; $newy = 300;  //new size
+            
+            $thumb = imagecreatetruecolor($newx,$newy);
+            imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
+            imagesx($sourcefile), imagesy($sourcefile)); 
+            imagejpeg($thumb, "thumb".($i+1).".jpg"); //creates jpg image file called "thumb.jpg"
+            $count++;
+            //echo $count;
+            echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'><img src='thumb".($i+1).".jpg' width='100' class='img-thumbnail'></div></div></a>";
+            if ($count % 3 == 0)
+                echo "</div><div class='row justify-content-center'>";
+        // echo "<a class='img1'><img src='gallery/".$files[$i]."' width='100' class='img'></a>";
+    }
+    echo '<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" data-dismiss="modal">
+    <div class="modal-content"  >              
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div> 
+      <div class="modal-footer">
+         
+
+      </div>
+          
+          
+    </div>
+  </div>
+</div>';
+    
+}
+/*
+    $maxSize = 1000000;
+    $filterError="";
+    echo "file name " . $_FILES['myFile']['size'];
+    if($_FILES['myFile']['size'] > 1000000) {
+        $error = "<h1>Error: Large file</h1>";
+        echo $error;
+    }
+    else{
+        
+    }*/
+    
+ 
+    
+
+/*
+
+   $error = "";
    if($_FILES['myFile']['size'] > 1000000) {
-        echo "<p>Error: Large file</p>";
+        $error = "<h1>Error: Large file</h1>";
+        echo $error;
     }
     
-   else if($_FILES['myFile']['size'] < 1000000) {
+   if($_FILES['myFile']['size'] < 1000000) {
+
       //move_uploaded_file($_FILES["myFile"]["tmp_name"], "gallery/" . $_FILES["myFile"]["name"]);
        move_uploaded_file($_FILES["myFile"]["tmp_name"], "gallery/" . $_FILES["myFile"]["name"] );
-      
+       $error ="Success";
+       echo $error;
   } 
 
  //echo "<img src='gallery/". $_FILES['myFile']['name'] . "'>";
     //$size = $_FILES['myFile']['size'];
     
-    $files = scandir("gallery/", 1);
-    print_r($files);
-    for($i = 0; $i < count($files) - 2;$i++){
-      echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
-    }
-    
+        $files = scandir("gallery/", 1);
    
-    // print_r($files);
+     function display($files){
+         
+        for($i = 0; $i < count($files) - 2;$i++){
+            echo "printing".$files[$i];
+            $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
+            $newx = 150; $newy = 150;  //new size
+           
+            $thumb = imagecreatetruecolor($newx,$newy);
+            imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
+            imagesx($sourcefile), imagesy($sourcefile)); 
+            imagejpeg($thumb, "thumb".($i+1).".jpg"); //creates jpg image file called "thumb.jpg"
+            echo "<img src='thumb".($i+1).".jpg' width='100' class='img-thumbnail'>";
+        }
+        
+}
+    
+*/
+    //print_r($files);
 /*
 function createThumbnail($file){
     $sourcefile = imagecreatefromstring(file_get_contents($file));
@@ -52,163 +147,111 @@ function createThumbnail($file){
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script>
-            $(document).ready( function(){
-                
-                $('img').on('click', function(){
-                   if($('#focus').length != 0) {
-                      $('#focus').attr('id','');
-                   }
-                   
-                   $(this).attr('id', 'focus');
-                    
-                });
+           $(document).ready( function(){
+               $('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
+            
             });
+           // $('element').css('position', 'absolute');
             
         </script>
         <style type="text/css">
-            #focus{
-                width: 400px;
-                height:400px;
-                
+       
+        body, html{
+            height:100%;
+        }
+        #gallery {
+           
+            padding-top:60px;
+            
+  
+         
+        }
+        img{
+            width:100%;
+            height:auto;
+        }
+        .square {
+    
+    padding-bottom: 10%;
+    background-size: cover;
+    background-position: center;
+    margin: 2%;
+    left:2rem;
+}
+        
+        form {
+            display: flex; 
+            flex-direction: row;
+        }
+            img{
+                display:inline-block;
+                margin:10px 0 10px 0;
+            }
+            
+            
+             input[type=submit], input[type=file] {
+               
+                border: none;
+                color: white;
+                padding: 5px 5px;
+                text-decoration: none;
+                margin: 4px 50px;
+                display:inline-block;
                 
             }
             
-            img {
-                margin: 120px 40px 0 0;
-                
-                
+            #buttons{
+                margin:0 auto;
+                margin-bottom:0;
             }
-            body{
-                background:#d5e1df;
+            .alert {
                 
-            }
-            
-            p{
-                color:red;
+               width:40%; 
+               margin:10px auto;
             }
             
             header{
-                background:#009688;
-                margin:20px auto;
-                width:50%;
-                border-radius:50px;
-            }
-            h1{
-                margin:0 auto;
-                text-align:center;
-                width:50%;
-                padding:20px;
-                color:white;
+                text-align: center;
+                padding-top:20px;
                 
             }
-            #gallery{
-                text-align:center;
-                background:grey;
+            .container{
+               
+               height: 100%;
+  
                 
-                margin:0 90px;
-                height:70%;
-            }
-            #buttons{
-             text-align:center;
-             margin-bottom:40px;
-            }
-            
-            #btn {
-                 color: #009688;
-                 background: #fff;
-                 border: 1px solid #009688;
-                 font-size: 17px;
-                 padding: 7px 12px;
-                 font-weight: normal;
-                 margin: 6px 0;
-                 margin-right: 12px;
-                 display: inline-block;
-                 text-decoration: none;
-                 font-family: 'Open Sans', sans-serif;
-                 min-width: 120px;
-            }
-            
-            #btn:hover{
-                color:#fff;
-                background:#009688;
-            }
-            
-            .inputfile{
-                 	width: 0.1px;
-                	height: 0.1px;
-                	opacity: 0;
-                	overflow: hidden;
-                	position: absolute;
-                	z-index: -1;
-            }
-            
-            label {
-               color: #009688;
-                 background: #fff;
-                 border: 1px solid #009688;
-                 font-size: 17px;
-                 padding: 7px 12px;
-                 font-weight: normal;
-                 margin: 6px 0;
-                 margin-right: 12px;
-                 display: inline-block;
-                 text-decoration: none;
-                 font-family: 'Open Sans', sans-serif;
-                 min-width: 120px;
-                 border-radius: 4px;
-            }
-            
-            input[type="file"] {
-                display: none;
-            }
-        .inputfile {
-            border: 1px solid #ccc;
-            display: inline-block;
-            padding: 6px 12px;
-            cursor: pointer;
-        }
-                    
-         label:focus,
-         label:hover {
-            color:#fff;
-                background:#009688;
             }
         </style>
         
     </head>
     <body>
         <header>
-        <h1>Photo Gallery</h1>
+        <h1 class="text-primary">Photo Gallery</h1><hr>
        
         </header>
         <br>
-       <div id="gallery">
-        <form method="POST" enctype="multipart/form-data"> 
-        <div id="buttons">
-            <label class="custom-file-upload">
-                <input class="inputfile" type="file" name="myFile" /> 
-                Choose File
-            </label>
-            
-            <input id="btn" type="submit"  name="submit" value="Upload File!"/>
-        </div>
-
-        
-        </form>
-        
-       
-            <?php
-           /* 
-        for ($i = 0; $i < count($files) - 2; $i++) {
-        
-        createThumbnail('gallery/'.$files[$i]);
-        if($i % 3 == 2){
-            echo"<br>";
-        }
-          // echo "<img src='gallery/" .   $files[$i] . "' width='50' >";
       
-        }*/
-            ?>
+        <form method="POST" enctype="multipart/form-data">
+            <div id="buttons">
+            <span id="submit" class="btn btn-primary">Select file:
+             <input type="file" name="fileName" id="file"/> <br />
+              </span>
+             <input class="btn btn-primary"type="submit" name="uploadForm" value="Upload File"/>
+            
+        </div>
+        </form>
+       
+      <div id="gallery" class="container">
+        <?php
+       display();
+        /*
+            display($files);
+            */
+        ?>
+       
         </div>
 
     </body>
