@@ -254,10 +254,21 @@ h6 {
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.item.condition.text + "</p>");
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
-            $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunset + "</p>");
+            var sunSet = json_weather.query.results.channel.astronomy.sunset;
+            if(sunSet.length == 6){
+               var arr1 = sunSet.split(":");
+               sunSet = "time" + arr1[0] + ":0" + arr1[1]);
+             } 
+
+            $('#main').append("<p class='lead'>" + sunSet + "</p>");
         } else if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
-            $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunrise + "</p>");
+              var sunRise = json_weather.query.results.channel.astronomy.sunrise;
+            if(sunRise.length == 6){
+               var arr2 = sunRise.split(":");
+               sunRise = "time" + arr2[0] + ":0" + arr2[1]);
+             } 
+            $('#main').append("<p class='lead'>" + sunRise + "</p>");
         }
        
        
