@@ -257,7 +257,7 @@ h6 {
             var sunSet = json_weather.query.results.channel.astronomy.sunset;
             if(sunSet.length == 6){
                var arr1 = sunSet.split(":");
-               sunSet = "time" + arr1[0] + ":0" + arr1[1]);
+               sunSet = "time" + arr1[0] + ":0" + arr1[1];
              } 
 
             $('#main').append("<p class='lead'>" + sunSet + "</p>");
@@ -266,7 +266,7 @@ h6 {
               var sunRise = json_weather.query.results.channel.astronomy.sunrise;
             if(sunRise.length == 6){
                var arr2 = sunRise.split(":");
-               sunRise = "time" + arr2[0] + ":0" + arr2[1]);
+               sunRise = "time" + arr2[0] + ":0" + arr2[1];
              } 
             $('#main').append("<p class='lead'>" + sunRise + "</p>");
         }
