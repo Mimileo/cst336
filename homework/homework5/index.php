@@ -269,14 +269,7 @@ h6 {
         } else if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
              var sunRise = json_weather.query.results.channel.astronomy.sunrise;
-             for(var i in sunRise)
-                {
-                    if (/^\d{1,2}\:\d{1}\s/.test( a[i] ))
-                    {
-                        var value = /^\d{1,2}(\:\d)\s/.exec(a[i])[1];
-                        sunRise[i] = sunRise[i].replace( value, ':0' + value.substr(1) )
-                    }
-                }
+            
             $('#main').append("<p class='lead'>" + sunRise + "</p>");
         }
        
