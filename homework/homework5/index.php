@@ -255,7 +255,14 @@ h6 {
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
             var sunSet = json_weather.query.results.channel.astronomy.sunset;
-            
+            if(sunSet.length == 6){
+   
+               var myArr = sunSet.split(":");
+               
+               sunSet = "time"+myArr[0] + ":0" + myArr[1];
+              
+                
+              } 
 
             $('#main').append("<p class='lead'>" + sunSet + "</p>");
         } else if($("#astronomy").val() == "Sunrise"){
