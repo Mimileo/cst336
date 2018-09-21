@@ -252,33 +252,26 @@ h6 {
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.wind.speed + " <b>mph</b></p>"); 
         $('<h3>').text('Forecast: ').appendTo('#main');
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.item.condition.text + "</p>");
-        if($("#astronomy").val() == "Sunset" || $("#astronomy").val() == "Sunrise"){
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
             var sunSet = json_weather.query.results.channel.astronomy.sunset;
             if(sunSet.length == 6){
-   
                var myArr = sunSet.split(":");
-               
                sunSet = myArr[0] + ":0" + myArr[1];
-              
               } 
 
             $('#main').append("<p class='lead'>" + sunSet + "</p>");
         } if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
               var sunRise = json_weather.query.results.channel.astronomy.sunrise;
-              if(sunSet.length == 6){
-   
+              if(sunRise.length == 6){
                var arr1 = sunRise.split(":");
-               
                sunRise = arr1[0] + ":0" + arr1[1];
-              
               } 
             
             $('#main').append("<p class='lead'>" + sunRise + "</p>");
         }
-        }
+        
        
        
         
