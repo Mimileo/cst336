@@ -252,6 +252,7 @@ h6 {
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.wind.speed + " <b>mph</b></p>"); 
         $('<h3>').text('Forecast: ').appendTo('#main');
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.item.condition.text + "</p>");
+        if($("#astronomy").val() == "Sunset" || $("#astronomy").val() == "Sunrise"){
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
             var sunSet = json_weather.query.results.channel.astronomy.sunset;
@@ -276,6 +277,7 @@ h6 {
               } 
             
             $('#main').append("<p class='lead'>" + sunRise + "</p>");
+        }
         }
        
        
