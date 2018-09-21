@@ -259,15 +259,21 @@ h6 {
    
                var myArr = sunSet.split(":");
                
-               sunSet = "time"+myArr[0] + ":0" + myArr[1];
+               sunSet = myArr[0] + ":0" + myArr[1];
               
-                
               } 
 
             $('#main').append("<p class='lead'>" + sunSet + "</p>");
         } else if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
               var sunRise = json_weather.query.results.channel.astronomy.sunrise;
+              if(sunSet.length == 6){
+   
+               var arr1 = sunRise.split(":");
+               
+               sunRise = arr1[0] + ":0" + arr1[1];
+              
+              } 
             
             $('#main').append("<p class='lead'>" + sunRise + "</p>");
         }
