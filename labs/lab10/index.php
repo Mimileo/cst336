@@ -38,7 +38,7 @@ if(count($errors) === 0) {
             
             $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
             $newx = 300; $newy = 300;  //new size
-            
+            echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
             $thumb = imagecreatetruecolor($newx,$newy);
             imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
             imagesx($sourcefile), imagesy($sourcefile)); 
