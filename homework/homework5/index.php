@@ -254,10 +254,30 @@ h6 {
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.item.condition.text + "</p>");
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
-            $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunset + "</p>");
+            var sunSet = json_weather.query.results.channel.astronomy.sunset;
+            for(var i in a)
+            {
+                if (/^\d{1,2}\:\d{1}\s/.test( a[i] ))
+                {
+                    var value = /^\d{1,2}(\:\d)\s/.exec(a[i])[1];
+                    a[i] = a[i].replace( value, ':0' + value.substr(1) )
+                }
+            }
+
+            $('#main').append("<p class='lead'>" + sunSet + "</p>");
+            
         } else if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
-            $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunrise + "</p>");
+             var sunRise = json_weather.query.results.channel.astronomy.sunrise;
+             for(var i in a)
+                {
+                    if (/^\d{1,2}\:\d{1}\s/.test( a[i] ))
+                    {
+                        var value = /^\d{1,2}(\:\d)\s/.exec(a[i])[1];
+                        a[i] = a[i].replace( value, ':0' + value.substr(1) )
+                    }
+                }
+            $('#main').append("<p class='lead'>" + sunRise + "</p>");
         }
        
        
