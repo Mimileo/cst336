@@ -32,13 +32,16 @@ if(count($errors) === 0) {
 }
 }
     $files = scandir("gallery/", 1);
+    for($i = 0; $i < count($files) - 2;$i++){
+      echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
+    }
     $count = 0;
     echo "<div class='row justify-content-center'>";
     for($i = 0; $i < count($files) - 2; $i++){
             
             $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
             $newx = 300; $newy = 300;  //new size
-            echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
+            //echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
             $thumb = imagecreatetruecolor($newx,$newy);
             imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
             imagesx($sourcefile), imagesy($sourcefile)); 
