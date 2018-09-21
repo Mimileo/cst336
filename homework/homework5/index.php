@@ -254,9 +254,7 @@ h6 {
         $('#main').append("<p class='lead'>" + json_weather.query.results.channel.item.condition.text + "</p>");
         if($("#astronomy").val() == "Sunset"){
             $('<h3>').text('Sunset: ').appendTo('#main');
-            
             $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunset + "</p>");
-            
         } else if($("#astronomy").val() == "Sunrise"){
              $('<h3>').text('Sunrise: ').appendTo('#main');
             $('#main').append("<p class='lead'>" + json_weather.query.results.channel.astronomy.sunrise + "</p>");
