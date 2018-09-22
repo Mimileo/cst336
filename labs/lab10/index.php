@@ -33,7 +33,9 @@ if(isset($_FILES['fileName'])) {
 
 if(count($errors) === 0) {
       $tmp_file = createThumbnail( $_FILES["fileName"]["tmp_name"]);
+      //echo "<img src='".$tmp_file."'/>";
       move_uploaded_file($tmp_file, "gallery/" . $_FILES['fileName']['name']);
+     // echo "   ".$_FILES['fileName']['name'];
 } else {
     foreach($errors as $error) {
         echo '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h6>'.$error.'</h6><button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -47,9 +49,9 @@ if(count($errors) === 0) {
    
     //$thumbs = scandir("testing/",1);
     $files = scandir("gallery/", 1);
-   /* for($i = 0; $i < count($files) - 2;$i++){
+    for($i = 0; $i < count($files) - 2;$i++){
       echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
-    }*/
+    }
     $count = 0;
     echo "<div class='row justify-content-center'>";
      /*for($i = 0; $i < count($files) - 2; $i++){
