@@ -31,12 +31,17 @@ if(count($errors) === 0) {
     //die(); //Ensure no more processing is done
 }
 }
-    $files = scandir("gallery/", 1);
-    for($i = 0; $i < count($files) - 2;$i++){
-      echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
+    if (!file_exists("testing")) {
+        mkdir("testing", 755, true);
     }
+    $thumbs = scandir("testing/",1);
+    $files = scandir("gallery/", 1);
+    /*for($i = 0; $i < count($files) - 2;$i++){
+      echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
+    }*/
     $count = 0;
     echo "<div class='row justify-content-center'>";
+    
     for($i = 0; $i < count($files) - 2; $i++){
             
             $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
@@ -45,14 +50,22 @@ if(count($errors) === 0) {
             $thumb = imagecreatetruecolor($newx,$newy);
             imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
             imagesx($sourcefile), imagesy($sourcefile)); 
-            imagejpeg($thumb, "thumb".($i+1).".jpg"); //creates jpg image file called "thumb.jpg"
-            $count++;
-            //echo $count;
-            echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'><img src='thumb".($i+1).".jpg' width='100' class='img-thumbnail'></div></div></a>";
-            if ($count % 3 == 0)
-                echo "</div><div class='row justify-content-center'>";
+            
+            imagejpeg($thumb, "testing/thumb".($i+1).".jpg"); //creates jpg image file called "thumb.jpg"
+            //if()
+            //unlink('gallery/' . $files[$i-1]);
+           
         // echo "<a class='img1'><img src='gallery/".$files[$i]."' width='100' class='img'></a>";
     }
+    
+    for($i=0;$i < count($thumbs)-2;$i++){
+            $count++;
+            //echo $count;
+            echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'><img src='testing/thumb".($i+1).".jpg' width='100' class='img-thumbnail'></div></div></a>";
+            if ($count % 3 == 0)
+                echo "</div><div class='row justify-content-center'>";
+    }
+    //print_r($files);
     echo '<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-dismiss="modal">
     <div class="modal-content"  >              
