@@ -45,6 +45,7 @@ if(count($errors) === 0) {
     $files = scandir("gallery/", 1);
    
     $count = 0;
+    
     echo "<div class='row justify-content-center'>";
      for($i = 0; $i < count($files) - 2; $i++){
          $count++;
@@ -53,7 +54,7 @@ if(count($errors) === 0) {
            if ($count % 3 == 0)
                 echo "</div><div class='row justify-content-center'>";
      }
-    echo "<br/>Thumbs<br/>";
+    echo "thumbs<div class='row justify-content-center'>";
     for($i = 0; $i < count($files) - 2; $i++){
             
             $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
@@ -64,21 +65,22 @@ if(count($errors) === 0) {
             imagesx($sourcefile), imagesy($sourcefile)); 
             
             imagejpeg($thumb, "thumb".($i+1).".jpg"); //creates jpg image file called "thumb.jpg"
+            
             //if()
             //rename('gallery/' . $files[$i],'testing/' . $files[$i] );
             //echo "<img src='testing/".$files[$i]."' width='100' class='img-thumbnail'>";
-           // rename("testing/thumb".($i+1).".jpg", "gallery/thumb".($i+1).".jpg");
+           rename("thumb".($i+1).".jpg", "gallery/".$files[$i]);
            
-         echo "<a href='#' class='pop'>
+         /*echo "<a href='#' class='pop'>
                 <div class='col-lg-4 col-6'>
-                    <div class='square'><img src='thumb".($i+1).".jpg' width='100' class='img'>
+                    <div class='square'><img src='".$files[$i]."' width='100' class='img'>
                     </div>
                 </div>
-            </a>";
+            </a>";*/
     }
     //print_r($files);
-    echo "files</br>";
-    
+    echo "<br>files</br>";
+    echo "<div class='row justify-content-center'>";
     for($i=0;$i < count($files)-2;$i++){
             $count++;
             //echo $count;
