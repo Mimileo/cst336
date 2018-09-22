@@ -73,6 +73,15 @@ if(count($errors) === 0) {
     }*/
     //print_r($files);
     //echo "</br>";
+     for($i=0;$i < count($files)-2;$i++){
+            $count++;
+            //echo $count;
+            echo "
+                        <img class='img-thumbnail img-fluid' src='gallery/".$files[$i]."' >
+                   ";
+            if ($count % 3 == 0)
+                echo "</div><div class='row justify-content-center'>";
+    }
     for($i=0;$i < count($files)-2;$i++){
             $count++;
             //echo $count;
