@@ -34,9 +34,9 @@ if(count($errors) === 0) {
             imagesx(imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"]))),
             imagesy(imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"])))); 
             
-            imagejpeg($thumb, $_FILES["fileName"]["tmp_name"]."jpg"); //creates jpg image file called "thumb.jpg"
+             //creates jpg image file called "thumb.jpg"
       //echo "<img src='".$tmp_file."'/>";
-      move_uploaded_file($_FILES["fileName"]["tmp_name"]."jpg", "gallery/" . $_FILES['fileName']['name']);
+      move_uploaded_file(imagejpeg($thumb, $_FILES["fileName"]["tmp_name"]), "gallery/" . $_FILES['fileName']['name']);
      // echo "   ".$_FILES['fileName']['name'];
 } else {
     foreach($errors as $error) {
