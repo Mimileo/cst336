@@ -25,18 +25,10 @@ if(isset($_FILES['fileName'])) {
 
 
 if(count($errors) === 0) {
-      //$tmp_file = createThumbnail( );
-        //$sourcefile = imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"]));
-            $newx = 300; $newy = 300;  //new size
-            //echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
-            $thumb = imagecreatetruecolor($newx,$newy);
-            imagecopyresampled($thumb, imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"])), 0,0, 0,0, $newx, $newy,     
-            imagesx(imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"]))),
-            imagesy(imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"])))); 
-            
+      
              //creates jpg image file called "thumb.jpg"
       //echo "<img src='".$tmp_file."'/>";
-      move_uploaded_file(imagejpeg($thumb, $_FILES["fileName"]["tmp_name"]), "gallery/" . $_FILES['fileName']['name']);
+      move_uploaded_file($_FILES["fileName"]["tmp_name"], "gallery/" . $_FILES['fileName']['name']);
      // echo "   ".$_FILES['fileName']['name'];
 } else {
     foreach($errors as $error) {
@@ -51,9 +43,7 @@ if(count($errors) === 0) {
    
     //$thumbs = scandir("testing/",1);
     $files = scandir("gallery/", 1);
-    for($i = 0; $i < count($files) - 2;$i++){
-      echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
-    }
+   
     $count = 0;
     echo "<div class='row justify-content-center'>";
      /*for($i = 0; $i < count($files) - 2; $i++){
@@ -87,9 +77,9 @@ if(count($errors) === 0) {
             $count++;
             //echo $count;
             echo "<a href='#' class='pop'>
-                <div class='col-xs-3'>
+                <div class='col-lg-4 col-6'>
                     <div class='square'>
-                        <img src='gallery/".$files[$i]."' width='100' class='img-thumbnail'>
+                        <img class='img-thumbnail img-fluid' src='gallery/".$files[$i]."' >
                     </div>
                 </div>
             </a>";
@@ -99,7 +89,7 @@ if(count($errors) === 0) {
     //print_r($files);
     echo '<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-dismiss="modal">
-    <div class="modal-content"  >              
+    <div class="modal-content">              
       <div class="modal-body">
       	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <img src="" class="imagepreview" style="width: 100%;" >
@@ -218,16 +208,18 @@ function createThumbnail($file){
          
         }
         img{
+            
             width: 100%;
             height:auto;
         }
         .square {
-    
-    padding-bottom: 10%;
-    background-size: cover;
-    background-position: center;
-    margin: 2%;
-    left:2rem;
+            height:300px;
+            width:300px;
+            padding-bottom: 10%;
+            background-size: cover;
+            background-position: center;
+            margin: 2%;
+           
 }
         
         form {
