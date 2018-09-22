@@ -50,7 +50,7 @@ if(count($errors) === 0) {
      for($i = 0; $i < count($files) - 2; $i++){
          $count++;
           echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'>
-          <img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'></div></div></a>";
+          <img id ='thumb' src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'></div></div></a>";
            if ($count % 3 == 0)
                 echo "</div><div class='row justify-content-center'>";
      }
@@ -194,10 +194,18 @@ function createThumbnail($file){
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <script>
            $(document).ready( function(){
+              
                $('.pop').on('click', function() {
-			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-			$('#imagemodal').modal('show');   
-		});		
+    			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			    $('#imagemodal').modal('show');   
+		});	
+		 const thumb = document.querySelector('#thumb')
+		 var positionInfo = thumb.getBoundingClientRect();
+               var height = positionInfo.height;
+               var width = positionInfo.width;
+               thumb.style.height = height/5;
+               thumb.style.width= width/5;
+               //thumb.padding
             
             });
            // $('element').css('position', 'absolute');
