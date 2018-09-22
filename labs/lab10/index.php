@@ -1,5 +1,17 @@
 <?php
  // print_r($_FILES);
+ function createThumbnail($file){
+     
+            $sourcefile = imagecreatefromstring(file_get_contents($file));
+            $newx = 300; $newy = 300;  //new size
+            //echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
+            $thumb = imagecreatetruecolor($newx,$newy);
+            imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
+            imagesx($sourcefile), imagesy($sourcefile)); 
+            
+            imagejpeg($thumb, $file); //creates jpg image file called "thumb.jpg"
+            return $file;
+ }
 function display() {
    
 if(isset($_FILES['fileName'])) {
@@ -20,7 +32,8 @@ if(isset($_FILES['fileName'])) {
 
 
 if(count($errors) === 0) {
-      move_uploaded_file($_FILES["fileName"]["tmp_name"], "gallery/" . $_FILES["fileName"]["name"] );
+      $tmp_file = createThumbnail( $_FILES["fileName"]["tmp_name"]);
+      move_uploaded_file($tmp_file, "gallery/" . $_FILES['fileName']['name']);
 } else {
     foreach($errors as $error) {
         echo '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h6>'.$error.'</h6><button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -30,24 +43,22 @@ if(count($errors) === 0) {
 
     //die(); //Ensure no more processing is done
 }
-}/*
-    if (!file_exists("testing")) {
-        mkdir("testing", 755, true);
-    }
-    $thumbs = scandir("testing/",1);*/
+
+   
+    //$thumbs = scandir("testing/",1);
     $files = scandir("gallery/", 1);
-    /*for($i = 0; $i < count($files) - 2;$i++){
+   /* for($i = 0; $i < count($files) - 2;$i++){
       echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
     }*/
     $count = 0;
     echo "<div class='row justify-content-center'>";
-     for($i = 0; $i < count($files) - 2; $i++){
+     /*for($i = 0; $i < count($files) - 2; $i++){
          $count++;
           echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'>
           <img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'></div></div></a>";
            if ($count % 3 == 0)
                 echo "</div><div class='row justify-content-center'>";
-     }
+     }*/
     /*
     for($i = 0; $i < count($files) - 2; $i++){
             
@@ -60,24 +71,27 @@ if(count($errors) === 0) {
             
             imagejpeg($thumb, "testing/thumb".($i+1).".jpg"); //creates jpg image file called "thumb.jpg"
             //if()
-            //unlink('gallery/' . $files[$i-1]);
+            rename('gallery/' . $files[$i],'testing/' . $files[$i] );
+            //echo "<img src='testing/".$files[$i]."' width='100' class='img-thumbnail'>";
+            rename("testing/thumb".($i+1).".jpg", "gallery/thumb".($i+1).".jpg");
            
         // echo "<a class='img1'><img src='gallery/".$files[$i]."' width='100' class='img'></a>";
     }*/
-    /*
-    for($i=0;$i < count($thumbs)-2;$i++){
+    //print_r($files);
+    //echo "</br>";
+    for($i=0;$i < count($files)-2;$i++){
             $count++;
             //echo $count;
             echo "<a href='#' class='pop'>
                 <div class='col-xs-3'>
                     <div class='square'>
-                        <img src='testing/thumb".($i+1).".jpg' width='100' class='img-thumbnail'>
+                        <img src='gallery/".$files[$i]."' width='100' class='img-thumbnail'>
                     </div>
                 </div>
             </a>";
             if ($count % 3 == 0)
                 echo "</div><div class='row justify-content-center'>";
-    }*/
+    }
     //print_r($files);
     echo '<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-dismiss="modal">
@@ -96,6 +110,7 @@ if(count($errors) === 0) {
   </div>
 </div>';
     
+}
 }
 /*
     $maxSize = 1000000;
@@ -199,7 +214,8 @@ function createThumbnail($file){
          
         }
         img{
-           
+            width: 100%;
+            height:auto;
         }
         .square {
     
