@@ -30,18 +30,25 @@ if(count($errors) === 0) {
 
     //die(); //Ensure no more processing is done
 }
-}
+}/*
     if (!file_exists("testing")) {
         mkdir("testing", 755, true);
     }
-    $thumbs = scandir("testing/",1);
+    $thumbs = scandir("testing/",1);*/
     $files = scandir("gallery/", 1);
     /*for($i = 0; $i < count($files) - 2;$i++){
       echo "<img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'>";
     }*/
     $count = 0;
     echo "<div class='row justify-content-center'>";
-    
+     for($i = 0; $i < count($files) - 2; $i++){
+         $count++;
+          echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'>
+          <img src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'></div></div></a>";
+           if ($count % 3 == 0)
+                echo "</div><div class='row justify-content-center'>";
+     }
+    /*
     for($i = 0; $i < count($files) - 2; $i++){
             
             $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
@@ -56,15 +63,21 @@ if(count($errors) === 0) {
             //unlink('gallery/' . $files[$i-1]);
            
         // echo "<a class='img1'><img src='gallery/".$files[$i]."' width='100' class='img'></a>";
-    }
-    
+    }*/
+    /*
     for($i=0;$i < count($thumbs)-2;$i++){
             $count++;
             //echo $count;
-            echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'><img src='testing/thumb".($i+1).".jpg' width='100' class='img-thumbnail'></div></div></a>";
+            echo "<a href='#' class='pop'>
+                <div class='col-xs-3'>
+                    <div class='square'>
+                        <img src='testing/thumb".($i+1).".jpg' width='100' class='img-thumbnail'>
+                    </div>
+                </div>
+            </a>";
             if ($count % 3 == 0)
                 echo "</div><div class='row justify-content-center'>";
-    }
+    }*/
     //print_r($files);
     echo '<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-dismiss="modal">
@@ -186,8 +199,7 @@ function createThumbnail($file){
          
         }
         img{
-            width:100%;
-            height:auto;
+           
         }
         .square {
     
