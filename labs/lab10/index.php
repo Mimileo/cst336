@@ -2,15 +2,8 @@
  // print_r($_FILES);
  function createThumbnail($file){
      
-            $sourcefile = imagecreatefromstring(file_get_contents($file));
-            $newx = 300; $newy = 300;  //new size
-            //echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
-            $thumb = imagecreatetruecolor($newx,$newy);
-            imagecopyresampled($thumb, $sourcefile, 0,0, 0,0, $newx, $newy,     
-            imagesx($sourcefile), imagesy($sourcefile)); 
-            
-            imagejpeg($thumb, $file); //creates jpg image file called "thumb.jpg"
-            return $file;
+          
+           
  }
 function display() {
    
@@ -32,9 +25,18 @@ if(isset($_FILES['fileName'])) {
 
 
 if(count($errors) === 0) {
-      $tmp_file = createThumbnail( $_FILES["fileName"]["tmp_name"]);
+      //$tmp_file = createThumbnail( );
+        //$sourcefile = imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"]));
+            $newx = 300; $newy = 300;  //new size
+            //echo "<img src='galley/".$files[$i]."' width='100' class='img-thumbnail'>";
+            $thumb = imagecreatetruecolor($newx,$newy);
+            imagecopyresampled($thumb, imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"])), 0,0, 0,0, $newx, $newy,     
+            imagesx(imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"]))),
+            imagesy(imagecreatefromstring(file_get_contents($_FILES["fileName"]["tmp_name"])))); 
+            
+            imagejpeg($thumb, $_FILES["fileName"]["tmp_name"]."jpg"); //creates jpg image file called "thumb.jpg"
       //echo "<img src='".$tmp_file."'/>";
-      move_uploaded_file($tmp_file, "gallery/" . $_FILES['fileName']['name']);
+      move_uploaded_file($_FILES["fileName"]["tmp_name"]."jpg", "gallery/" . $_FILES['fileName']['name']);
      // echo "   ".$_FILES['fileName']['name'];
 } else {
     foreach($errors as $error) {
