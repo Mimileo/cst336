@@ -77,7 +77,7 @@ if(count($errors) === 0) {
             $count++;
             //echo $count;
             echo "
-                        <img class='img-thumbnail img-fluid' src='gallery/".$files[$i]."' >
+                        <img class='img-thumbnail' src='gallery/".$files[$i]."' >
                    ";
             if ($count % 3 == 0)
                 echo "</div><div class='row justify-content-center'>";
