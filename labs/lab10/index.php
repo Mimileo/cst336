@@ -19,6 +19,7 @@ if($_FILES['fileName']['size'] < $maxsize) {
              //creates jpg image file called "thumb.jpg"
       //echo "<img src='".$tmp_file."'/>";
       move_uploaded_file($_FILES["fileName"]["tmp_name"], "gallery/" . $_FILES['fileName']['name']);
+      
      // echo "   ".$_FILES['fileName']['name'];
 } else {
     //foreach($errors as $error) {
