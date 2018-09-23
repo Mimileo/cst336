@@ -7,7 +7,7 @@
  }
 function display() {
    
-if(isset($_FILES['fileName'])) {
+
     //echo $_FILES['fileName']['name'];
     $errors     = array();
     $maxsize    = 1000000;
@@ -33,8 +33,8 @@ if(count($errors) === 0) {
 } else {
     foreach($errors as $error) {
         echo '<div class="alert alert-danger alert-dismissible fade show" role="alert"><h6>'.$error.'</h6><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button></div>';
+            <span aria-hidden="true">&times;</span>
+          </button></div>';
     }
 
     //die(); //Ensure no more processing is done
@@ -49,12 +49,30 @@ if(count($errors) === 0) {
     echo "<div class='row justify-content-center'>";
      for($i = 0; $i < count($files) - 2; $i++){
          $count++;
-          echo "<a href='#' class='pop'><div class='col-xs-3'><div class='square'>
-          <img id ='thumb' src='gallery/" . $files[$i] . "' width='100' class='img-thumbnail'></div></div></a>";
+          echo "<a href='#' class='pop'>
+                            
+                                <div class='square'>
+                                    <img id ='thumb' src='gallery/" . $files[$i] . "' width='250' height='250' >
+                                </div>
+                        
+                    </a>";
            if ($count % 3 == 0)
-                echo "</div><div class='row justify-content-center'>";
+                echo "</div>
+                <div class='row justify-content-center'>";
      }
-    echo "thumbs<div class='row justify-content-center'>";
+     
+     
+   /*  
+   <div class='row justify-content-center'>"
+   echo "<a href='#' class='pop'>
+                            <div class='col-lg-4 col-6'>
+                                <div class='square'>
+                                    <img id ='thumb' src='gallery/" . $files[$i] . "' width='70' height='70' class='img-thumbnail'>
+                                </div>
+                        </div>
+                    </a>";*/
+     
+   /* echo "thumbs<div class='row justify-content-center'>";
     for($i = 0; $i < count($files) - 2; $i++){
             
             $sourcefile = imagecreatefromstring(file_get_contents('gallery/' . $files[$i]));
@@ -71,36 +89,22 @@ if(count($errors) === 0) {
             //echo "<img src='testing/".$files[$i]."' width='100' class='img-thumbnail'>";
            rename("thumb".($i+1).".jpg", "gallery/".$files[$i]);
            
-         /*echo "<a href='#' class='pop'>
+         echo "<a href='#' class='pop'>
                 <div class='col-lg-4 col-6'>
                     <div class='square'><img src='".$files[$i]."' width='100' class='img'>
                     </div>
                 </div>
-            </a>";*/
-    }
-    //print_r($files);
-    echo "<br>files</br>";
-    echo "<div class='row justify-content-center'>";
-    for($i=0;$i < count($files)-2;$i++){
-            $count++;
-            //echo $count;
-            echo "<a href='#' class='pop'>
-                <div class='col-lg-4 col-6'>
-                    <div class='square'>
-                        <img class='img-thumbnail img-fluid' src='gallery/".$files[$i]."' >
-                    </div>
-                </div>
             </a>";
-            if ($count % 3 == 0)
-                echo "</div><div class='row justify-content-center'>";
-    }
+    }*/
+    //print_r($files);
+    
     //print_r($files);
     echo '<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" data-dismiss="modal">
     <div class="modal-content">              
       <div class="modal-body">
       	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <img src="" class="imagepreview" style="width: 100%;" >
+        <img src="" class="imagepreview" style="height:;" >
       </div> 
       <div class="modal-footer">
          
@@ -113,7 +117,8 @@ if(count($errors) === 0) {
 </div>';
     
 }
-}
+
+
 /*
     $maxSize = 1000000;
     $filterError="";
@@ -195,20 +200,17 @@ function createThumbnail($file){
         <script>
            $(document).ready( function(){
               
+                
                $('.pop').on('click', function() {
+               
     			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
 			    $('#imagemodal').modal('show');   
 		});	
-		 const thumb = document.querySelector('#thumb')
-		 var positionInfo = thumb.getBoundingClientRect();
-               var height = positionInfo.height;
-               var width = positionInfo.width;
-               thumb.style.height = height/5;
-               thumb.style.width= width/5;
+		
                //thumb.padding
             
             });
-           // $('element').css('position', 'absolute');
+         
             
         </script>
         <style type="text/css">
@@ -216,25 +218,48 @@ function createThumbnail($file){
         body, html{
             height:100%;
         }
-        #gallery {
-           
-            padding-top:60px;
-            
-  
          
+        #gallery {
+            padding: 20px;
         }
+        
+        .imagepreview{
+            
+            display:block;
+            padding-top:60px;
+            padding bottom:200px;
+            margin:auto;
+            transform: scale(2.2);
+            -ms-transform:scale(2.2);
+        }
+       
         img{
             
-            width: 100%;
-            height:auto;
+             height:250px;
+            width:250px;
         }
+        
+        #thumb{
+             border: 1px solid #ddd; /* Gray border */
+            border-radius: 4px;  /* Rounded border */
+            padding: 5px; /* Some padding */
+            height:250px;
+            width:250px;
+            margin:5px;
+        }
+        #thumb:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        
         .square {
-            height:300px;
-            width:300px;
-            padding-bottom: 10%;
-            background-size: cover;
+            height:250px;
+            width:250px;
+           margin:5px;
+           margin-bottom:10px;
+           
+           
             background-position: center;
-            margin: 2%;
+            
            
 }
         
