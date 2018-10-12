@@ -1,10 +1,8 @@
 <?php
     session_start();
-     include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-    /*
+    
     include 'dbConnection.php';
-    $conn = getDatabaseConnection();*/
+    $conn = getDatabaseConnection();
     
     //Display the items
     function getItem($itemId) {

@@ -3,13 +3,11 @@ session_start();
 if(!isset($_SESSION['username'])) { // validates that admin has logged in
     header("Location:index.php");
 }
- include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-/*
+
  include "dbConnection.php";
  $conn = getDatabaseConnection();
 
-*/
+
 
 
 if (isset($_GET['addUserForm'])){

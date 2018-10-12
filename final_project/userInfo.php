@@ -7,9 +7,10 @@ if (!isset($_SESSION['username'])) { //checks whether admin has logged in
     exit();
     
 }
-
+ 
 include 'dbConnection.php';
 $conn = getDatabaseConnection();
+
 
 
 function displayUsers() {

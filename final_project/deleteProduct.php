@@ -1,11 +1,9 @@
 <?php
 
- include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-/*
+
 include "dbConnection.php";
  $conn = getDatabaseConnection();
-*/
+
 
 $sql = "DELETE FROM ss_product
         WHERE product_id = " . $_GET['product_id'];

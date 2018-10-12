@@ -1,13 +1,10 @@
 <?php
     session_start();
     
-    include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-    
-/*
+ 
     include 'dbConnection.php';
     $conn = getDatabaseConnection();
-    */
+    
     
    
         global $conn;

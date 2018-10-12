@@ -2,12 +2,10 @@
 session_start();
 //print_r($_POST);
 
- include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-/*
+ 
 include 'dbConnection.php';
 $conn = getDatabaseConnection();
-*/
+
 //print_r($conn);
 
 $username = $_POST['username'];

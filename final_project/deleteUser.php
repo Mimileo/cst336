@@ -1,11 +1,10 @@
 <?php
 
- include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-/*
+
+
  include "dbConnection.php";
  $conn = getDatabaseConnection();
-*/
+
 
 $sql = "DELETE FROM tc_user
         WHERE userId = " . $_GET['userId'];

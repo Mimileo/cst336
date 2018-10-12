@@ -1,12 +1,10 @@
 <?php
     session_start();
     
-     include '../../dbConnection.php';
-    $conn = getDatabaseConnection();
-/*
+
     include 'dbConnection.php';
     $conn = getDatabaseConnection();
-    */
+    
     function getItemInfo($productId) {
         global $conn;
         $sql = "SELECT * 
