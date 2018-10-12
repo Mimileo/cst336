@@ -1,15 +1,17 @@
 <?php
     session_start();
-    
-    include 'dbConnection.php';
+     include '../../dbConnection.php';
     $conn = getDatabaseConnection();
+    /*
+    include 'dbConnection.php';
+    $conn = getDatabaseConnection();*/
     
     //Display the items
     function getItem($itemId) {
         global $conn;
         $sql = "SELECT * 
-                FROM vg_game, vg_console
-                WHERE game_id = $itemId";
+                FROM ss_product
+                WHERE product_id = $itemId";
         $statement = $conn->prepare($sql);
         $statement->execute();
         $user = $statement->fetch(PDO::FETCH_ASSOC);
@@ -23,10 +25,14 @@
     ";
         
         
-        echo "<td><a href='viewitem.php?itemId=".$item['game_id']."'>".$item['game_name'] . "</a> </td><td>" . $item['console_name']."</td><td>Genre: ".$item['genre'] . "</td><td>Release: " . $item['game_release']."</td><td>";
-            
+        echo "<td><a href='viewitem.php?product_id=".$item['product_id']."'>".$item['name'] . "</a> </td><td>" . $item['brand']."</td><td>$".$item['price'] . "</td><td>";
+             echo "<form action='buyitem.php' style='display:inline'>";
+            echo "<input type='hidden' name='product_id' value='".$item['product_id']."'>";
+            echo "<button  class='btn btn-info' role='button'type='submit' value='Buy Item'>
+            Buy Item &nbsp<span class='glyphicon glyphicon-ok'></span></button>";
+            echo "</form></td><td>";
             echo "<form action='removefromcart.php' style='display:inline'>";
-            echo "<input type='hidden' name='itemId' value='".$item['game_id']."'>";
+            echo "<input type='hidden' name='product_id' value='".$item['product_id']."'>";
             echo "<button  class='btn btn-danger' role='button'type='submit' value='Remove from Cart'>
             Remove from Cart &nbsp<span class='glyphicon glyphicon-remove'></span></button>";
             echo "</form></td>";
@@ -36,7 +42,9 @@
     
     function getCart(){
         if(isset($_SESSION['ids'])){
+             //var_dump($_SESSION['ids']);
             foreach($_SESSION['ids'] as $record){
+                
                 $item = getItem($record);
                 showItem($item);
             }
@@ -57,23 +65,24 @@
    
     </head>
     <body>
-        <div class= "jumbotron">
-        <h1 style="margin-top:-200px;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;Your Cart</h1>
+        <div class= "jumbotron" style="height:100px;padding-bottom:-100px;">
+        <h2 style="text-align:center;padding-bottom:-150px;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;Your Cart</h2>
         </div>
+        <div class="col-md-6 col-md-offset-3">
         <table class="table table-hover">
+            
             <thead>
         <tr>
-         <th>Name</th>
-         <th>Console</th>
-         <th>Genre</th>
-         <th>Release</th>
+         <th>Product</th>
+         <th>Brand</th>
+         <th>Price</th>
         </tr>
         </thead>
         <tbody>
        <?php getCart(); ?>
        </tbody>
        </table>
-       
+       </div>
         <form action="index.php">
             <div id="admin">
             <button class= "btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>

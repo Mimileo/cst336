@@ -15,9 +15,7 @@ $conn = getDatabaseConnection();
 function displayUsers() {
     global $conn;
     $sql = "SELECT * 
-            FROM tc_user a
-            INNER JOIN tc_department b 
-            ON a.deptId = b.departmentId
+            FROM ss_customer
             WHERE userId=" .$_GET['userId'];
     $statement = $conn->prepare($sql);
     $statement->execute();
@@ -88,11 +86,10 @@ function displayUsers() {
                   <th>First Name</th>
                   <th>Last Name</th>
                   <th>Email</th>
-                  <th>University Id</th>
-                  <th>Gender</th>
+                  <th>address</th>
+                 
                   <th>Phone</th>
-                  <th>Dept. Name</th>
-                  <th>Role</th>
+                 
                  
                 </tr>
               </thead>
@@ -105,8 +102,7 @@ function displayUsers() {
             echo "<td>";
             echo $user['userId'] . "</td> <td> " . $user['firstName'] . "</td><td>  " . 
             $user['lastName'] . "</td><td> ". $user['email']."</td><td> ".
-            $user['universityId']."</td><td> ". $user['gender'] ."</td><td> ". $user['phone']
-            ."</td><td>" .$user['deptName'] ."</td><td>" .$user['role'];
+            $user['address']."</td><td> ". $user['phone'] ."</td><td> ";
         
         echo "</td>";
         }

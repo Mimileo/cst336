@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Lab 6: Admin Login Page </title>
+        <title>Admin Login Page </title>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,13 +16,16 @@
             </style>
     </head>
     <body>
+    <div class="jumbotron text-center">
+         <h2> Admin Login Portal</h2>
+        </div>
     <div class="container">
         <div class="row">
       
-       <h1> Admin Login </h1>
+      
       
         
-        <form class="form-signin" method="POST" action="loginProcess.php" >
+        <form class="form-signin"style="width:50%;margin:0 auto;" method="POST" action="loginProcess.php" >
             <div class="input-group input-group-lg">
              <label class="input-group-addon" id="sizing-addon1" for="formGroupExampleInput"> Username:</label>
                 <input type="text" class="form-control input-group-lg" id="formGroupExampleInput" name="username"/> <br />

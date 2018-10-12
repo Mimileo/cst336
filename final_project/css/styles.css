@@ -3,13 +3,13 @@
     word-spacing: 1.2em;
 }
 */
+body {
+   
+    padding:0px;
+}
 .jumbotron{
-    margin-top: 0;
-    height: 40%;
-    padding-top: 350px;
-    color:#839496;
-    text-align: center;
-    background-color:#073642;
+    
+   
 }
 
 #selectpicker{
@@ -25,18 +25,15 @@
      
 }
 
-.navbar-brand {
-    height:50px;
-    width:50px;
+.navbar{
+     margin-left:-3px;
+     margin-right:-3px;
+     margin-bottom: 0px;
+     padding-right: 20px;
+     padding-left: 20px;
+   
 }
 
-#images{
-position: absolute;
-  padding-top: 95px;
- 
-  z-index: 15;
-  top: 20%;
-  left: 33%;
-  margin: -100px 0 0 -150px;
-  
+#productInfo {
+    text-align: center;
 }

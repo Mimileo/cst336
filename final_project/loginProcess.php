@@ -2,9 +2,12 @@
 session_start();
 //print_r($_POST);
 
+ include '../../dbConnection.php';
+    $conn = getDatabaseConnection();
+/*
 include 'dbConnection.php';
 $conn = getDatabaseConnection();
-
+*/
 //print_r($conn);
 
 $username = $_POST['username'];
@@ -17,7 +20,7 @@ $password = sha1($_POST['password']);
 //         AND   password = '$password'";
 
 $sql = "SELECT *
-        FROM tc_admin
+        FROM ss_admin
         WHERE username = :username 
         AND  password = :password";
 

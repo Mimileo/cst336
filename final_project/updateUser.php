@@ -7,26 +7,23 @@ if (!isset($_SESSION['username'])) { //validates that admin has indeed logged in
     
 }
 
+ include '../../dbConnection.php';
+    $conn = getDatabaseConnection();
+
+/*
  include "dbConnection.php";
  $conn = getDatabaseConnection();
+ */
 
 function getDepartmentInfo(){
-    global $conn;        
-    $sql = "SELECT deptName, departmentId 
-            FROM tc_department 
-            ORDER BY deptName";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll();
-    
-    return $records;
+  
     
 }
 
 function getUserInfo($userId) {
     global $conn;    
     $sql = "SELECT * 
-            FROM tc_user
+            FROM ss_customer
             WHERE userId = $userId";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
@@ -38,15 +35,13 @@ function getUserInfo($userId) {
 
 if (isset($_GET['updateUserForm'])) { //admin has submitted form to update user
     
-    $sql = "UPDATE tc_user
+    $sql = "UPDATE ss_customer
             SET firstName = :fName,
                 lastName = :lName,
                 email = :email,
-                universityId = :universityId,
-                phone = :phone,
-                gender = :gender,
-                role = :role,
-                deptId = :deptId
+                address = :address,
+                phone = :phone
+              
                 
                 
                 
@@ -55,18 +50,18 @@ if (isset($_GET['updateUserForm'])) { //admin has submitted form to update user
 	$namedParameters[":fName"] = $_GET['firstName'];
 	$namedParameters[":lName"] = $_GET['lastName'];
 	$namedParameters[":email"] = $_GET['email'];
-	$namedParameters[":universityId"] = $_GET['universityId'];
+	$namedParameters[":address"] = $_GET['address'];
 	$namedParameters[":phone"] = $_GET['phone'];
-	$namedParameters[":role"] = $_GET['role'];
-	$namedParameters[":gender"] = $_GET['gender'];
-	$namedParameters[":deptId"] = $_GET['deptId'];
+
 
 	
 	$namedParameters[":userId"] = $_GET['userId'];
     $stmt = $conn->prepare($sql);
     $stmt->execute($namedParameters);
+     echo "<alert class='alert alert-success'>Success! Updated User Info</alert>";
     
 }
+
 
 
 if (isset($_GET['userId'])) {
@@ -125,40 +120,15 @@ if (isset($_GET['userId'])) {
             First Name: <input type="text" name="firstName" required value="<?=$userInfo['firstName']?>" /> <br><br>
             Last Name: <input type="text" name="lastName" required value="<?=$userInfo['lastName']?>"/> <br><br>
             Email: <input type="text" name="email" value="<?=$userInfo['email']?>"/> <br><br>
-            University Id: <input type="text" name="universityId" value="<?=$userInfo['universityId']?>"/> <br><br>
+            Address:<input type="text" name="address" value="<?=$userInfo['address']?>"/> <br><br>
             Phone: <input type="text" name="phone" value="<?=$userInfo['phone']?>"/> <br><br>
-            Gender: <input type="radio" name="gender" value="F" id="genderF" <?=($userInfo['gender'] == 'F' ) ? "checked" :"" ?> required/> 
-                    <label for="genderF">Female</label>
-                    <input type="radio" name="gender" value="M" id="genderM"  <?=($userInfo['gender'] == 'M' ) ? "checked" :"" ?> required/> 
-                    <label for="genderM">Male</label><br><br>
-            Role:   <select name="role">
-                        <option value=""> Select One </option>
-                        <option <?=($userInfo['role'] == 'Faculty' ) ? "selected" :"" ?>>Faculty</option>
-                        <option <?=($userInfo['role'] == 'Student' ) ? "selected" :"" ?>>Student</option>
-                        <option <?=($userInfo['role'] == 'Staff' ) ? "selected" :"" ?>>Staff</option>
-                    </select>
-            <br /><br>
-            Department: <select name="deptId">
-                            <option value=""> Select One </option>
-                            <?php
-                            
-                                $departments = getDepartmentInfo();
-                                foreach ($departments as $record) {
-                                    echo $userInfo['deptId'];
-                                    echo "<option value='$record[departmentId]' " . (($userInfo['deptId'] == $record['departmentId'] ) ? "selected" : "") . ">$record[deptName]";
-                                   // echo ($userInfo['deptId'] == $record[departmentId] ) ? "selected" : "";
-                                 
-                                    echo "</option>";
-                                }
-                           
-                            ?>
-                            
-                        </select>
+            
                         <br /><br>
                 <input type="submit" name="updateUserForm" value="Update User!"/>
         </form>
         
     </fieldset>
+    <div id="alert"></div>
        
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

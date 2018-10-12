@@ -1,11 +1,13 @@
 <?php
     session_start();
+    
      include '../../dbConnection.php';
     $conn = getDatabaseConnection();
     /*
     include 'dbConnection.php';
     $conn = getDatabaseConnection();
     */
+    
     //Display the items
     function getItems() {
         global $conn;
@@ -75,13 +77,21 @@
     
    
     function showItems($items){
-        foreach($items as $item) {
-            echo "<tr><td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a></td>" . "<td> ".$item['brand'] . "</td><td> $" . $item['price']."";
+         foreach($items as $item) {
+            echo "<tr><td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a></td>" . "<td> ".$item['brand'] . "</td><td> $" . $item['price']."</td><td>".$item['type'];
             
-            echo "</td><td><form action='addtocart.php' style='display:inline'>";
+            echo "</td>";
+             echo "<td>";
+            echo "<a class='btn btn-info' href='updateProduct.php?product_id=".$item['product_id']."'> Update </a>";
+             echo "</td>";
+            echo"<td>";
             echo "<input type='hidden' name='product_id' value='".$item['product_id']."'>";
-            echo '<button  class="btn btn-info btn-sm" value="'.$item['name'].'"><span class="glyphicon glyphicon-ok-sign"></span>  &nbsp;&nbsp;&nbsp;Add to cart</button>';
-            echo "</form>";
+            echo "<form action='deleteProduct.php' style='display:inline' onsubmit='return confirmDelete(\"".$item['name']."\")'>
+                     <input  type='hidden' name='product_id' value='".$item['product_id']."' />
+                     <input class='btn btn-danger' type='submit' value='Delete'>
+                  </form>";
+           // echo '<button  class="btn btn-info btn-sm" value="'.$item['name'].'"><span class="glyphicon glyphicon-ok-sign"></span>  &nbsp;&nbsp;&nbsp;Add to cart</button>';
+           // echo "</form>";
             echo "</td></tr>";
         }
     }
@@ -157,19 +167,23 @@ function getGenre() {
           <span class="icon-bar"></span>
         </button>
             
-        <a class="navbar-brand navbar-link" ><b>SpreePicky</b> </a>
+        <a class="navbar-brand navbar_link" ><b>Welcome Admin</b> </a>
       </div>
       <div id="navbar1" class="navbar-collapse collapse">
          
         <ul class="nav navbar-nav">
                 
-                  <li> <a href="#" class="navbar-link">Home</a></li>
-                  <li> <a href="#" class="navbar-link">About</a></li>
-                  <li> <a href="viewcart.php" class="navbar-link">Your Cart  &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+              
                  
         </ul>
          <ul class="nav navbar-nav navbar-right">
-         <li> <a href="adminloginpage.php" class="navbar-link">Admin Login &nbsp;&nbsp; <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+         <li> 
+           <form action="admin.php">
+            <div id="admin">
+            <button class= "btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
+             <div>
+           </form>
+         </li>
       </ul>
       </div>
       <!--/.nav-collapse -->
@@ -185,14 +199,14 @@ function getGenre() {
                     
                
             
-            <h2>Clothes Catalog</h2>
-            <p>Search through our selection.</p>
+            <h2>Inventory</h2>
+            <h4 >Browse Inventory</h4>
         </div>
         
         
        
         <hr>
-        <h3>Clothing</h3>
+        
       
         
         <form method="get">
@@ -247,7 +261,8 @@ function getGenre() {
         <div id="productImg" style="text-align:center;"></div>
       </div>
       <div class="modal-footer">
-       <div id="productInfo" style="text-align:center;"></div>
+        <div id="productInfo" style="text-align:center;"></div>
+      </div>
       </div>
     </div>
   </div>
@@ -264,12 +279,18 @@ function getGenre() {
                       // $(".alert").removeClass("in").show();
                        //$(".msg").html("<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a><strong>Added</strong> " + $(this).attr('value') + " item to your cart.</div>")
 	                   //$(".alert").delay("slow").addClass("in").fadeOut();
-                        alert("Added " + $(this).attr('value') + " item to your cart.");
+                        //alert("Added " + $(this).attr('value') + " item to your cart.");
                         
                     });
+                    
+                   
+                    
                     $(".prolink").click(function(){
-                        $('#productModal').modal("show");
-                        $('#productInfo').empty();
+                            $('#productInfo').empty();
+                             $('#productImg').html("<img src='img/Loading_icon.gif'>");
+                            $('#productModal').modal("show");
+                            
+                        
                         //$('#productInfo').empty();
                           $.ajax({
                                     type: "GET",
@@ -281,7 +302,7 @@ function getGenre() {
                                     },
                                     success: function(data,status) {
                                        
-                                        $("#productImg").html("<img src='" +data.img + "' width='300' height='300' alt='"+data.name+"'>" );
+                                         $("#productImg").html("<img src='" +data.img + "' width='300' height='300' alt='"+data.name+"'>" );
                                         $("#productInfo").html("<p class='text text-info'>Product name: " + data.name + "</p><p class='text text-info'>Material: " + data.material + "</p>");
                                       },
                                     complete: function(data,status) { //optional, used for debugging purposes

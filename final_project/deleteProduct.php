@@ -3,12 +3,12 @@
  include '../../dbConnection.php';
     $conn = getDatabaseConnection();
 /*
- include "dbConnection.php";
+include "dbConnection.php";
  $conn = getDatabaseConnection();
 */
 
-$sql = "DELETE FROM tc_user
-        WHERE userId = " . $_GET['userId'];
+$sql = "DELETE FROM ss_product
+        WHERE product_id = " . $_GET['product_id'];
         
         $stmt= $conn->prepare($sql);
         $stmt->execute();
@@ -19,7 +19,7 @@ $sql = "DELETE FROM tc_user
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Admin: Deleting User </title>
+        <title>Admin: Deleting Product </title>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
