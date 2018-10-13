@@ -113,7 +113,7 @@
         
     }
 }
-function getGenre() {
+function getType() {
     global $conn;
     $sql = "SELECT DISTINCT(type)
             FROM ss_product 
@@ -212,7 +212,7 @@ function getGenre() {
                  <div class="btn-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Type:  <select style="color:white;"name="type" class="selectpicker" >
                 <option value="">Select One</option>
-                    <?=getGenre()?>
+                    <?=getType()?>
                 </select>
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

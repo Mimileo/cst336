@@ -104,7 +104,7 @@
         
     }
 }
-function getGenre() {
+function getType() {
     global $conn;
     $sql = "SELECT DISTINCT(type)
             FROM ss_product 
@@ -177,17 +177,17 @@ function getGenre() {
     <!--/.container-fluid -->
   </nav>
 
-        <div class="jumbotron">
+        <div class="jumbotron" style="background-image: url('img/shops.jpg');">
             
             
              
                     
                
             
-            <h2>Clothes Catalog</h2>
-            <p>Search through our selection.</p>
+            <h2>EXPLORE SHOP DISCOVER</h2>
+            <p>Pastel, goth, grunge, lolita, & more styles!</p>
         </div>
-        
+       
         
        
         <hr>
@@ -199,7 +199,7 @@ function getGenre() {
                  <div class="btn-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Type:  <select style="color:white;"name="type" class="selectpicker" >
                 <option value="">Select One</option>
-                    <?=getGenre()?>
+                    <?=getType()?>
                 </select>
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -226,7 +226,7 @@ function getGenre() {
       <tr>
         <th>Item</th>
         <th>Brand</th>
-        <th>Price</th>
+        <th>Price</tjh>
     
        
         </tr>
