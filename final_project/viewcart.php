@@ -23,7 +23,7 @@
     ";
         
         
-        echo "<td><a href='viewitem.php?product_id=".$item['product_id']."'>".$item['name'] . "</a> </td><td>" . $item['brand']."</td><td>$".$item['price'] . "</td><td>";
+        echo "<td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a> </td><td>" . $item['brand']."</td><td>$".$item['price'] . "</td><td>";
              echo "<form action='buyitem.php' style='display:inline'>";
             echo "<input type='hidden' name='product_id' value='".$item['product_id']."'>";
             echo "<button  class='btn btn-info' role='button'type='submit' value='Buy Item'>
@@ -78,6 +78,24 @@
         </thead>
         <tbody>
        <?php getCart(); ?>
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="productImg" style="text-align:center;"></div>
+      </div>
+      <div class="modal-footer">
+       <div id="productInfo" style="text-align:center;"></div>
+      </div>
+    </div>
+  </div>
+</div>
        </tbody>
        </table>
        </div>
@@ -86,5 +104,42 @@
             <button class= "btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
              <div>
            </form>
+             <script>
+        
+       
+                $(document).ready(function(){
+                    $(".btn-info").click(function(){
+                      // $(".alert").removeClass("in").show();
+                       //$(".msg").html("<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a><strong>Added</strong> " + $(this).attr('value') + " item to your cart.</div>")
+	                   //$(".alert").delay("slow").addClass("in").fadeOut();
+                        alert("Added " + $(this).attr('value') + " item to your cart.");
+                        
+                    });
+                    $(".prolink").click(function(){
+                        $('#productModal').modal("show");
+                        $('#productInfo').empty();
+                        //$('#productInfo').empty();
+                          $.ajax({
+                                    type: "GET",
+                                     url: "viewitem.php",
+                                dataType: "json",
+                                    data: {
+                                           "product_id": $(this).attr('id')
+                                           
+                                    },
+                                    success: function(data,status) {
+                                       
+                                        $("#productImg").html("<img src='" +data.img + "' width='300' height='300' alt='"+data.name+"'>" );
+                                        $("#productInfo").html("<p class='text text-info'>Product name: " + data.name + "</p><p class='text text-info'>Material: " + data.material + "</p>");
+                                      },
+                                    complete: function(data,status) { //optional, used for debugging purposes
+                                         // alert(status); 
+                                    }
+                                 });
+                        
+                    });
+                    
+                });
+        </script>
     </body>
 </html>
