@@ -113,7 +113,7 @@
         
     }
 }
-function getType() {
+function getCat() {
     global $conn;
     $sql = "SELECT DISTINCT(type)
             FROM ss_product 
@@ -155,7 +155,7 @@ function getType() {
     <body>
         
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse" style="border-radius:0;">
     <div class="container-fluid">
       <div class="navbar-header ">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
@@ -212,7 +212,7 @@ function getType() {
                  <div class="btn-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Type:  <select style="color:white;"name="type" class="selectpicker" >
                 <option value="">Select One</option>
-                    <?=getType()?>
+                    <?=getCat()?>
                 </select>
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

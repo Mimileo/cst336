@@ -52,7 +52,7 @@ if (isset($_GET['addProduct'])){
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <style>
-            @import url('css/styles.css');
+            @import url('css/custom.css');
             </style>
             
     </head>
@@ -60,7 +60,7 @@ if (isset($_GET['addProduct'])){
     <body>
 
     
-   <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+   <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse" style="border-radius:0;">
       
      <h1 style="color:white;" class="text-center header"> Admin Section </h1>
     <h2  class="text-center header" style="color:#4d4d4d;"> Adding New Products </h2>
@@ -70,8 +70,8 @@ if (isset($_GET['addProduct'])){
        
         <br/>
           <form action="admin.php">
-            <div id="admin">
-            <input type="submit" value="back" />
+            <div id="admin" style="display:inline;float:right;">
+           <button class= "btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
              <div>
            </form>
     
@@ -79,31 +79,56 @@ if (isset($_GET['addProduct'])){
       
     </nav>
     <fieldset>
-        
-       
         <legend class="text-center header">Add New Product</legend>
-        
-        <form id="add" class="form-horizontal span8" >
-            <div class="md-form">
-            Product Name: <input type="text" name="name"/> <br/><br/>
-            </div>
-            <div class="md-form">
-            Type: <input type="text" name="type"/> <br/><br/>
-            </div>
-            <div class="md-form">
-            Brand: <input type="text" name="brand"/> <br/><br/>
-            </div>
-            
-            Price: <input type="text" name="price"/> <br><br/>
-            <div class="md-form">
-            Material: <input type="text" name="mat"/> <br/><br/>
-            </div>
-             <div class="md-form">
-            Image Link: <input type="text" name="img"/> <br/><br/>
-            </div>
+        <section id="loginform" class="outer-wrapper" style="display: table;width: 100%;height: 100%;">
+                <div class="card" > 
+                     <div class="row">
+                             <div class="col-sm-4 col-sm-offset-4" style="text-align:left;">
+                                        <form id="add" role="form">
+                                           <div class="form-group">
+                                               <label>
+                                                    Product Name:
+                                                </label>
+                                                <input type="text" name="name" class="form-control"/> <br/><br/>
+                                            </div>
+           
+                                             <div class="form-group">
+                                               <label>
+                                                    Type:
+                                                </label>
+                                                <input type="text" name="type" class="form-control"/> <br/><br/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    Brand:
+                                                </label>
+                                                <input type="text" name="brand" class="form-control"/> <br/><br/>
+                                            </div>
+                                            <div class="form-group">
+                                               <label>
+                                                    Price: 
+                                                </label>
+                                                <input type="text" name="price" class="form-control"/> <br><br/>
+                                            </div>
+                                             <div class="form-group">
+                                               <label>
+                                                    Material: 
+                                                </label>
+                                                <input type="text" name="mat" class="form-control"/> <br/><br/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    Image Link:
+                                                </label>
+                                                <input type="text" name="img" class="form-control"/> <br/><br/>
+                                            </div>
            
                         <br /><br/>
-                <input type="submit" name="addProduct" value="Add Product!"/>
+                <div class="form-group">
+                    <div class="col-md-offset-5 col-md-10">
+                        <input id="addadmin" type="submit" name="addProduct" value="Add Product!" class="btn btn-info" role="button"/>
+                    </div>
+                </div>
                 <br/><br/>
                 
                 

@@ -220,7 +220,7 @@ function displayUsers() {
     </head>
     
     
-    <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse" style="border-radius:0;">
       
       <a class="navbar-brand" href="#"> <h2> Welcome <?=$_SESSION['adminFullName']?>! </h2> </a>
 
@@ -228,34 +228,40 @@ function displayUsers() {
        
           </div>
           <br><br>
-       
-         
-        <form class="form-inline my-2 my-lg-0" action="addUser.php">
+       <ul class="nav navbar-nav">
+       <li class="navbar-link">
+        <form  action="addUser.php">
+            
             <div id="admin">
-            <input id="admin" type="submit" value="Add new User" />
+            <input id="admin" type="submit" value="Add new User" role="btn" class="btn btn-default"/>
+             <div>
+                
+        </form>
+        </li>
+        
+        <li class="navbar-link">
+        <form  action="addProduct.php">
+            <div id="admin">
+            <input id="admin" type="submit" value="Add new Product" role="btn" class="btn btn-default"/>
              <div>
         </form>
-        <br/>
-        <form class="form-inline my-2 my-lg-0" action="addProduct.php">
+        </li>
+        <li>
+        <form action="inventory.php">
             <div id="admin">
-            <input id="admin" type="submit" value="Add new Product" />
+            <input id="admin" type="submit" value="View Inventory" role="btn" class="btn btn-default"/>
              <div>
         </form>
-        <br/>
-        <form class="form-inline my-2 my-lg-0" action="inventory.php">
-            <div id="admin">
-            <input id="admin" type="submit" value="View Inventory" />
-             <div>
-        </form>
-        <br/>
+        </li>
+        <li class="navbar-link">
           <form action="logout.php">
             <div id="admin">
-            <input type="submit" value="Logout" />
+            <input type="submit" value="Logout" role="btn" class="btn btn-default"/>
              <div>
            </form>
-    
+        </li>
        
-      
+      </ul>
     </nav>
 
     

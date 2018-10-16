@@ -45,7 +45,7 @@
         </form>
         <?php
        if (isset($_SESSION['error'])) {
-  echo "<p class='text-warning'>" . $_SESSION['error']. "</p>";
+  echo "<p id ='admin-error' style= 'margin-left:450px;' class='btn btn-danger'>" . $_SESSION['error']. "</p>";
   unset($_SESSION['error']);
  
 }

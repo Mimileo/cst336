@@ -34,7 +34,7 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC);//expecting only one record
 
 if (empty($record)) {
     $_SESSION['error'] = 'Error: Wrong Username or Password.';
-    header("Location: index.php");
+    header("Location: adminloginpage.php");
     
 } else {
     

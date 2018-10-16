@@ -38,7 +38,7 @@ if (isset($_GET['addUserForm'])){
     $stmt = $conn->prepare($sql);
     $stmt->execute($namedParameters);
     
-    echo "<h4 style='color:#4CAF50;'>User has been added successfully!</h4>";
+    echo "<h4 class='alert alert-success'style='color:#4CAF50;'>User has been added successfully!</h4>";
             
 }
 
@@ -52,7 +52,7 @@ if (isset($_GET['addUserForm'])){
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <style>
-            @import url('css/styles.css');
+            @import url('css/custom.css');
             </style>
             
     </head>
@@ -60,7 +60,7 @@ if (isset($_GET['addUserForm'])){
     <body>
 
     
-   <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+   <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse" style="border-radius:0;">
       
      <h1 style="color:white;" class="text-center header"> Admin Section </h1>
     <h2  class="text-center header" style="color:#4d4d4d;"> Adding New Users </h2>
@@ -70,66 +70,102 @@ if (isset($_GET['addUserForm'])){
        
         <br/>
           <form action="admin.php">
-            <div id="admin">
-            <input type="submit" value="back" />
+            <div id="admin" style="display:inline;float:right;">
+             <button class= "btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
              <div>
            </form>
     
        
       
     </nav>
-    <fieldset>
+        <fieldset>
         
        
         <legend class="text-center header">Add New User</legend>
-        
-        <form id="add" class="form-horizontal span8">
-            <div class="md-form">
-            First Name: <input type="text" name="firstName"/> <br/><br/>
-            </div>
-            <div class="md-form">
-            Last Name: <input type="text" name="lastName"/> <br/><br/>
-            </div>
-            <div class="md-form">
-            Email: <input type="text" name="email"/> <br/><br/>
-            </div>
-            
-            Address:<input type="text" name="address"> <br><br>
-            Phone: <input type="text" name="phone"/> <br><br/>
-            
-           
-          
-            <div class="row">
-                <div class="col-sm-2">
-            Gender: 
-            
-                   </div>
-                      <div class="col-sm-3">
-                        <input type="radio" name="gender" value="F" id="genderF"/> 
-                        <label for="genderF">Female</label>
+        <section id="loginform" class="outer-wrapper" style="display: table;width: 100%;height: 100%;" >
+                <div class="card" > 
+                     <div class="row">
+                             <div class="col-sm-4 col-sm-offset-4" style="text-align:left;">
+                                        <form id="add" role="form">
+                                            <div class="form-group">
+                                                <label>
+                                                    First Name:
+                                                </label> 
+                                                <input type="text" name="firstName" class="form-control"/> <br/><br/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    Last Name:
+                                                </label> 
+                                                <input type="text" name="lastName" class="form-control"/> <br/><br/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>
+                                                    Email: 
+                                                </label>
+                                                <input type="text" name="email" class="form-control"/> <br/><br/>
+                                            </div>
+                                             <div class="form-group">
+                                                <label>
+                                                    Address:
+                                                </label>
+                                                <input type="text" name="address" class="form-control"> <br><br>
+                                            </div>
+                                             <div class="form-group">
+                                                <label>
+                                                    Phone:
+                                                </label>
+                                                <input type="text" name="phone" class="form-control"/> <br><br/>
+                                             </div>
+                                            
+                                           
+                                          
+                                            <div class="form-group">
+                                                
+                                                    <label >
+                                                        Gender:&nbsp;&nbsp;&nbsp;&nbsp;           
+                                                     </label>
+                                            
+                                                      <div class="radio-inline">
+                                                        <input type="radio" name="gender" value="F" id="genderF"/>&nbsp;&nbsp;&nbsp;       
+                                                        <label for="genderF">Female</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      
+                                                      </div>
+                                                      <div class="radio-inline">
+                                                        <input type="radio" name="gender" value="M" id="genderM"/>&nbsp;&nbsp;&nbsp;       
+                                                        <label for="genderM">  Male</label>
+                                                      </div>    
+                                                        
+                                                        <br><br/>
+                                                       
+                                                  
+                                            </div>
+                                             <div class="form-group">   
+                                             <div class="col-md-offset-5 col-md-10">
+                                                  
+                                                 
+                                                  
+                                           
+                                                        <br /><br/>
+                                                        <input id="addadmin" style=" "type="submit" name="addUserForm" value="Add User"  class="btn btn-info" role="button"/>
+                                                   </div>
+                                                  </div>
+                                                   
+                                                </div>
+                                                </div>
+                                                <br/><br/>
+                                                
+                                                
+                                            
+                                            
+                                            
+                                        
+                                        </form>
+                            
+                                </fieldset>
                         </div>
-                     
-                     <div class="col-sm-3">
-                        <input type="radio" name="gender" value="M" id="genderM"/> 
-                        <label for="genderM">Male</label><br><br/>
-                        </div>
-                  
+                    </div>
             </div>
-             <div class="row">   
-              <div class="col-sm-2">
-           
-                        <br /><br/>
-                <input type="submit" name="addUserForm" value="Add User!"/>
-                <br/><br/>
-                
-                
-            
-            
-            
-        
-        </form>
-        
-    </fieldset>
+    </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

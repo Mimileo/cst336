@@ -4,7 +4,22 @@
     
     include 'dbConnection.php';
     $conn = getDatabaseConnection();
+    function getCategory() {
+    global $conn;
+    $sql = "SELECT DISTINCT(type)
+            FROM ss_product 
+            ORDER BY type";
     
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    foreach ($records as $record) {
+        
+        echo "<option> "  . $record['type'] . "</option>";
+        
+    }
+}
     //Display the items
     function getItems() {
         global $conn;
@@ -13,7 +28,7 @@
                 WHERE 1";
 
     if (isset($_GET['search'])){
-        
+      
         $namedParameters = array();
         
         
@@ -50,38 +65,35 @@
          if(isset($_GET['orderBy'])){
             $sql .= " ORDER BY ".$_GET['orderBy']." ASC";
         } 
+        
+       
     }//endIf (isset)
        
         $stmt = $conn->prepare($sql);
         $stmt->execute($namedParameters);
         $games = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
         showItems($games);
-        echo '';
+        
+
     }
     
-    function display($items){
-        /* foreach($items as $item) {
-            echo $item['game_id']." ".$item['game_name'] . " " . $item['console_name']."<br>Genre: ".$item['genre'] . "<br>Release: " . $item['game_release']."</a><br>";
-            
-            echo "<form action='addtocart.php' style='display:inline'>";
-            echo "<input type='hidden' name='itemId' value='".$item['game_id']."'>";
-            echo '<button value="'.$item['game_name'].'"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;Add to cart</button>';
-          
-            echo "<br />";
-        }*/
-    }
-    
+  
    
     function showItems($items){
+        $count=0;
+        echo "<tr>";
         foreach($items as $item) {
-            echo "<tr><td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a></td>" . "<td> ".$item['brand'] . "</td><td> $" . $item['price']."";
+            $count++;
+            echo "<td style='margin-right:30px;'><div style='text-align:center;'><div style='margin-bottom:10px;'><a style='margin-left:50px;' href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'><img src='".$item['img'] . "' alt='".$item['name']."' width='250' height='250'></a></div><p style='text-align:center;'>Price:  $" . $item['price']."</p>";
             
-            echo "</td><td><form action='addtocart.php' style='display:inline'>";
+            echo "<form action='addtocart.php' style='text-align:center;'>";
             echo "<input type='hidden' name='product_id' value='".$item['product_id']."'>";
             echo '<button  class="btn btn-info btn-sm" value="'.$item['name'].'"><span class="glyphicon glyphicon-ok-sign"></span>  &nbsp;&nbsp;&nbsp;Add to cart</button>';
-            echo "</form>";
-            echo "</td></tr>";
+            echo "</form></div></div>";
+            echo "</td>";
+            if($count % 3 == 0){
+                echo "</tr><tr>";
+            }
         }
     }
     
@@ -104,22 +116,7 @@
         
     }
 }
-function getType() {
-    global $conn;
-    $sql = "SELECT DISTINCT(type)
-            FROM ss_product 
-            ORDER BY type";
-    
-    $stmt = $conn->prepare($sql);
-    $stmt->execute();
-    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-    foreach ($records as $record) {
-        
-        echo "<option> "  . $record['type'] . "</option>";
-        
-    }
-}
+
    /* if(!isset($_SESSION['ids']) || empty($_SESSION['ids'])){
         $_SESSION['ids']=array();
     }*/
@@ -130,23 +127,30 @@ function getType() {
         
     
         <title>SpreePicky </title>
+
+                   
+
        <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0797/1877/files/22_32x32.png?v=1480663515" type="image/png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+       
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+       
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-         <style>
-            @import url('css/styles.css');
+        
+                 <style>
+            @import url('https://fonts.googleapis.com/css?family=Parisienne');
         </style>
-    
+         <link rel="stylesheet" href="css/custom.css">
+   
     </head>
     <body>
         
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar  navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header ">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
@@ -162,8 +166,9 @@ function getType() {
          
         <ul class="nav navbar-nav">
                 
-                  <li> <a href="#" class="navbar-link">Home</a></li>
-                  <li> <a href="#" class="navbar-link">About</a></li>
+                  <li> <a href="#home" class="navbar-link">Home</a></li>
+                 
+                  <li> <a href="#store" class="navbar-link">Store</a></li>
                   <li> <a href="viewcart.php" class="navbar-link">Your Cart  &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                  
         </ul>
@@ -177,56 +182,91 @@ function getType() {
     <!--/.container-fluid -->
   </nav>
 
-        <div class="jumbotron" style="background-image: url('img/shops.jpg');">
-            
+        <div id="home" class="jumbotron" style="  background-image: url('img/shops.jpg'); ">
+          
             
              
                     
                
-            
-            <h2>EXPLORE SHOP DISCOVER</h2>
+            <div id="store-info" style="margin:25%;" >
+            <h1 id="home-head">Explore, Shop, Discover</h1>
             <p>Pastel, goth, grunge, lolita, & more styles!</p>
+            </div>
         </div>
        
-        
+        <div id="store">
        
         <hr>
-        <h3>Clothing</h3>
+        
+        <h3 style="text-align:center;">Broswe:</h3>
       
-        
+         <div id="home-search" class="col-md-offset-2">
         <form method="get">
-             Product: <input type="text" name="name" placeholder="Product Name"/>
-                 <div class="btn-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Type:  <select style="color:white;"name="type" class="selectpicker" >
-                <option value="">Select One</option>
-                    <?=getType()?>
-                </select>
+           <div class="row" style="margin-left:20px;"> 
+               <div class="form-group">
+                     <div class="col-sm-4">
+                         <label>Product:</label> <input type="text" name="name" placeholder="Product Name" class="form-control"/>
+                    </div>
                 </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Brand:  <select style="color:white;"class="selectpicker"  name="brand">
-                <option value="">Select One</option>
-                    <?=getBrand()?>
-                </select>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-            Order by:&nbsp;
-            <div class="radio-inline">
-            <input type="radio" name="orderBy" id="orderByName" value="name"/> 
-             <label for="orderByName"> Name </label></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="radio-inline">
-            <input type="radio" name="orderBy" id="orderByPrice" value="price"/> 
-             <label for="orderByPrice"> Price </label></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <div class="form-group">
+                     <div class="col-sm-4">
+                            <label>Type:</label> 
+                                <select style="color:white;"name="type" class="selectpicker" class="form-control">
+                                    <option value="">Select</option>
+                                        <?=getCategory()?>
+                                </select>
+                    </div>        
+                </div>
+                 <div class="form-group">
+                     <div class="col-sm-4" style="margin-left:-110px;">
+                         <label>Brand:</label>
+                            <select style="color:white;"class="selectpicker"  name="brand" class="form-control">
+                            <option value="">Select</option>
+                                <?=getBrand()?>
+                            </select>
+                        </div>
+                 </div>
+             </div>
+             <div class="row" style="margin-left:170px;margin-top:30px;"> 
+                <div class="form-group">
+                   <div class="row">
+                       <div class="col-sm-2">
+                        <label>Order by:</label>
+                       </div>
+                           <div class="col-sm-2">
+                                <div class="radio-inline">
+                                    
+                                    <input type="radio" name="orderBy" id="orderByName" value="name" /> 
+                                        <label for="orderByName"> Name </label>
+                                </div>
+                            </div>
+                       
+                            <div class="col-sm-2">
+                                <div class="radio-inline">
+                                    <input type="radio" name="orderBy" id="orderByPrice" value="price" /> 
+                                         <label for="orderByPrice"> Price </label>
+                                </div>
+                            </div>
+                  
             
-            <button class="btn" type="submit" name="search" value="Search">Search&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></button>
+            
+                         <div class="col-sm-4" style="margin-left:50px;">
+                            <button id="home-btn" class="btn btn-default" type="submit" name="search" value="Search">Search&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></button>
+                           </div>
+                   </div>
+                </div>
+            </div>
         </form>
+        </div>
         <br>
-        
-         <table class="table table-hover">
+        <div style="text-align:center; margin-left: 16%;">
+         <div class="col-sm-9 ">
+         <table id="tab" class="table table-hover" style="cell-spacing:10px;">
             <thead>
       <tr>
-        <th>Item</th>
-        <th>Brand</th>
-        <th>Price</tjh>
+        <th></th>
+        <th></th>
+        <th></tjh>
     
        
         </tr>
@@ -252,9 +292,11 @@ function getType() {
   </div>
 </div>
         </tbody>
-       
+       </table>
+       </div>
+       </div>
         </div>
-        
+        </div>
         <script>
         
        
@@ -267,9 +309,10 @@ function getType() {
                         
                     });
                     $(".prolink").click(function(){
+                         $('#productInfo').empty();
+                         $('#productImg').html("<img src='img/Loading_icon.gif'>");
                         $('#productModal').modal("show");
-                        $('#productInfo').empty();
-                        //$('#productInfo').empty();
+                       
                           $.ajax({
                                     type: "GET",
                                      url: "viewitem.php",
@@ -281,7 +324,7 @@ function getType() {
                                     success: function(data,status) {
                                        
                                         $("#productImg").html("<img src='" +data.img + "' width='300' height='300' alt='"+data.name+"'>" );
-                                        $("#productInfo").html("<p class='text text-info'>Product name: " + data.name + "</p><p class='text text-info'>Material: " + data.material + "</p>");
+                                        $("#productInfo").html("<p class='text text-info'>Product name: " + data.name + "</p><p class='text text-info'>Brand: " + data.brand + "</p><p class='text text-info'>Type: " + data.type + "</p><p class='text text-info'>Price: $"+data.price+"</p><p class='text text-info'>Material: " + data.material + "</p>");
                                       },
                                     complete: function(data,status) { //optional, used for debugging purposes
                                          // alert(status); 

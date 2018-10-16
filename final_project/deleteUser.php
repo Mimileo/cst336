@@ -6,12 +6,12 @@
  $conn = getDatabaseConnection();
 
 
-$sql = "DELETE FROM tc_user
+$sql = "DELETE FROM ss_customer
         WHERE userId = " . $_GET['userId'];
         
         $stmt= $conn->prepare($sql);
         $stmt->execute();
-        
+       
         header("Location: admin.php");
 ?>
 

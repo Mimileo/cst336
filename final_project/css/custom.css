@@ -1,0 +1,96 @@
+/*.cart{
+    text-decoration: none;
+    word-spacing: 1.2em;
+}
+*/
+body {
+    margin: 0;
+    padding:0px;
+    text-align: center;
+}
+
+
+#home {
+  
+    height:600px;
+   
+    background-repeat:no-repeat;
+    background-size:100%;
+    padding-bottom:55%;
+    text-align: center;
+}
+#admin li{
+    margin-left: 20px;
+    
+}
+
+#selectpicker{
+    color:white; 
+}
+    
+.img-responsive{
+    border-radius: 30px;
+    max-width: 70%;
+    max-height: 70%;
+     display:block;
+     
+     
+}
+
+.navbar{
+     margin-left:-3px;
+     margin-right:-3px;
+     margin-bottom: 0px;
+     padding-right: 20px;
+     padding-left: 20px;
+     
+   
+}
+
+#productInfo {
+    text-align: center;
+    
+}
+#addadmin{
+   
+    background-color: #01e4bb;   
+    margin:0px auto;
+    
+}
+#addadmin:hover{
+ background-color:#01a084;
+}
+
+ #store-info {
+     
+      background-color: rgba(248, 247, 216, 0.7);
+      text-align: center;
+    
+     padding:1%;
+     border-radius:5px;
+   
+  
+}
+
+.card{
+   
+    
+}
+
+#home-head{
+    font-family: 'Parisienne', cursive;
+}
+
+h3 {
+    font-family: cursive;
+}
+
+h2{
+   
+}
+#home-search{
+    margin-bottom: 50px;
+}
+#clothes{
+    padding:500px;
+}
