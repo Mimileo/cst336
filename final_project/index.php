@@ -28,7 +28,7 @@
                 WHERE 1";
 
     if (isset($_GET['search'])){
-      
+      //header('index.php#store');
         $namedParameters = array();
         
         
@@ -142,6 +142,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
         
                  <style>
+                 
             @import url('https://fonts.googleapis.com/css?family=Parisienne');
         </style>
          <link rel="stylesheet" href="css/custom.css">
@@ -209,7 +210,7 @@
                     </div>
                 </div>
                  <div class="form-group">
-                     <div class="col-sm-4">
+                     <div class="col-sm-4" style="margin-left:-50px;">
                             <label>Type:</label> 
                                 <select style="color:white;"name="type" class="selectpicker" class="form-control">
                                     <option value="">Select</option>
@@ -250,8 +251,8 @@
                   
             
             
-                         <div class="col-sm-4" style="margin-left:50px;">
-                            <button id="home-btn" class="btn btn-default" type="submit" name="search" value="Search">Search&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></button>
+                         <div class="col-sm-4" style="margin-left:-30px;">
+                            <button id="home-btn" class="btn btn-default" onclick="location.href='index.php#store';" type="submit" name="search" value="Search">Search&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></button>
                            </div>
                    </div>
                 </div>
@@ -301,6 +302,10 @@
         
        
                 $(document).ready(function(){
+                    $(".home-btn").click(function(){
+                    
+                        
+                    });
                     $(".btn-info").click(function(){
                       // $(".alert").removeClass("in").show();
                        //$(".msg").html("<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a><strong>Added</strong> " + $(this).attr('value') + " item to your cart.</div>")
