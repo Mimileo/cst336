@@ -26,7 +26,7 @@
         echo "<td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a> </td><td>" . $item['brand']."</td><td>$".$item['price'] . "</td><td>";
              echo "<form action='buyitem.php' style='display:inline'>";
             echo "<input type='hidden' name='product_id' value='".$item['product_id']."'>";
-            echo "<button  class='btn btn-info' role='button'type='submit' value='Buy Item'>
+            echo "<button class='btn btn-info' role='button'type='submit' value='".$item['name']."'>
             Buy Item &nbsp<span class='glyphicon glyphicon-ok'></span></button>";
             echo "</form></td><td>";
             echo "<form action='removefromcart.php' style='display:inline'>";
@@ -63,9 +63,28 @@
    
     </head>
     <body>
-        <div class= "jumbotron" style="height:100px;padding-bottom:-100px;">
-        <h2 style="text-align:center;padding-bottom:-150px;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;Your Cart</h2>
+       
+        <div class= "jumbotron" style="height:145px;padding-bottom:-100px;">
+             <?php
+        if(isset($_SESSION['username'])){
+            echo "<p style='display:inline;margin-left:10px;font-size:2em;'>Welcome " . $_SESSION['username']."</p>" ;
+        }
+        ?>
+    
+        <h2 style="text-align:center;padding-bottom:-150px;"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;
+         
+        Your Cart</h2>
         </div>
+        <?php
+        if(isset($_SESSION['username'])) {
+            echo "<form action='logout.php'>
+            <div id='admin' style='margin-left:10px;'>
+            <input type='submit' value='Logout' role='btn' class='btn btn-default'/>
+             <div>
+           </form>";
+        }
+           
+           ?>
         <div class="col-md-6 col-md-offset-3">
         <table class="table table-hover">
             
@@ -115,6 +134,8 @@
                         alert("Added " + $(this).attr('value') + " item to your cart.");
                         
                     });
+                   
+                    
                     $(".prolink").click(function(){
                         $('#productModal').modal("show");
                         $('#productInfo').empty();

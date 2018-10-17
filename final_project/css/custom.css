@@ -4,20 +4,25 @@
 }
 */
 body {
-    margin: 0;
-    padding:0px;
+    
+  overflow-x: hidden !important;
     text-align: center;
+     overflow-y: visible !important;
+    
 }
 
 
 #home {
   
     height:600px;
-   
+     max-width: 100% !important;
+    overflow-x: hidden !important;
     background-repeat:no-repeat;
     background-size:100%;
     padding-bottom:55%;
     text-align: center;
+    
+    
 }
 #admin li{
     margin-left: 20px;
@@ -65,7 +70,7 @@ body {
      
       background-color: rgba(248, 247, 216, 0.7);
       text-align: center;
-    
+   
      padding:1%;
      border-radius:5px;
    

@@ -10,7 +10,7 @@ $conn = getDatabaseConnection();
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
-
+$user;
 //The following SQL allows SQL injection
 // $sql = "SELECT *
 //         FROM tc_admin
@@ -18,14 +18,14 @@ $password = sha1($_POST['password']);
 //         AND   password = '$password'";
 
 $sql = "SELECT *
-        FROM ss_admin
+        FROM ss_customer
         WHERE username = :username 
         AND  password = :password";
 
 $namedParameters = array();
 $namedParameters[':username'] = $username;
-$namedParameters[':password'] = $password;        
-        
+$namedParameters[':password'] = $password;
+
 $stmt = $conn->prepare($sql);
 $stmt->execute($namedParameters);
 $record = $stmt->fetch(PDO::FETCH_ASSOC);//expecting only one record
@@ -34,17 +34,21 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC);//expecting only one record
 
 if (empty($record)) {
     $_SESSION['error'] = 'Error: Wrong Username or Password.';
-    header("Location: adminloginpage.php");
+    header("Location: customerlogin.php");
     
 } 
 else {
     
     //echo "right credentials!";
+   
     $_SESSION['username'] = $record['username'];
-    $_SESSION['adminFullName'] = $record['firstName'] . " " . $record['lastName'];
+    $_SESSION['password'] = $record['password'];
+   
+
+    //$_SESSION['adminFullName'] = $record['firstName'] . " " . $record['lastName'];
     //echo $_SESSION['adminFullName'] . "<br>";
     //echo $record['firstName'] . " " . $record['lastName'];
-   header("Location: admin.php"); //redirecting to admin portal
+   header("Location: viewcart.php"); //redirecting to admin portal
 }
 ?>
 
@@ -60,7 +64,7 @@ else {
             </style>
     </head>
     <body>
-
+       
     </body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

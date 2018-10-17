@@ -128,7 +128,7 @@
     
         <title>SpreePicky </title>
 
-                   
+                
 
        <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0797/1877/files/22_32x32.png?v=1480663515" type="image/png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -170,7 +170,7 @@
                   <li> <a href="#home" class="navbar-link">Home</a></li>
                  
                   <li> <a href="#store" class="navbar-link">Store</a></li>
-                  <li> <a href="viewcart.php" class="navbar-link">Your Cart  &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                  <li> <a href="customerlogin.php" class="navbar-link">Your Cart  &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
                  
         </ul>
          <ul class="nav navbar-nav navbar-right">
@@ -183,7 +183,7 @@
     <!--/.container-fluid -->
   </nav>
 
-        <div id="home" class="jumbotron" style="  background-image: url('img/shops.jpg'); ">
+        <div id="home" class="jumbotron" style="background-image: url('img/shops.jpg'); ">
           
             
              
@@ -201,7 +201,7 @@
         
         <h3 style="text-align:center;">Broswe:</h3>
       
-         <div id="home-search" class="col-md-offset-2">
+         <div id="home-search" class="col-md-offset-2" style="overflow-y:visible;-x:hidden;">
         <form method="get">
            <div class="row" style="margin-left:20px;"> 
                <div class="form-group">
@@ -262,7 +262,7 @@
         <br>
         <div style="text-align:center; margin-left: 16%;">
          <div class="col-sm-9 ">
-         <table id="tab" class="table table-hover" style="cell-spacing:10px;">
+         <table id="tab" class="table table-hover" style="cell-spacing:10px;overflow-x:hidden;">
             <thead>
       <tr>
         <th></th>
