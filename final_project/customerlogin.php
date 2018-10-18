@@ -6,10 +6,11 @@
 
 <!DOCTYPE html>
 <?php
+
 if(isset($_SESSION['username'])){
     //echo "logging";
     header('Location: viewcart.php');
-}else{
+}else {
     echo '<html>
     <head>
         <title>Customer Login Page </title>
@@ -47,9 +48,6 @@ if(isset($_SESSION['username'])){
             </div>
             </div>
             
-        </form>
-        <form action="viewcart.php"> 
-        <input type="submit"  class="btn btn-info btn-block btn-lg" name="login" value="Continue without Signing in"/>
         </form>';
        
         
@@ -68,4 +66,5 @@ if(isset($_SESSION['username'])){
 </html>';
     
 }
+ 
 ?>

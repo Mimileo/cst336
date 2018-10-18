@@ -75,16 +75,15 @@
          
         Your Cart</h2>
         </div>
-        <?php
-        if(isset($_SESSION['username'])) {
-            echo "<form action='logout.php'>
+       
+            <form action='logout.php'>
             <div id='admin' style='margin-left:10px;'>
             <input type='submit' value='Logout' role='btn' class='btn btn-default'/>
              <div>
-           </form>";
-        }
+           </form>
+        
            
-           ?>
+          
         <div class="col-md-6 col-md-offset-3">
         <table class="table table-hover">
             
@@ -131,14 +130,15 @@
                       // $(".alert").removeClass("in").show();
                        //$(".msg").html("<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a><strong>Added</strong> " + $(this).attr('value') + " item to your cart.</div>")
 	                   //$(".alert").delay("slow").addClass("in").fadeOut();
-                        alert("Added " + $(this).attr('value') + " item to your cart.");
+                        alert("Purchased " + $(this).attr('value') + " from your cart.");
                         
                     });
                    
                     
                     $(".prolink").click(function(){
+                         $('#productInfo').empty();
+                         $('#productImg').html("<img src='img/Loading_icon.gif'>");
                         $('#productModal').modal("show");
-                        $('#productInfo').empty();
                         //$('#productInfo').empty();
                           $.ajax({
                                     type: "GET",

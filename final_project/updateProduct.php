@@ -70,7 +70,7 @@ if (isset($_GET['product_id'])) {
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <style>
-            @import url('css/styles.css');
+            @import url('css/custom.css');
             </style>
     </head>
     <body>
@@ -87,8 +87,8 @@ if (isset($_GET['product_id'])) {
        
         <br/>
           <form action="inventory.php">
-            <div id="admin">
-            <input type="submit" value="back" />
+            <div id="admin" style="display:inline;float:right;">
+             <button class="btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
              <div>
            </form>
     
@@ -103,35 +103,60 @@ if (isset($_GET['product_id'])) {
         
        
         <legend class="text-center header">Update Product</legend>
-        
-        <form id="add" class="form-horizontal span8">
-            <div class="md-form">
-                <input type="hidden" name="product_id" value="<?=$productInfo['product_id']?>" />
-            Product Name: <input type="text" name="name" required value="<?=$productInfo['name']?>"/> <br/><br/>
-            </div>
-            <div class="md-form">
-            Type: <input type="text" name="type"  value="<?=$productInfo['type']?>"/> <br/><br/>
-            </div>
-            <div class="md-form">
-            Brand: <input type="text" name="brand"  value="<?=$productInfo['brand']?>"/> <br/><br/>
-            </div>
-            
-            Price: <input type="text" name="price" value="<?=$productInfo['price']?>"/> <br><br/>
-            Material: <input type="text" name="mat" value="<?=$productInfo['material']?>"/> <br><br/>
-            
-            Image Link: <input type="text" name="img" required value="<?=$productInfo['img']?>"/> <br/><br/>
-            </div>
-           
-                        <br /><br/>
-                <input type="submit" name="updateProductForm" value="Update Product!"/>
-                <br/><br/>
-                
-                
-            
-            
-            
-        
-        </form>
+          <section id="loginform" class="outer-wrapper" style="display: table;width: 100%;height: 100%;">
+                <div class="card" > 
+                     <div class="row">
+                             <div class="col-sm-4 col-sm-offset-4" style="text-align:left;">
+                                    <form id="add"role-"form">
+                                        <div class="form-group">
+                                            <input type="hidden" name="product_id" value="<?=$productInfo['product_id']?>" />
+                                                <label>
+                                                    Product Name:
+                                                </label> 
+                                                <input type="text" name="name" required value="<?=$productInfo['name']?>" class="form-control"/><br/><br/> 
+                                        </div>
+                                         <div class="form-group">
+                                                <label>
+                                                    Type:
+                                                </label> 
+                                                <input type="text" name="type"  value="<?=$productInfo['type']?>" class="form-control"/> <br/><br/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                Brand:
+                                            </label> 
+                                            <input type="text" name="brand"  value="<?=$productInfo['brand']?>" class="form-control"/><br/><br/>
+                                        </div>
+                                         <div class="form-group">
+                                            <label>
+                                                Price:
+                                            </label> 
+                                            <input type="text" name="price" value="<?=$productInfo['price']?>" class="form-control"/><br/><br/>
+                                            </div>
+                                             <div class="form-group">
+                                                    <label>
+                                                        Material:
+                                                    </label> 
+                                                    <input type="text" name="mat" value="<?=$productInfo['material']?>" class="form-control"/><br/><br/>
+                                            </div>
+                                         <div class="form-group">
+                                                <label>
+                                                    Image Link:
+                                                </label> 
+                                                <input type="text" name="img" required value="<?=$productInfo['img']?>" class="form-control"/><br/><br/>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                             <div class="col-md-offset-4 col-md-10">     
+                                                <input id="addadmin" type="submit" name="updateProductForm" value="Update Product!"  class="btn btn-info" role="button"/>
+                                             </div>
+                                        </div>
+                                            
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
         
     </fieldset>
     <div id="alert"></div>

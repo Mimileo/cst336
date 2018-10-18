@@ -123,7 +123,7 @@ if (isset($_GET['addProduct'])){
                                                 <input type="text" name="img" class="form-control"/> <br/><br/>
                                             </div>
            
-                        <br /><br/>
+                       
                 <div class="form-group">
                     <div class="col-md-offset-5 col-md-10">
                         <input id="addadmin" type="submit" name="addProduct" value="Add Product!" class="btn btn-info" role="button"/>

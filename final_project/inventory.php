@@ -76,7 +76,7 @@
    
     function showItems($items){
          foreach($items as $item) {
-            echo "<tr><td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a></td>" . "<td> ".$item['brand'] . "</td><td> $" . $item['price']."</td><td>".$item['type'];
+            echo "<tr><td>".$item['product_id']."</td><td><a href='#' class='prolink' id='".$item['product_id']."' data-toggle='modal' data-target='#bannerformmodal'>".$item['name'] . "</a></td>" . "<td> ".$item['brand'] . "</td><td> $" . $item['price']."</td><td>".$item['type'];
             
             echo "</td>";
              echo "<td>";
@@ -237,6 +237,7 @@ function getCat() {
          <table class="table table-hover">
             <thead>
       <tr>
+        <th>Id</th>  
         <th>Item</th>
         <th>Brand</th>
         <th>Price</th>

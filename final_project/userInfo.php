@@ -49,7 +49,7 @@ function displayUsers() {
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <style>
-            @import url('css/styles.css');
+            @import url('css/custom.css');
             </style>
     </head>
     <body>
@@ -64,15 +64,12 @@ function displayUsers() {
         
         <hr>
         
-        <form action="addUser.php">
-            
-            <input type="submit" value="Add new User" />
-            
-        </form>
-        
+       
           <form action="admin.php">
             
-            <input type="submit" value="back" />
+            <div id="admin">
+             <button class="btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
+             <div>
             
         </form>
         

@@ -75,7 +75,7 @@ if (isset($_GET['userId'])) {
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <style>
-            @import url('css/styles.css');
+            @import url('css/custom.css');
             </style>
     </head>
     <body>
@@ -92,8 +92,8 @@ if (isset($_GET['userId'])) {
        
         <br/>
           <form action="admin.php">
-            <div id="admin">
-            <input type="submit" value="back" />
+            <div id="admin" style="display:inline;float:right;">
+             <button class="btn" type="submit" value="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
              <div>
            </form>
     
@@ -107,18 +107,52 @@ if (isset($_GET['userId'])) {
     <fieldset>
         
         <legend class="text-center header"> Update User </legend>
-        
-        <form id="add">
-             <input type="hidden" name="userId" value="<?=$userInfo['userId']?>" />
-            First Name: <input type="text" name="firstName" required value="<?=$userInfo['firstName']?>" /> <br><br>
-            Last Name: <input type="text" name="lastName" required value="<?=$userInfo['lastName']?>"/> <br><br>
-            Email: <input type="text" name="email" value="<?=$userInfo['email']?>"/> <br><br>
-            Address:<input type="text" name="address" value="<?=$userInfo['address']?>"/> <br><br>
-            Phone: <input type="text" name="phone" value="<?=$userInfo['phone']?>"/> <br><br>
-            
-                        <br /><br>
-                <input type="submit" name="updateUserForm" value="Update User!"/>
-        </form>
+         <section id="loginform" class="outer-wrapper" style="display: table;width: 100%;height: 100%;">
+                <div class="card" > 
+                     <div class="row">
+                             <div class="col-sm-4 col-sm-offset-4" style="text-align:left;">
+                                    <form id="add"role-"form">
+                                        <div class="form-group">
+                                             <input type="hidden" name="userId" value="<?=$userInfo['userId']?>" />
+                                                <label>
+                                                    First Name:
+                                                </label> 
+                                                <input type="text" name="firstName" required value="<?=$userInfo['firstName']?>" class="form-control"/><br/><br/> 
+                                        </div>
+                                        <div class="form-group">
+                                                <label>
+                                                    Last Name:
+                                                </label>
+                                                <input type="text" name="lastName" required value="<?=$userInfo['lastName']?>" class="form-control"/><br/><br/> 
+                                        </div>
+                                        <div class="form-group">
+                                                <label>
+                                                    Email:
+                                                </label> 
+                                                <input type="text" name="email" value="<?=$userInfo['email']?>" class="form-control"/><br/><br/> 
+                                        </div>
+                                        <div class="form-group">
+                                                <label>
+                                                    Address:
+                                                </label>
+                                                <input type="text" name="address" value="<?=$userInfo['address']?>" class="form-control"/><br/><br/> 
+                                        </div>
+                                        <div class="form-group">
+                                                <label>
+                                                    Phone:
+                                                </label> 
+                                                <input type="text" name="phone" value="<?=$userInfo['phone']?>" class="form-control"/><br/><br/> 
+                                        </div>
+                                                <div class="form-group">
+                                                     <div class="col-md-offset-4 col-md-10">       
+                                                        <input type="submit" id="addadmin" name="updateUserForm" value="Update User!" class="btn btn-info" role="button"/>
+                                                     </div>
+                                                </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
         
     </fieldset>
     <div id="alert"></div>
