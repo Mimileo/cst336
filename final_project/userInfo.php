@@ -84,10 +84,10 @@ function displayUsers() {
                   <th>First Name</th>
                   <th>Last Name</th>
                   <th>Email</th>
-                  <th>address</th>
-                 
+                  <th>Address</th>
+                  <th>Gender</th>
                   <th>Phone</th>
-                 
+                  <th>Last Activity</th>
                  
                 </tr>
               </thead>
@@ -97,10 +97,18 @@ function displayUsers() {
         $users =displayUsers();
         
         foreach($users as $user) {
+            $userDate = $user['last_activity'];
+            $dt = new DateTime($userDate, new DateTimeZone('UTC'));
+
+
+            $dt->setTimezone(new DateTimeZone('America/Los_Angeles'));
+
+
+            $date = $dt->format('M&\nb\sp;j,&\nb\sp;Y  &\nb\sp;&\nb\sp;&\nb\sp;    g:ia  ');
             echo "<td>";
-            echo $user['userId'] . "</td> <td> " . $user['firstName'] . "</td><td>  " . 
+            echo $user['userId'] . "</td><td> " . $user['firstName'] . "</td><td>  " . 
             $user['lastName'] . "</td><td> ". $user['email']."</td><td> ".
-            $user['address']."</td><td> ". $user['phone'] ."</td><td> ";
+            $user['address']."</td><td>".$user['gender']."</td><td> ". $user['phone'] ."</td><td> ".$date;
         
         echo "</td>";
         }

@@ -17,10 +17,13 @@
         
         return $record;
     }
-    
+   
     if (isset($_GET['product_id'])) {
+        $use = $_SESSION['username'];
+        $pass=$_SESSION['password'];
         $_SESSION['ids'][] = $_GET['product_id'];
        // array_push($_SESSION['ids'],$_GET['product_id']);
+      
        
         header("Location: index.php");
     }

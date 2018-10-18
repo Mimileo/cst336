@@ -32,6 +32,7 @@ if (isset($_GET['updateUserForm'])) { //admin has submitted form to update user
             SET firstName = :fName,
                 lastName = :lName,
                 email = :email,
+                gender = :gender,
                 address = :address,
                 phone = :phone
               
@@ -44,6 +45,7 @@ if (isset($_GET['updateUserForm'])) { //admin has submitted form to update user
 	$namedParameters[":lName"] = $_GET['lastName'];
 	$namedParameters[":email"] = $_GET['email'];
 	$namedParameters[":address"] = $_GET['address'];
+	$namedParameters[":gender"] = $_GET['gender'];
 	$namedParameters[":phone"] = $_GET['phone'];
 
 
@@ -143,6 +145,21 @@ if (isset($_GET['userId'])) {
                                                 </label> 
                                                 <input type="text" name="phone" value="<?=$userInfo['phone']?>" class="form-control"/><br/><br/> 
                                         </div>
+                                             <div class="form-group">
+                                                      <label >
+                                                        Gender:&nbsp;&nbsp;&nbsp;&nbsp;           
+                                                      </label>
+                                            
+                                                      <div class="radio-inline">
+                                                        <input type="radio" name="gender" value="F" id="genderF"  <?= ($userInfo['gender']=='F') ? "checked" : "" ?>/>&nbsp;&nbsp;&nbsp;       
+                                                        <label for="genderF">Female</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      
+                                                      </div>
+                                                      <div class="radio-inline">
+                                                        <input type="radio" name="gender" value="M" id="genderM" <?= ($userInfo['gender']=='M') ? "checked" : "" ?>/>&nbsp;&nbsp;&nbsp;       
+                                                        <label for="genderM">  Male</label>
+                                                      </div>    
+                                                        <br><br/>
+                                            </div>
                                                 <div class="form-group">
                                                      <div class="col-md-offset-4 col-md-10">       
                                                         <input type="submit" id="addadmin" name="updateUserForm" value="Update User!" class="btn btn-info" role="button"/>

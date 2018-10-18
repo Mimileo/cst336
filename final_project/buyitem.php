@@ -57,6 +57,18 @@ if(isset($_SESSION['username']) && isset($_GET['product_id'])){
     $stmt = $conn->prepare($sql);
     $stmt->execute($namedParameters);
     
+   
+    $sql = "UPDATE ss_customer
+            SET last_activity= CURRENT_TIMESTAMP()
+            WHERE userId=".$userId;
+   
+     $namedParameters[':userId'] =  $userId;
+   
+    
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($namedParameters);
+    
+    
     echo "<h4 style='color:#4CAF50;'>Product has been purchased successfully!</h4>";
      header("Location: viewcart.php");
 }
