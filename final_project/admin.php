@@ -193,6 +193,47 @@ function displayUsers() {
         }
        
     }//endIf (isset)
+    else{
+         echo' <h3 style="text-align:center;">  <span class="glyphicon glyphicon-user" aria-hidden="true"> </span>   User Information</h3>
+        <div class="table-responsive">
+            <table class="table table-striped">
+               
+                     <thead>
+                <tr>
+                  <th>User ID#</th>
+                  <th>Name</th>
+                  <th><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></th>
+                  <th><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></th>
+                 
+                </tr>
+              </thead>';
+        $users =displayUsers();
+        
+        foreach($users as $user) {
+            echo "<tr>";
+            echo "<td>";
+            echo $user['userId'] . ' </td> ';// . $user['firstName'] . "  " . $user['lastName'];
+            $name = $user['firstName'] . "  " . $user['lastName'];
+             echo "</td>";
+              echo "<td>";
+            echo "<a class='name' href='userInfo.php?userId=".$user['userId']."'> $name </a> ";
+             echo "</td>";
+              echo "<td>";
+            echo "<a class='btn btn-info' href='updateUser.php?userId=".$user['userId']."'> Update </a>";
+             echo "</td>";
+              echo "<td>";
+            //echo "[<a href='deleteUser.php?userId=".$user['userId']."'> Delete </a> ]";
+            echo "<form action='deleteUser.php' style='display:inline' onsubmit='return confirmDelete(\"".$user['firstName']." ".$user['lastName']."\")'>
+                     <input  type='hidden' name='userId' value='".$user['userId']."' />
+                     <input class='btn btn-danger' type='submit' value='Delete'>
+                  </form>
+                ";
+                 echo "</td>";
+            
+            //echo "<br />";
+             echo "</tr>";
+            }
+    }
        
 
 
@@ -285,11 +326,11 @@ function displayUsers() {
                 
             <b>Select Table View:</b>&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="radio-inline">
-            <input type="radio" name="orderBy" id="orderByName" value="customer"/> 
+            <input type="radio" name="orderBy" id="orderByName" value="customer"  <?= ($_GET['orderBy']=='customer') ? "checked" : "" ?>/> 
              <label for="orderByName"> Customer Data </label></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="radio-inline">
            
-              <input type="radio" name="orderBy" id="orderByPrice" value="reports"/> 
+              <input type="radio" name="orderBy" id="orderByPrice" value="reports" <?= ($_GET['orderBy']=='reports') ? "checked" : "" ?>/> 
              <label for="orderByPrice">&nbsp; Reports </label></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <button class="btn" type="submit" name="search" value="Search">Search&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></button>
