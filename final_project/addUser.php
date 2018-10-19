@@ -23,9 +23,9 @@ if (isset($_GET['addUserForm'])){
     //"INSERT INTO `tc_user` (`userId`, `firstName`, `lastName`, `email`, `universityId`, `gender`, `phone`, `role`, `deptId`) VALUES (NULL, 'a', 'a', 'a', '1', 'm', '1', '1', '1');
     
     $sql = "INSERT INTO ss_customer
-            (firstName, lastName, email, address, phone, gender, last_activity)
+            (firstName, lastName, email, address, phone, gender, last_purchase)
             VALUES
-            (:fName, :lName, :email, :address, :phone, :gender, NULL)";
+            (:fName, :lName, :email, :address, :phone, :gender, null)";
     $namedParameters = array();
     $namedParameters[':fName'] =  $firstName;
     $namedParameters[':lName'] =  $lastName;

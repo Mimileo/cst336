@@ -34,8 +34,8 @@ if (isset($_GET['updateUserForm'])) { //admin has submitted form to update user
                 email = :email,
                 gender = :gender,
                 address = :address,
-                phone = :phone
-              
+                phone = :phone,
+                last_purchase = last_purchase
                 
                 
                 

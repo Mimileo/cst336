@@ -16,23 +16,6 @@ $user;
 //         FROM tc_admin
 //         WHERE username = '$username' 
 //         AND   password = '$password'";
-function displayCust($username) {
-    global $conn;
-    $sql = "SELECT * 
-            FROM ss_customer";
-    $statement = $conn->prepare($sql);
-    $statement->execute();
-    $users = $statement->fetchAll(PDO::FETCH_ASSOC);
-    //print_r($users);
-    $userId=0;
-    foreach($users as $user){
-        if($user['username'] == $username){
-            $userId=$user['userId'];
-            break;
-        }
-    }
-    return $userId;
-}
 
 $sql = "SELECT *
         FROM ss_customer
@@ -60,16 +43,7 @@ else {
    
     $_SESSION['username'] = $record['username'];
     $_SESSION['password'] = $record['password'];
-   $userId=displayCust($_SESSION['username']);
-   $sql = "UPDATE ss_customer
-            SET last_activity = CURRENT_TIMESTAMP()
-            WHERE username=".$userId;
-   
-     $namedParameters[':userId'] =  $userId;
-   
-    
-    $stmt = $conn->prepare($sql);
-    $stmt->execute($namedParameters);
+  
 
     //$_SESSION['adminFullName'] = $record['firstName'] . " " . $record['lastName'];
     //echo $_SESSION['adminFullName'] . "<br>";

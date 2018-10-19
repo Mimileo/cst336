@@ -87,7 +87,7 @@ function displayUsers() {
                   <th>Address</th>
                   <th>Gender</th>
                   <th>Phone</th>
-                  <th>Last Activity</th>
+                  <th>Last Purchase</th>
                  
                 </tr>
               </thead>
@@ -97,7 +97,9 @@ function displayUsers() {
         $users =displayUsers();
         
         foreach($users as $user) {
-            $userDate = $user['last_activity'];
+            
+            $userDate = $user['last_purchase'];
+            if($userDate != NULL){
             $dt = new DateTime($userDate, new DateTimeZone('UTC'));
 
 
@@ -105,6 +107,9 @@ function displayUsers() {
 
 
             $date = $dt->format('M&\nb\sp;j,&\nb\sp;Y  &\nb\sp;&\nb\sp;&\nb\sp;    g:ia  ');
+            } else{
+                $date = "No Purchase Activity";
+            }
             echo "<td>";
             echo $user['userId'] . "</td><td> " . $user['firstName'] . "</td><td>  " . 
             $user['lastName'] . "</td><td> ". $user['email']."</td><td> ".

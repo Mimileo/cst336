@@ -62,7 +62,7 @@ if(isset($_SESSION['username']) && isset($_GET['product_id'])){
     
     
      $sql = "UPDATE ss_customer
-            SET last_activity= CURRENT_TIMESTAMP()
+            SET last_purchase= CURRENT_TIMESTAMP()
             WHERE userId=".$userId;
    
      $namedParameters[':userId'] =  $userId;
